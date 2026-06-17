@@ -9,82 +9,55 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  date: "Wednesday, June 10, 2026",
-  sentiment: "risk-off",
+  date: "Wednesday, June 17, 2026",
+  sentiment: "neutral",
 
   ticker_bar: [
-    { label:"SPX",  value:"7,355",  change:"-0.40%", up:false },
-    { label:"NDX",  value:"25,480", change:"-0.50%", up:false },
-    { label:"DOW",  value:"50,752", change:"-0.24%", up:false },
-    { label:"VIX",  value:"21.73",  change:"↑ Elevated", up:false, neutral:true },
-    { label:"WTI",  value:"$90.15", change:"+2.50%", up:true  },
-    { label:"NG",   value:"$3.45",  change:"+0.90%", up:true  }
+    { label:"SPX",  value:"7,536",   change:"+0.33%", up:true  },
+    { label:"NDX",  value:"30,539",  change:"+0.50%", up:true  },
+    { label:"DOW",  value:"52,418",  change:"+0.15%", up:true  },
+    { label:"VIX",  value:"17.68",   change:"mod",    up:false, neutral:true },
+    { label:"WTI",  value:"$75.12",  change:"-1.2%",  up:false },
+    { label:"NG",   value:"$2.77",   change:"-0.6%",  up:false }
   ],
 
   snapshot: [
-    { label:"S&P 500 Futures",    value:"7,355",  change:"-0.40%", up:false, note:"Prior close: 7,386 · CPI + Iran drag" },
-    { label:"Nasdaq 100 Futures", value:"25,480", change:"-0.50%", up:false, note:"Chips under pressure post-AVGO" }
+    { label:"S&P 500 Futures",    value:"7,536", change:"+0.33%", up:true, note:"Edging higher ahead of 2:30pm ET Fed press conference" },
+    { label:"Nasdaq 100 Futures", value:"30,539", change:"+0.50%", up:true, note:"AI/tech names leading pre-market gains" }
   ],
 
-  vix: { value:"21.73", pct:43.46, note:"Intraday range 20.06–21.89 · Persistent fear demand" },
+  vix: { value:"17.68", pct:35, note:"Moderate caution — typical Fed-day premium; 52-wk range 12–32" },
 
   commodities: [
-    { label:"WTI Crude Oil", value:"$90.15", change:"+2.50%", up:true,  note:"Iran-Strait of Hormuz disruption" },
-    { label:"Brent Crude",   value:"$94.27", change:"+1.80%", up:true,  note:"Approaching $95 resistance" },
-    { label:"Natural Gas",   value:"$3.45",  change:"+0.90%", up:true,  note:"Elevated but off recent highs" }
+    { label:"WTI Crude Oil", value:"$75.12", change:"-1.2%", up:false, note:"5th straight down session; 3-month low on Iran deal supply outlook" },
+    { label:"Brent Crude",   value:"$78.50", change:"-1.0%", up:false, note:"Iran-US deal to be signed Friday; Tehran oil exports to resume" },
+    { label:"Natural Gas",   value:"$2.77",  change:"-0.6%", up:false, note:"Near multi-month lows; demand flat amid mild summer start" }
   ],
 
   news: [
-    {
-      title: "May CPI Hits 4.2% — Highest Since April 2023",
-      tags: [{label:"Macro",cls:"tag-macro"}],
-      summary: "CPI rose 0.5% MoM and 4.2% YoY in May. Energy prices up 23.5% YoY (gasoline +40.5%). Core CPI a more contained +2.9% YoY. Futures markets now price a Fed rate hike in December.",
-      why: "Effectively rules out any near-term Fed easing. Rate-sensitive growth stocks face renewed pressure. Combined with Iran disruption, this is the dominant market driver today."
-    },
-    {
-      title: "US-Iran Conflict Escalates — Strait of Hormuz at Risk",
-      tags: [{label:"Geopolitical",cls:"tag-geo"},{label:"Oil",cls:"tag-energy"}],
-      summary: "US launched new strikes on Iranian targets near the Strait of Hormuz. Iran retaliated with missiles on US bases in Jordan, Kuwait, and Bahrain. IEA calls it the largest supply disruption in global oil market history. No ceasefire in sight at the 100-day mark.",
-      why: "Structurally bullish for oil and energy equities. Creates a risk-off environment for growth stocks. Any surprise ceasefire would rapidly unwind crude gains — monitor closely."
-    },
-    {
-      title: "Broadcom Earnings: Revenue Beat, AI Guidance Miss",
-      tags: [{label:"Tech",cls:"tag-tech"},{label:"Earnings",cls:"tag-tech"}],
-      summary: "Broadcom beat Q1 revenue estimates but its AI chip revenue forecast fell short of expectations, rattling the semiconductor complex. NVDA, AMD, MU, and INTC fell for a second consecutive day.",
-      why: "Broadcom's custom ASIC business (Google TPUs, Meta) is a leading indicator for hyperscaler AI spend. A guidance miss here questions the durability of the entire AI infrastructure trade."
-    },
-    {
-      title: "Strong May Payrolls + Hot CPI = Fed Rate Hike Priced In",
-      tags: [{label:"Macro",cls:"tag-macro"}],
-      summary: "US added 172,000 jobs in May vs. 80,000 expected. April revised up to 179,000. Combined with 4.2% CPI, markets now price a full 25bp rate hike by year-end. 10-year Treasury yield ~4.57%.",
-      why: "Double pressure on rate-sensitive and growth stocks. The pivot narrative is dead for 2026. Elevated bond yields mean higher discount rates on future earnings."
-    },
-    {
-      title: "USTR Proposes Replacement Tariffs on 60 Economies",
-      tags: [{label:"Trade",cls:"tag-geo"},{label:"Macro",cls:"tag-macro"}],
-      summary: "New tariffs of 10–12.5% proposed on 60 economies to replace the temporary 10% global tariff expiring July 24. Markets had hoped for a rollback — effective tariff rates stay elevated.",
-      why: "Removes a positive catalyst the market had been anticipating. Maintains pressure on import-sensitive sectors and supply chains."
-    }
+    { title:"Kevin Warsh Chairs First FOMC Meeting — Rate Hold Expected, Dot Plot in Focus", tags:[{label:"Macro",cls:"tag-macro"},{label:"Fed",cls:"tag-macro"}], summary:"The Federal Reserve is holding rates at 3.50%–3.75% with a 97% market probability of no change. This is new Fed Chair Kevin Warsh's first meeting. The updated dot plot and 2:30pm ET press conference are the key events. May CPI at 4.2% YoY is expected to eliminate the single projected rate cut from March — and at least three members are seen projecting hikes. First cut now priced no earlier than mid-2027.", why:"Every statement, dot, and word from Warsh will move markets today. Watch for any hawkish tilt in forward guidance — that could reprice rate expectations and hit long-duration tech." },
+    { title:"Iran-US Peace Deal Set for Friday Signing — Oil Hits 3-Month Low", tags:[{label:"Geopolitical",cls:"tag-geo"},{label:"Energy",cls:"tag-energy"}], summary:"An interim US-Iran agreement is scheduled to be signed in Switzerland on Friday, allowing Tehran to immediately resume oil exports and ease Strait of Hormuz restrictions. Over 100 oil-laden ships currently held in the Gulf could be released, significantly boosting global supply. WTI is now in its 5th straight down session approaching $75/bbl.", why:"If signed, this is a major supply catalyst that could push WTI toward $70. Upstream energy names (COP, XOM, CVX) face near-term headwinds. Watch for a dip-buy setup in integrated majors if crude finds a floor." },
+    { title:"May CPI at 4.2% YoY Eliminates 2026 Rate Cut Expectations", tags:[{label:"Macro",cls:"tag-macro"},{label:"Inflation",cls:"tag-macro"}], summary:"May inflation came in hot at 4.2% year-over-year, driven by a 23.5% annual surge in energy prices from the Strait of Hormuz disruption. Core CPI rose 0.2% monthly and 2.9% annually — still well above the Fed's 2% target. Futures markets now price no cut before mid-2027 and have opened the door to rate hike discussion.", why:"Higher-for-longer rates are a headwind for growth stocks and leveraged names. But AI capex spending appears insulated — the key question is whether rate sensitivity bites consumer tech and SaaS multiples." },
+    { title:"BMW Slashes 2026 Profit Outlook, Shares Drop 7% to 5-Year Low", tags:[{label:"Earnings",cls:"tag-macro"},{label:"Geopolitical",cls:"tag-geo"}], summary:"BMW cut its 2026 profit outlook citing weakening China/Asia Pacific sales and elevated energy costs from the Iran conflict. Shares fell ~7% to their lowest in over five years. The automaker is a bellwether for how geopolitical energy disruption is now flowing through to non-energy corporate margins.", why:"A warning shot for any industrial or manufacturing name with European exposure and energy-intensive operations. Watch for read-through to other auto/industrial sectors." },
+    { title:"AI Infrastructure Stocks Lead Pre-Market — NVDA, Semis Outperform", tags:[{label:"Tech",cls:"tag-tech"},{label:"AI",cls:"tag-tech"}], summary:"Semiconductor and AI-linked names are outperforming broadly in pre-market trading. NVIDIA is up ~0.48% after announcing a collaborative AI-within-fabs initiative with TSMC. Micron traded an unusual $35B in dollar volume Tuesday. The broader narrative: AI infrastructure capex remains insulated from macro headwinds, with investors treating it as a defensive growth play.", why:"If Warsh's press conference is perceived as hawkish, growth stocks could give back gains. But AI infrastructure names with durable revenue visibility (NVDA, TSMC) may hold better than rate-sensitive SaaS." }
   ],
 
   tech_stocks: [
-    { ticker:"NVDA", name:"Nvidia",    price:"~$138.50", perf:"-1.5% pre-mkt",  up:false, note:"2nd day of pressure · Watch $135 support" },
-    { ticker:"AVGO", name:"Broadcom",  price:"~$387",    perf:"AI guide miss",   up:false, note:"Custom ASIC demand questioned by hyperscalers" },
-    { ticker:"MSFT", name:"Microsoft", price:"~$408",    perf:"Holding",         up:null,  note:"Azure cloud stickier than hardware orders" },
-    { ticker:"AMD",  name:"AMD",       price:"~$456",    perf:"Under pressure",  up:false, note:"Caught in semis selloff post-AVGO" }
+    { ticker:"NVDA", name:"NVIDIA Corp", price:"$208.40", perf:"+0.48%", up:true, note:"Pre-market gains on AI demand + TSMC fab collaboration" },
+    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$466.38", perf:"Recovering", up:true, note:"Rebounding from -10.86% sell-off on June 5; consolidating" },
+    { ticker:"MU",   name:"Micron Technology", price:"$142.50", perf:"-0.70%", up:false, note:"$35B unusual dollar volume Tuesday — institutional repositioning" }
   ],
 
   energy_stocks: [
-    { ticker:"XOM", name:"Exxon Mobil", price:"—", perf:"▲ Bullish", up:true, note:"Direct beneficiary of WTI surge" },
-    { ticker:"CVX", name:"Chevron",     price:"—", perf:"▲ Bullish", up:true, note:"Strong buyback program · Iran tailwind" },
-    { ticker:"OXY", name:"Occidental",  price:"—", perf:"▲ Bullish", up:true, note:"High oil beta · Buffett-backed" }
+    { ticker:"XOM", name:"ExxonMobil Corp", price:"$122.40", perf:"+0.2%",  up:true,  note:"Defensive integrated; YTD +6.6%, dividend cushion vs crude drop" },
+    { ticker:"CVX", name:"Chevron Corp",    price:"$163.50", perf:"-0.5%",  up:null,  note:"Higher yield play; more upstream crude exposure, YTD +1.4%" },
+    { ticker:"COP", name:"ConocoPhillips",  price:"$105.20", perf:"-1.2%",  up:false, note:"Pure-play upstream; most sensitive to crude decline, watch for entry" }
   ],
 
   watchlist: [
-    { ticker:"XOM",  company:"Exxon Mobil",  desc:"Oil surge on Iran escalation. Direct beneficiary of elevated WTI. Energy is the only sector with clear strength today.", change:"▲ Bullish", up:true  },
-    { ticker:"GLD",  company:"SPDR Gold ETF", desc:"Safe-haven flows intensifying on Iran conflict + inflation hedge demand on 4.2% CPI print.", change:"▲ Bullish", up:true  },
-    { ticker:"AVGO", company:"Broadcom",      desc:"AI chip guidance miss still digesting. Watch for analyst downgrades today. Negative read-through for entire semis complex.", change:"▼ Bearish", up:false },
-    { ticker:"NVDA", company:"Nvidia",        desc:"Second day of pressure post-AVGO. Key support at $135 — a break below would accelerate selling.", change:"▼ Watch $135", up:false }
+    { ticker:"NVDA", company:"NVIDIA Corp", desc:"AI infrastructure demand + Fed-day catalyst. Pre-market strength; watch post-2:30pm reaction.", change:"+0.48%", up:true },
+    { ticker:"MU",   company:"Micron Technology", desc:"$35B in unusual dollar volume Tuesday. Flat on surface but institutional rotation signal ahead of Fed.", change:"-0.70%", up:false },
+    { ticker:"XOM",  company:"ExxonMobil", desc:"Oil at 3-month low on Iran deal. Watch for crude floor signal — integrated majors typically recover fastest post-supply shock.", change:"+0.2%", up:true }
   ]
 };
 // ═══════════════════════════════════════════════════════
@@ -179,16 +152,12 @@ const D = {
     <span id="sentiment-text"></span>
   </div>
 </div>
-
 <div class="container">
   <div class="status-bar" id="ticker-bar" style="margin-top:4px"></div>
-
   <div class="section-label">Market Snapshot</div>
   <div class="g3" id="snapshot-cards"></div>
-
   <div class="section-label">Energy &amp; Commodities</div>
   <div class="g3" id="commodity-cards"></div>
-
   <div class="g2" style="margin-top:20px">
     <div>
       <div class="section-label" style="margin-top:0">Top Stories</div>
@@ -203,124 +172,28 @@ const D = {
       <div class="watch-card" id="watchlist"></div>
     </div>
   </div>
-
   <div class="footer">Data as of pre-market <span id="footer-date"></span> · For informational purposes only · Not financial advice</div>
 </div>
-
 <script>
-function chip(change, up, neutral) {
-  const cls = neutral ? 'neutral' : up ? 'up' : 'down';
-  const arrow = neutral ? '' : up ? '▲ ' : '▼ ';
-  return `<span class="chip ${cls}">${arrow}${change}</span>`;
-}
-
-function render() {
-  // Header
-  document.getElementById('h-date').textContent = D.date;
-  document.getElementById('footer-date').textContent = D.date;
-
-  // Sentiment
-  const sMap = { 'risk-on': ['badge-on','dot-on','Risk-On'], 'risk-off': ['badge-off','dot-off','Risk-Off'], 'neutral': ['badge-neutral','dot-neutral','Neutral'] };
-  const [bc, dc, st] = sMap[D.sentiment] || sMap.neutral;
+function chip(change,up,neutral){const cls=neutral?'neutral':up?'up':'down';const arrow=neutral?'':up?'▲ ':'▼ ';return `<span class="chip ${cls}">${arrow}${change}</span>`}
+function render(){
+  document.getElementById('h-date').textContent=D.date;
+  document.getElementById('footer-date').textContent=D.date;
+  const sMap={'risk-on':['badge-on','dot-on','Risk-On'],'risk-off':['badge-off','dot-off','Risk-Off'],'neutral':['badge-neutral','dot-neutral','Neutral']};
+  const[bc,dc,st]=sMap[D.sentiment]||sMap.neutral;
   document.getElementById('sentiment-badge').classList.add(bc);
   document.getElementById('sentiment-dot').classList.add(dc);
-  document.getElementById('sentiment-text').textContent = st;
-
-  // Ticker bar
-  const tb = document.getElementById('ticker-bar');
-  tb.innerHTML = D.ticker_bar.map((t, i) => {
-    const cls = t.neutral ? 'neutral' : t.up ? 'up' : 'down';
-    return `${i > 0 ? '<span class="sep">|</span>' : ''}
-    <div class="si">
-      <span class="si-label">${t.label}</span>
-      <span class="si-val">${t.value}</span>
-      <span class="chip ${cls}" style="padding:1px 6px">${t.change}</span>
-    </div>`;
-  }).join('');
-
-  // Snapshot cards
-  const sc = document.getElementById('snapshot-cards');
-  sc.innerHTML = D.snapshot.map(s => `
-    <div class="card">
-      <div class="metric-label">${s.label}</div>
-      <div class="metric-value">${s.value}</div>
-      ${chip(s.change, s.up)}
-      <div class="metric-sub">${s.note}</div>
-    </div>`).join('') + `
-    <div class="card">
-      <div class="metric-label">VIX — Fear Index</div>
-      <div class="metric-value">${D.vix.value}</div>
-      <div class="vix-track">
-        <div class="vix-fill" style="width:${D.vix.pct}%"></div>
-        <div class="vix-needle" style="left:calc(${D.vix.pct}% - 5px)"></div>
-      </div>
-      <div class="vix-labels"><span>0 — Calm</span><span>25</span><span>50 — Panic</span></div>
-      <div class="metric-sub" style="margin-top:6px">${D.vix.note}</div>
-    </div>`;
-
-  // Commodities
-  document.getElementById('commodity-cards').innerHTML = D.commodities.map(c => `
-    <div class="card">
-      <div class="metric-label">${c.label}</div>
-      <div class="metric-value">${c.value}</div>
-      ${chip(c.change, c.up)}
-      <div class="metric-sub">${c.note}</div>
-    </div>`).join('');
-
-  // News
-  document.getElementById('news-list').innerHTML = D.news.map((n, i) => `
-    <div class="news-card" onclick="this.classList.toggle('open')">
-      <div class="news-header">
-        <div class="news-num">${i+1}</div>
-        <div class="news-body">
-          <div class="news-title">${n.title}</div>
-          <div class="tags">${n.tags.map(t=>`<span class="tag ${t.cls}">${t.label}</span>`).join('')}</div>
-          <div class="news-summary">${n.summary}</div>
-          <div class="news-why"><strong>Why it matters:</strong> ${n.why}</div>
-        </div>
-        <div class="toggle">▾</div>
-      </div>
-    </div>`).join('');
-
-  // Tech stocks
-  document.getElementById('tech-panel').innerHTML = `
-    <div class="sector-title"><div class="sector-icon icon-tech">💻</div>Semiconductors & AI — Snapshot</div>
-    ${D.tech_stocks.map(s => `
-    <div class="stock-row">
-      <div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div>
-      <div class="stock-right">
-        <div class="stock-price">${s.price}</div>
-        <div><span class="chip ${s.up ? 'up' : s.up===false ? 'down' : 'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div>
-        <div class="stock-note">${s.note}</div>
-      </div>
-    </div>`).join('')}`;
-
-  // Energy stocks
-  document.getElementById('energy-panel').innerHTML = `
-    <div class="sector-title"><div class="sector-icon icon-energy">⚡</div>Energy — Mixed Today</div>
-    ${D.energy_stocks.map(s => `
-    <div class="stock-row">
-      <div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div>
-      <div class="stock-right">
-        <div class="stock-price">${s.price}</div>
-        <div><span class="chip ${s.up===true ? 'up' : s.up===false ? 'down' : 'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div>
-        <div class="stock-note">${s.note}</div>
-      </div>
-    </div>`).join('')}`;
-
-  // Watchlist
-  document.getElementById('watchlist').innerHTML = D.watchlist.map(w => `
-    <div class="watch-row">
-      <div class="watch-badge ${w.up ? 'up' : 'down'}">${w.ticker}</div>
-      <div class="watch-info">
-        <div class="watch-ticker">${w.ticker}</div>
-        <div class="watch-company">${w.company}</div>
-        <div class="watch-desc">${w.desc}</div>
-      </div>
-      <div class="watch-change" style="color:${w.up ? 'var(--green)' : 'var(--red)'}">${w.change}</div>
-    </div>`).join('');
+  document.getElementById('sentiment-text').textContent=st;
+  const tb=document.getElementById('ticker-bar');
+  tb.innerHTML=D.ticker_bar.map((t,i)=>{const cls=t.neutral?'neutral':t.up?'up':'down';return`${i>0?'<span class="sep">|</span>':''}<div class="si"><span class="si-label">${t.label}</span><span class="si-val">${t.value}</span><span class="chip ${cls}" style="padding:1px 6px">${t.change}</span></div>`}).join('');
+  const sc=document.getElementById('snapshot-cards');
+  sc.innerHTML=D.snapshot.map(s=>`<div class="card"><div class="metric-label">${s.label}</div><div class="metric-value">${s.value}</div>${chip(s.change,s.up)}<div class="metric-sub">${s.note}</div></div>`).join('')+`<div class="card"><div class="metric-label">VIX — Fear Index</div><div class="metric-value">${D.vix.value}</div><div class="vix-track"><div class="vix-fill" style="width:${D.vix.pct}%"></div><div class="vix-needle" style="left:calc(${D.vix.pct}% - 5px)"></div></div><div class="vix-labels"><span>0 — Calm</span><span>25</span><span>50 — Panic</span></div><div class="metric-sub" style="margin-top:6px">${D.vix.note}</div></div>`;
+  document.getElementById('commodity-cards').innerHTML=D.commodities.map(c=>`<div class="card"><div class="metric-label">${c.label}</div><div class="metric-value">${c.value}</div>${chip(c.change,c.up)}<div class="metric-sub">${c.note}</div></div>`).join('');
+  document.getElementById('news-list').innerHTML=D.news.map((n,i)=>`<div class="news-card" onclick="this.classList.toggle('open')"><div class="news-header"><div class="news-num">${i+1}</div><div class="news-body"><div class="news-title">${n.title}</div><div class="tags">${n.tags.map(t=>`<span class="tag ${t.cls}">${t.label}</span>`).join('')}</div><div class="news-summary">${n.summary}</div><div class="news-why"><strong>Why it matters:</strong> ${n.why}</div></div><div class="toggle">▾</div></div></div>`).join('');
+  document.getElementById('tech-panel').innerHTML=`<div class="sector-title"><div class="sector-icon icon-tech">💻</div>Semiconductors & AI</div>${D.tech_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
+  document.getElementById('energy-panel').innerHTML=`<div class="sector-title"><div class="sector-icon icon-energy">⚡</div>Energy</div>${D.energy_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up===true?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
+  document.getElementById('watchlist').innerHTML=D.watchlist.map(w=>`<div class="watch-row"><div class="watch-badge ${w.up?'up':'down'}">${w.ticker}</div><div class="watch-info"><div class="watch-ticker">${w.ticker}</div><div class="watch-company">${w.company}</div><div class="watch-desc">${w.desc}</div></div><div class="watch-change" style="color:${w.up?'var(--green)':'var(--red)'}">${w.change}</div></div>`).join('');
 }
-
 render();
 </script>
 </body>
