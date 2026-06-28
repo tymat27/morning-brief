@@ -9,61 +9,63 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  date: "Wednesday, June 17, 2026",
-  sentiment: "neutral",
+  date: "Friday, June 26, 2026",
+  sentiment: "risk-off",
 
   ticker_bar: [
-    { label:"SPX",  value:"7,536",   change:"+0.33%", up:true  },
-    { label:"NDX",  value:"30,539",  change:"+0.50%", up:true  },
-    { label:"DOW",  value:"52,418",  change:"+0.15%", up:true  },
-    { label:"VIX",  value:"17.68",   change:"mod",    up:false, neutral:true },
-    { label:"WTI",  value:"$75.12",  change:"-1.2%",  up:false },
-    { label:"NG",   value:"$2.77",   change:"-0.6%",  up:false }
+    { label:"SPX",  value:"7,344",  change:"-0.19%", up:false  },
+    { label:"NDX",  value:"22,280", change:"-0.31%", up:false  },
+    { label:"DOW",  value:"51,831", change:"-0.17%", up:false  },
+    { label:"VIX",  value:"18.89",  change:"+1.40%", up:false, neutral:true },
+    { label:"WTI",  value:"$70.85", change:"-1.50%", up:false  },
+    { label:"NG",   value:"$3.33",  change:"+1.11%", up:true   }
   ],
 
   snapshot: [
-    { label:"S&P 500 Futures",    value:"7,536", change:"+0.33%", up:true, note:"Edging higher ahead of 2:30pm ET Fed press conference" },
-    { label:"Nasdaq 100 Futures", value:"30,539", change:"+0.50%", up:true, note:"AI/tech names leading pre-market gains" }
+    { label:"S&P 500 Futures",    value:"7,338", change:"-0.20%", up:false, note:"Tech sell-off; defensive rotation in play" },
+    { label:"Nasdaq 100 Futures", value:"22,280", change:"-0.31%", up:false, note:"AAPL & MSFT dragging; MU, AMD providing offset" }
   ],
 
-  vix: { value:"17.68", pct:35, note:"Moderate caution — typical Fed-day premium; 52-wk range 12–32" },
+  vix: { value:"18.89", pct:38, note:"Elevated caution; tech-led volatility, not broad panic" },
 
   commodities: [
-    { label:"WTI Crude Oil", value:"$75.12", change:"-1.2%", up:false, note:"5th straight down session; 3-month low on Iran deal supply outlook" },
-    { label:"Brent Crude",   value:"$78.50", change:"-1.0%", up:false, note:"Iran-US deal to be signed Friday; Tehran oil exports to resume" },
-    { label:"Natural Gas",   value:"$2.77",  change:"-0.6%", up:false, note:"Near multi-month lows; demand flat amid mild summer start" }
+    { label:"WTI Crude Oil", value:"$70.85", change:"-1.50%", up:false, note:"Iran General License X flooding market with supply" },
+    { label:"Brent Crude",   value:"$74.43", change:"-1.11%", up:false, note:"Below $75 for first time since early May; war premium fading" },
+    { label:"Natural Gas",   value:"$3.33",  change:"+1.11%", up:true,  note:"Summer heat demand + LNG exports supporting price" }
   ],
 
   news: [
-    { title:"Kevin Warsh Chairs First FOMC Meeting — Rate Hold Expected, Dot Plot in Focus", tags:[{label:"Macro",cls:"tag-macro"},{label:"Fed",cls:"tag-macro"}], summary:"The Federal Reserve is holding rates at 3.50%–3.75% with a 97% market probability of no change. This is new Fed Chair Kevin Warsh's first meeting. The updated dot plot and 2:30pm ET press conference are the key events. May CPI at 4.2% YoY is expected to eliminate the single projected rate cut from March — and at least three members are seen projecting hikes. First cut now priced no earlier than mid-2027.", why:"Every statement, dot, and word from Warsh will move markets today. Watch for any hawkish tilt in forward guidance — that could reprice rate expectations and hit long-duration tech." },
-    { title:"Iran-US Peace Deal Set for Friday Signing — Oil Hits 3-Month Low", tags:[{label:"Geopolitical",cls:"tag-geo"},{label:"Energy",cls:"tag-energy"}], summary:"An interim US-Iran agreement is scheduled to be signed in Switzerland on Friday, allowing Tehran to immediately resume oil exports and ease Strait of Hormuz restrictions. Over 100 oil-laden ships currently held in the Gulf could be released, significantly boosting global supply. WTI is now in its 5th straight down session approaching $75/bbl.", why:"If signed, this is a major supply catalyst that could push WTI toward $70. Upstream energy names (COP, XOM, CVX) face near-term headwinds. Watch for a dip-buy setup in integrated majors if crude finds a floor." },
-    { title:"May CPI at 4.2% YoY Eliminates 2026 Rate Cut Expectations", tags:[{label:"Macro",cls:"tag-macro"},{label:"Inflation",cls:"tag-macro"}], summary:"May inflation came in hot at 4.2% year-over-year, driven by a 23.5% annual surge in energy prices from the Strait of Hormuz disruption. Core CPI rose 0.2% monthly and 2.9% annually — still well above the Fed's 2% target. Futures markets now price no cut before mid-2027 and have opened the door to rate hike discussion.", why:"Higher-for-longer rates are a headwind for growth stocks and leveraged names. But AI capex spending appears insulated — the key question is whether rate sensitivity bites consumer tech and SaaS multiples." },
-    { title:"BMW Slashes 2026 Profit Outlook, Shares Drop 7% to 5-Year Low", tags:[{label:"Earnings",cls:"tag-macro"},{label:"Geopolitical",cls:"tag-geo"}], summary:"BMW cut its 2026 profit outlook citing weakening China/Asia Pacific sales and elevated energy costs from the Iran conflict. Shares fell ~7% to their lowest in over five years. The automaker is a bellwether for how geopolitical energy disruption is now flowing through to non-energy corporate margins.", why:"A warning shot for any industrial or manufacturing name with European exposure and energy-intensive operations. Watch for read-through to other auto/industrial sectors." },
-    { title:"AI Infrastructure Stocks Lead Pre-Market — NVDA, Semis Outperform", tags:[{label:"Tech",cls:"tag-tech"},{label:"AI",cls:"tag-tech"}], summary:"Semiconductor and AI-linked names are outperforming broadly in pre-market trading. NVIDIA is up ~0.48% after announcing a collaborative AI-within-fabs initiative with TSMC. Micron traded an unusual $35B in dollar volume Tuesday. The broader narrative: AI infrastructure capex remains insulated from macro headwinds, with investors treating it as a defensive growth play.", why:"If Warsh's press conference is perceived as hawkish, growth stocks could give back gains. But AI infrastructure names with durable revenue visibility (NVDA, TSMC) may hold better than rate-sensitive SaaS." }
+    { title:"OpenAI Reportedly Delays IPO to 2027 After SpaceX's Rocky Debut", tags:[{label:"Tech",cls:"tag-tech"}], summary:"OpenAI executives are urging caution on the company's IPO timeline after SpaceX (SPCX) fell sharply from its $225 intraday high to ~$153 near listing price. CEO Sam Altman wants a $1T valuation — above the current private mark of $730B–$850B. Polymarket traders now price ~35% odds of no OpenAI IPO by year-end.", why:"Raises systemic questions about AI capital market sustainability. If the 'picks and shovels' AI infrastructure trade can't hold post-IPO, it pressures the narrative supporting NVDA, MSFT Azure, and AI chip multiples broadly." },
+    { title:"Apple Falls 6.1% on MacBook & iPad Price Hikes — Microsoft Drops 3.5% on Xbox Increases", tags:[{label:"Tech",cls:"tag-tech"},{label:"Macro",cls:"tag-macro"}], summary:"Apple announced price increases on MacBook and iPad models citing rising chip and memory costs. Microsoft followed with Xbox price hikes. Combined, the Mag-7 heavyweights shed hundreds of billions in market cap in a single session, signaling that AI infrastructure cost inflation is now flowing through to consumers.", why:"Watch Q3 guidance carefully — if AI component costs are rising fast enough to justify consumer price hikes now, volume risk grows. This is the first hard evidence of AI cost inflation reaching the end consumer." },
+    { title:"Micron Surges 15.7% on Record Q3 Earnings — Memory Demand Remains Red-Hot", tags:[{label:"Tech",cls:"tag-tech"}], summary:"Micron Technology reported fiscal Q3 2026 results well above consensus, driven by AI server memory demand. Shares surged 15.7% Thursday to ~$1,199. The Philadelphia Semiconductor Index (SOX) rose 3.2%. MU is pulling back ~5% Friday as traders book gains, but the fundamental read-through for AI infrastructure demand is unambiguously bullish.", why:"Confirms the AI infrastructure buildout is alive and spending on memory. Good read-through for NVDA (HBM demand) and AMD. The bifurcation — hardware AI strong, consumer AI soft — is the key theme today." },
+    { title:"US Q1 2026 GDP Revised Up to 2.1% — PCE Inflation Reaccelerates to 4.6%", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The BEA third estimate of Q1 2026 GDP was revised up to +2.1% annualized from 1.6%, driven by lower imports. However, the PCE price index came in at 4.6% — revised up 0.1pp — and consumer spending grew only +0.5%, well below prior estimates.", why:"The GDP upgrade is a short-term positive, but reaccelerating PCE inflation (4.6%) locks the Fed into higher-for-longer. Rate cut expectations will need to be pushed out, adding pressure to long-duration tech valuations already under stress." },
+    { title:"Iran Sanctions Relief (General License X) Hammers Oil — XOM, CVX Down 2.8%", tags:[{label:"Energy",cls:"tag-energy"},{label:"Geo",cls:"tag-geo"}], summary:"The U.S. Treasury's OFAC issued General License X on June 22 — a 60-day authorization for worldwide buyers to purchase Iranian crude with no volume cap. Brent fell 3.5%+ on the news. XOM and CVX have both fallen ~20-23% from 52-week highs.", why:"If this license is extended or made permanent, the structural bull case for domestic oil producers weakens materially. Energy was the top S&P 500 sector in Q1 2026 — much of that was war premium now unwinding. Watch for OPEC+ response." }
   ],
 
   tech_stocks: [
-    { ticker:"NVDA", name:"NVIDIA Corp", price:"$208.40", perf:"+0.48%", up:true, note:"Pre-market gains on AI demand + TSMC fab collaboration" },
-    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$466.38", perf:"Recovering", up:true, note:"Rebounding from -10.86% sell-off on June 5; consolidating" },
-    { ticker:"MU",   name:"Micron Technology", price:"$142.50", perf:"-0.70%", up:false, note:"$35B unusual dollar volume Tuesday — institutional repositioning" }
+    { ticker:"NVDA", name:"NVIDIA Corporation",     price:"$195.17",  perf:"-0.29%",  up:false, note:"Holding firm; AI data center demand intact, limited consumer exposure" },
+    { ticker:"AAPL", name:"Apple Inc.",              price:"$275.15",  perf:"-6.12%",  up:false, note:"MacBook & iPad price hikes spook investors on volume risk" },
+    { ticker:"MU",   name:"Micron Technology",       price:"~$1,107",  perf:"-4.80%",  up:false, note:"Post-earnings profit-taking after 15.7% surge Thursday; fundamentals strong" },
+    { ticker:"AMD",  name:"Advanced Micro Devices",  price:"~$186",    perf:"+2.47%",  up:true,  note:"Outperforming on positive memory read-through; no consumer hardware drag" },
+    { ticker:"MSFT", name:"Microsoft Corp.",         price:"~$338",    perf:"-3.46%",  up:false, note:"Xbox price hikes weigh; Azure/Copilot fundamentals remain solid" }
   ],
 
   energy_stocks: [
-    { ticker:"XOM", name:"ExxonMobil Corp", price:"$122.40", perf:"+0.2%",  up:true,  note:"Defensive integrated; YTD +6.6%, dividend cushion vs crude drop" },
-    { ticker:"CVX", name:"Chevron Corp",    price:"$163.50", perf:"-0.5%",  up:null,  note:"Higher yield play; more upstream crude exposure, YTD +1.4%" },
-    { ticker:"COP", name:"ConocoPhillips",  price:"$105.20", perf:"-1.2%",  up:false, note:"Pure-play upstream; most sensitive to crude decline, watch for entry" }
+    { ticker:"XOM",  name:"ExxonMobil Corp.",  price:"$139.73", perf:"-2.82%", up:false, note:"Down 23% from 52-wk high of $176.41; Iran supply shock is structural headwind" },
+    { ticker:"CVX",  name:"Chevron Corp.",     price:"$175.98", perf:"-2.81%", up:false, note:"Down 20% from 52-wk high $214.71; attractive dividend yield at current prices" },
+    { ticker:"SPCX", name:"SpaceX Inc.",       price:"$152.86", perf:"~flat",  up:null,  note:"IPO stabilizing near $135 listing; Starlink mobile plans are new catalyst" }
   ],
 
   watchlist: [
-    { ticker:"NVDA", company:"NVIDIA Corp", desc:"AI infrastructure demand + Fed-day catalyst. Pre-market strength; watch post-2:30pm reaction.", change:"+0.48%", up:true },
-    { ticker:"MU",   company:"Micron Technology", desc:"$35B in unusual dollar volume Tuesday. Flat on surface but institutional rotation signal ahead of Fed.", change:"-0.70%", up:false },
-    { ticker:"XOM",  company:"ExxonMobil", desc:"Oil at 3-month low on Iran deal. Watch for crude floor signal — integrated majors typically recover fastest post-supply shock.", change:"+0.2%", up:true }
+    { ticker:"MU",   company:"Micron Technology",       desc:"Post-earnings dip after 15.7% surge — potential entry for AI memory thesis. Q3 results confirm structural demand.", change:"-4.8%", up:false },
+    { ticker:"AMD",  company:"Advanced Micro Devices",  desc:"Outperforming semiconductors today on Micron read-through. Gaining share in AI data center workloads.", change:"+2.5%", up:true },
+    { ticker:"SPCX", company:"SpaceX Inc.",             desc:"IPO volatility settling near listing price. Starlink mobile service announcement is a new growth catalyst.", change:"~0.0%", up:true }
   ]
 };
 // ═══════════════════════════════════════════════════════
 </script>
 <style>
-  :root { color-scheme: light; --bg:#f4f5f7; --surface:#fff; --surface2:#f8f9fb; --border:#e2e6ea; --text:#0d1117; --muted:#8b93a4; --secondary:#5a6272; --green:#00c087; --green-bg:#e6f9f4; --red:#e05252; --red-bg:#fdf0f0; --blue:#2563eb; --blue-bg:#eff4ff; --amber:#d97706; --amber-bg:#fffbeb; --shadow:0 1px 3px rgba(0,0,0,.07); --shadow-md:0 4px 12px rgba(0,0,0,.08); }
+  :root { color-scheme: light; --bg:#f4f5f7; --surface:#fff; --surface2:#f8f9fb; --border:#e2e6ea; --text:#0d1117; --muted:#8b93a4; --secondary:#5a6272; --green:#00c087; --green-bg:#e6f9f4; --red:#e05252; --red-bg:#fdf0f0; --blue:#2563eb; --blue-bg:#eff4ff; --amber:#d97706; --amber-bg:#fffbeb; --purple:#7c3aed; --purple-bg:#f5f3ff; --shadow:0 1px 3px rgba(0,0,0,.07); --shadow-md:0 4px 12px rgba(0,0,0,.08); }
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}
   .header{background:var(--surface);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
@@ -78,6 +80,15 @@ const D = {
   .dot{width:7px;height:7px;border-radius:50%;animation:pulse 2s infinite}
   .dot-on{background:var(--green)} .dot-off{background:var(--red)} .dot-neutral{background:var(--amber)}
   @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
+
+  /* ── Tab nav ── */
+  .tab-nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 24px;display:flex;position:sticky;top:61px;z-index:99}
+  .tab-btn{padding:12px 20px;font-size:13px;font-weight:600;color:var(--muted);border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;display:flex;align-items:center;gap:6px}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{color:var(--blue);border-bottom-color:var(--blue)}
+  .tab-content{display:none}
+  .tab-content.active{display:block}
+
   .container{max-width:1100px;margin:0 auto;padding:20px 20px 40px}
   .section-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:20px 0 10px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;box-shadow:var(--shadow);transition:box-shadow .2s}
@@ -135,10 +146,45 @@ const D = {
   .watch-desc{font-size:12px;color:var(--secondary);margin-top:4px;line-height:1.4}
   .watch-change{font-size:16px;font-weight:700;white-space:nowrap;padding-top:3px}
   .footer{text-align:center;color:var(--muted);font-size:11px;margin-top:24px;padding-top:16px;border-top:1px solid var(--border)}
-  @media(max-width:700px){.g3{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}}
+
+  /* ── On the Radar styles (consumed by radar.js) ── */
+  .radar-container{max-width:1100px;margin:0 auto;padding:20px 20px 40px}
+  .radar-subtitle{font-size:12px;color:var(--muted);margin-bottom:16px}
+  .radar-empty{text-align:center;padding:60px 20px;font-size:18px;font-weight:600;color:var(--muted);letter-spacing:-.3px}
+  .radar-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow);margin-bottom:14px;transition:box-shadow .2s,border-color .2s}
+  .radar-card:hover{box-shadow:var(--shadow-md);border-color:#c7d2fe}
+  .radar-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+  .radar-left{flex:1}
+  .radar-ticker{font-size:20px;font-weight:800;letter-spacing:-.5px;line-height:1}
+  .radar-name{font-size:13px;color:var(--secondary);margin-top:2px}
+  .radar-badges{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+  .radar-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px;text-transform:uppercase;letter-spacing:.4px}
+  .rb-tech{background:#eff6ff;color:#1d4ed8}
+  .rb-energy{background:#fff7ed;color:#c2410c}
+  .rb-health{background:#f0fdf4;color:#15803d}
+  .rb-industrial{background:#fef9c3;color:#854d0e}
+  .rb-other{background:var(--surface2);color:var(--secondary)}
+  .radar-right{text-align:right;flex-shrink:0}
+  .radar-price{font-size:22px;font-weight:800;letter-spacing:-.5px;line-height:1}
+  .radar-change{font-size:15px;font-weight:700;margin-top:4px}
+  .radar-change.up{color:var(--green)}
+  .radar-change.down{color:var(--red)}
+  .radar-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:14px}
+  .radar-stat-label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+  .radar-stat-value{font-size:13px;font-weight:700;color:var(--text)}
+  .radar-why-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--purple);margin-bottom:6px}
+  .radar-why-text{font-size:13px;color:var(--secondary);line-height:1.6;padding:12px 14px;background:var(--purple-bg);border-radius:8px;border-left:3px solid var(--purple)}
+  .radar-vol-bar{display:flex;align-items:center;gap:6px;margin-top:4px}
+  .radar-vol-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+  .radar-vol-fill{height:100%;border-radius:2px;background:var(--blue)}
+  .radar-vol-fill.high{background:var(--amber)}
+  .radar-vol-label{font-size:10px;color:var(--muted);white-space:nowrap}
+
+  @media(max-width:700px){.g3{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.radar-stats{grid-template-columns:1fr 1fr}.radar-card-top{flex-direction:column}.radar-right{text-align:left}}
 </style>
 </head>
 <body>
+
 <div class="header">
   <div class="h-left">
     <div class="logo">M</div>
@@ -152,49 +198,113 @@ const D = {
     <span id="sentiment-text"></span>
   </div>
 </div>
-<div class="container">
-  <div class="status-bar" id="ticker-bar" style="margin-top:4px"></div>
-  <div class="section-label">Market Snapshot</div>
-  <div class="g3" id="snapshot-cards"></div>
-  <div class="section-label">Energy &amp; Commodities</div>
-  <div class="g3" id="commodity-cards"></div>
-  <div class="g2" style="margin-top:20px">
-    <div>
-      <div class="section-label" style="margin-top:0">Top Stories</div>
-      <div id="news-list"></div>
-    </div>
-    <div>
-      <div class="section-label" style="margin-top:0">Tech &amp; AI Sector</div>
-      <div class="sector-panel" style="margin-bottom:16px" id="tech-panel"></div>
-      <div class="section-label">Energy Equities</div>
-      <div class="sector-panel" style="margin-bottom:16px" id="energy-panel"></div>
-      <div class="section-label">Stocks to Watch</div>
-      <div class="watch-card" id="watchlist"></div>
-    </div>
-  </div>
-  <div class="footer">Data as of pre-market <span id="footer-date"></span> · For informational purposes only · Not financial advice</div>
+
+<!-- Tab navigation -->
+<div class="tab-nav">
+  <button class="tab-btn active" id="tab-btn-briefing" onclick="switchTab('briefing')">📰 Today's Briefing</button>
+  <button class="tab-btn" id="tab-btn-radar" onclick="switchTab('radar')">📡 On the Radar</button>
 </div>
+
+<!-- Briefing tab -->
+<div id="tab-briefing" class="tab-content active">
+  <div class="container">
+    <div class="status-bar" id="ticker-bar" style="margin-top:4px"></div>
+    <div class="section-label">Market Snapshot</div>
+    <div class="g3" id="snapshot-cards"></div>
+    <div class="section-label">Energy &amp; Commodities</div>
+    <div class="g3" id="commodity-cards"></div>
+    <div class="g2" style="margin-top:20px">
+      <div>
+        <div class="section-label" style="margin-top:0">Top Stories</div>
+        <div id="news-list"></div>
+      </div>
+      <div>
+        <div class="section-label" style="margin-top:0">Tech &amp; AI Sector</div>
+        <div class="sector-panel" style="margin-bottom:16px" id="tech-panel"></div>
+        <div class="section-label">Energy Equities</div>
+        <div class="sector-panel" style="margin-bottom:16px" id="energy-panel"></div>
+        <div class="section-label">Stocks to Watch</div>
+        <div class="watch-card" id="watchlist"></div>
+      </div>
+    </div>
+    <div class="footer">Data as of pre-market <span id="footer-date"></span> · For informational purposes only · Not financial advice</div>
+  </div>
+</div>
+
+<!-- Radar data + render logic — Claude updates RADAR object in this file each morning -->
+<script src="radar.js"></script>
+
+<!-- On the Radar tab — content populated by radar.js -->
+<div id="tab-radar" class="tab-content">
+  <div class="radar-container">
+    <div style="margin-top:20px;margin-bottom:4px">
+      <div class="section-label" style="margin-top:0">On the Radar</div>
+      <div class="radar-subtitle">Sub-$10B market cap · Unusual volume · Near-term breakout signals · Tech/AI &amp; Energy weighted · Updated each morning</div>
+    </div>
+    <div id="radar-content"></div>
+    <div class="footer" style="margin-top:16px">Radar picks are research prompts, not financial advice · Data: FMP &amp; <a href="https://bigdata.com" target="_blank" style="color:var(--muted)">Bigdata.com</a></div>
+  </div>
+</div>
+
 <script>
-function chip(change,up,neutral){const cls=neutral?'neutral':up?'up':'down';const arrow=neutral?'':up?'▲ ':'▼ ';return `<span class="chip ${cls}">${arrow}${change}</span>`}
-function render(){
-  document.getElementById('h-date').textContent=D.date;
-  document.getElementById('footer-date').textContent=D.date;
-  const sMap={'risk-on':['badge-on','dot-on','Risk-On'],'risk-off':['badge-off','dot-off','Risk-Off'],'neutral':['badge-neutral','dot-neutral','Neutral']};
-  const[bc,dc,st]=sMap[D.sentiment]||sMap.neutral;
+// ─── Tab switching ───────────────────────────────────────────
+function switchTab(name) {
+  ['briefing', 'radar'].forEach(t => {
+    document.getElementById('tab-' + t).classList.toggle('active', t === name);
+    document.getElementById('tab-btn-' + t).classList.toggle('active', t === name);
+  });
+}
+
+// ─── Briefing render ─────────────────────────────────────────
+function chip(change, up, neutral) {
+  const cls = neutral ? 'neutral' : up ? 'up' : 'down';
+  const arrow = neutral ? '' : up ? '▲ ' : '▼ ';
+  return `<span class="chip ${cls}">${arrow}${change}</span>`;
+}
+
+function render() {
+  document.getElementById('h-date').textContent = D.date;
+  document.getElementById('footer-date').textContent = D.date;
+
+  const sMap = { 'risk-on':['badge-on','dot-on','Risk-On'], 'risk-off':['badge-off','dot-off','Risk-Off'], 'neutral':['badge-neutral','dot-neutral','Neutral'] };
+  const [bc, dc, st] = sMap[D.sentiment] || sMap.neutral;
   document.getElementById('sentiment-badge').classList.add(bc);
   document.getElementById('sentiment-dot').classList.add(dc);
-  document.getElementById('sentiment-text').textContent=st;
-  const tb=document.getElementById('ticker-bar');
-  tb.innerHTML=D.ticker_bar.map((t,i)=>{const cls=t.neutral?'neutral':t.up?'up':'down';return`${i>0?'<span class="sep">|</span>':''}<div class="si"><span class="si-label">${t.label}</span><span class="si-val">${t.value}</span><span class="chip ${cls}" style="padding:1px 6px">${t.change}</span></div>`}).join('');
-  const sc=document.getElementById('snapshot-cards');
-  sc.innerHTML=D.snapshot.map(s=>`<div class="card"><div class="metric-label">${s.label}</div><div class="metric-value">${s.value}</div>${chip(s.change,s.up)}<div class="metric-sub">${s.note}</div></div>`).join('')+`<div class="card"><div class="metric-label">VIX — Fear Index</div><div class="metric-value">${D.vix.value}</div><div class="vix-track"><div class="vix-fill" style="width:${D.vix.pct}%"></div><div class="vix-needle" style="left:calc(${D.vix.pct}% - 5px)"></div></div><div class="vix-labels"><span>0 — Calm</span><span>25</span><span>50 — Panic</span></div><div class="metric-sub" style="margin-top:6px">${D.vix.note}</div></div>`;
-  document.getElementById('commodity-cards').innerHTML=D.commodities.map(c=>`<div class="card"><div class="metric-label">${c.label}</div><div class="metric-value">${c.value}</div>${chip(c.change,c.up)}<div class="metric-sub">${c.note}</div></div>`).join('');
-  document.getElementById('news-list').innerHTML=D.news.map((n,i)=>`<div class="news-card" onclick="this.classList.toggle('open')"><div class="news-header"><div class="news-num">${i+1}</div><div class="news-body"><div class="news-title">${n.title}</div><div class="tags">${n.tags.map(t=>`<span class="tag ${t.cls}">${t.label}</span>`).join('')}</div><div class="news-summary">${n.summary}</div><div class="news-why"><strong>Why it matters:</strong> ${n.why}</div></div><div class="toggle">▾</div></div></div>`).join('');
-  document.getElementById('tech-panel').innerHTML=`<div class="sector-title"><div class="sector-icon icon-tech">💻</div>Semiconductors & AI</div>${D.tech_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
-  document.getElementById('energy-panel').innerHTML=`<div class="sector-title"><div class="sector-icon icon-energy">⚡</div>Energy</div>${D.energy_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up===true?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
-  document.getElementById('watchlist').innerHTML=D.watchlist.map(w=>`<div class="watch-row"><div class="watch-badge ${w.up?'up':'down'}">${w.ticker}</div><div class="watch-info"><div class="watch-ticker">${w.ticker}</div><div class="watch-company">${w.company}</div><div class="watch-desc">${w.desc}</div></div><div class="watch-change" style="color:${w.up?'var(--green)':'var(--red)'}">${w.change}</div></div>`).join('');
+  document.getElementById('sentiment-text').textContent = st;
+
+  const tb = document.getElementById('ticker-bar');
+  tb.innerHTML = D.ticker_bar.map((t, i) => {
+    const cls = t.neutral ? 'neutral' : t.up ? 'up' : 'down';
+    return `${i > 0 ? '<span class="sep">|</span>' : ''}<div class="si"><span class="si-label">${t.label}</span><span class="si-val">${t.value}</span><span class="chip ${cls}" style="padding:1px 6px">${t.change}</span></div>`;
+  }).join('');
+
+  const sc = document.getElementById('snapshot-cards');
+  sc.innerHTML = D.snapshot.map(s =>
+    `<div class="card"><div class="metric-label">${s.label}</div><div class="metric-value">${s.value}</div>${chip(s.change, s.up)}<div class="metric-sub">${s.note}</div></div>`
+  ).join('') + `<div class="card"><div class="metric-label">VIX — Fear Index</div><div class="metric-value">${D.vix.value}</div><div class="vix-track"><div class="vix-fill" style="width:${D.vix.pct}%"></div><div class="vix-needle" style="left:calc(${D.vix.pct}% - 5px)"></div></div><div class="vix-labels"><span>0 — Calm</span><span>25</span><span>50 — Panic</span></div><div class="metric-sub" style="margin-top:6px">${D.vix.note}</div></div>`;
+
+  document.getElementById('commodity-cards').innerHTML = D.commodities.map(c =>
+    `<div class="card"><div class="metric-label">${c.label}</div><div class="metric-value">${c.value}</div>${chip(c.change, c.up)}<div class="metric-sub">${c.note}</div></div>`
+  ).join('');
+
+  document.getElementById('news-list').innerHTML = D.news.map((n, i) =>
+    `<div class="news-card" onclick="this.classList.toggle('open')"><div class="news-header"><div class="news-num">${i+1}</div><div class="news-body"><div class="news-title">${n.title}</div><div class="tags">${n.tags.map(t=>`<span class="tag ${t.cls}">${t.label}</span>`).join('')}</div><div class="news-summary">${n.summary}</div><div class="news-why"><strong>Why it matters:</strong> ${n.why}</div></div><div class="toggle">▾</div></div></div>`
+  ).join('');
+
+  document.getElementById('tech-panel').innerHTML = `<div class="sector-title"><div class="sector-icon icon-tech">💻</div>Semiconductors & AI</div>${D.tech_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
+
+  document.getElementById('energy-panel').innerHTML = `<div class="sector-title"><div class="sector-icon icon-energy">⚡</div>Energy</div>${D.energy_stocks.map(s=>`<div class="stock-row"><div><div class="ticker">${s.ticker}</div><div class="stock-name">${s.name}</div></div><div class="stock-right"><div class="stock-price">${s.price}</div><div><span class="chip ${s.up===true?'up':s.up===false?'down':'neutral'}" style="font-size:11px;padding:1px 6px">${s.perf}</span></div><div class="stock-note">${s.note}</div></div></div>`).join('')}`;
+
+  document.getElementById('watchlist').innerHTML = D.watchlist.map(w =>
+    `<div class="watch-row"><div class="watch-badge ${w.up?'up':'down'}">${w.ticker}</div><div class="watch-info"><div class="watch-ticker">${w.ticker}</div><div class="watch-company">${w.company}</div><div class="watch-desc">${w.desc}</div></div><div class="watch-change" style="color:${w.up?'var(--green)':'var(--red)'}">${w.change}</div></div>`
+  ).join('');
 }
-render();
+
+// ─── Init ─────────────────────────────────────────────────────
+render();       // populate briefing tab
+initRadar();    // populate radar tab immediately (data lives in radar.js)
 </script>
+
+
 </body>
 </html>
