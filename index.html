@@ -9,56 +9,56 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  date: "Tuesday, July 7, 2026",
-  sentiment: "risk-off",
+  date: "Tuesday, July 14, 2026",
+  sentiment: "risk-on",
 
   ticker_bar: [
-    { label:"SPX",  value:"7,487",   change:"-0.67%", up:false  },
-    { label:"NDX",  value:"29,057",  change:"-2.16%", up:false  },
-    { label:"DOW",  value:"52,843",  change:"-0.40%", up:false  },
-    { label:"VIX",  value:"16.43",   change:"+5.52%", up:false, neutral:true },
-    { label:"WTI",  value:"$70.39",  change:"+2.68%", up:true   },
-    { label:"NG",   value:"$3.28",   change:"+1.05%", up:true   }
+    { label:"SPX",  value:"7,550",   change:"+0.47%", up:true  },
+    { label:"NDX",  value:"29,657",  change:"+1.34%", up:true  },
+    { label:"DOW",  value:"52,468",  change:"-0.06%", up:false  },
+    { label:"VIX",  value:"16.39",   change:"-4.49%", up:false, neutral:true },
+    { label:"WTI",  value:"$79.08",  change:"+1.20%", up:true  },
+    { label:"NG",   value:"$2.89",   change:"-0.14%", up:false  }
   ],
 
   snapshot: [
-    { label:"S&P 500",    value:"7,487",  change:"-0.67%", up:false, note:"Opened firmer on trade-deficit and bank-earnings optimism, then gave it back as the chip selloff broadened across the tape" },
-    { label:"Nasdaq 100", value:"29,057", change:"-2.16%", up:false, note:"Samsung's earnings miss triggered a chip-wide rout — Intel -10%, Applied Materials -10%, AMD -8% — the sharpest tech drawdown in weeks" }
+    { label:"S&P 500",    value:"7,550",  change:"+0.47%", up:true, note:"Extending its climb after a much cooler-than-expected June CPI print (3.5% y/y) gives the Fed room to hold rates, with tech leading the advance" },
+    { label:"Nasdaq 100", value:"29,657", change:"+1.34%", up:true, note:"Outpacing the broader tape as chip stocks roar back — NVDA (+3.8%) and AMD (+4.2%) rally on easing China-chip uncertainty and bullish analyst calls, even as AAPL and MSFT lag" }
   ],
 
-  vix: { value:"16.43", pct:33, note:"Jumped off 2026 lows as the AI-trade unwind broadens; still under its 200-day average of 18.67, so this reads as a gut-check, not a panic" },
+  vix: { value:"16.39", pct:33, note:"Falling over 4% as the cooler CPI print removes a near-term catalyst for volatility — a sharp reversal from yesterday's Hormuz-driven spike, though still above its 52-week low of 13.38" },
 
   commodities: [
-    { label:"WTI Crude Oil", value:"$70.39", change:"+2.68%", up:true, note:"Bouncing off cycle lows on fresh supply-risk headlines — Ukrainian drones hit Russia's biggest refinery and tanker attacks were reported near the Strait of Hormuz" },
-    { label:"Brent Crude",   value:"$73.97", change:"+2.75%", up:true, note:"Tracking WTI higher on the same geopolitical risk premium; still well below April's Hormuz-driven spike above $114" },
-    { label:"Natural Gas",   value:"$3.28",  change:"+1.05%", up:true, note:"Holding a tight range; WSJ pins it on summer weather and power-sector demand, no fresh catalyst today" }
+    { label:"WTI Crude Oil", value:"$79.08", change:"+1.20%", up:true, note:"Holding above $80 intraday after yesterday's Hormuz-blockade spike, with Exxon's Permian upside back in focus as prices sit well above shut-in breakevens" },
+    { label:"Brent Crude",   value:"$84.62", change:"+1.58%", up:true, note:"Tracking WTI higher, still carrying the geopolitical risk premium from the Strait of Hormuz standoff" },
+    { label:"Natural Gas",   value:"$2.89",  change:"-0.14%", up:false, note:"Little changed and continuing to diverge from the crude complex, with mild-weather demand and ample supply keeping a lid on prices" }
   ],
 
   news: [
-    { title:"Samsung Earnings Miss Triggers Broad Chip Selloff — Intel, Applied Materials Down 10%, AMD Down 8%", tags:[{label:"Tech",cls:"tag-tech"}], summary:"A disappointing Samsung earnings report out of Korea rattled sentiment across the global semiconductor supply chain Tuesday morning. Intel and Applied Materials each fell roughly 10%, AMD dropped about 8%, while NVIDIA held up comparatively well, down near 1.4%.", why:"This is today's dominant story for anything AI/semis-adjacent. Samsung is a bellwether for memory and foundry demand, so a miss there raises real questions about near-term AI capex appetite, not just sentiment. NVDA's smaller decline looks like a flight-to-quality trade within chips — worth watching whether that holds or the selloff broadens tomorrow." },
-    { title:"Ukrainian Drones Hit Russia's Biggest Refinery as Tanker Attacks Reported Near Strait of Hormuz", tags:[{label:"Energy",cls:"tag-energy"},{label:"Geo",cls:"tag-geo"}], summary:"Ukrainian drones struck Russia's largest oil refinery in one of the deepest attacks inside Russian territory since the war began, causing fuel shortages and long lines in Omsk. Separately, reports surfaced of tanker attacks near the Strait of Hormuz.", why:"WTI and Brent are both up nearly 3% on this combination — a reminder that oil's 2026 downtrend (WTI cooled from an April spike above $114 to under $70 recently) isn't a one-way trade. For XOM and CVX, a firmer crude tape today is a tailwind after weeks of drifting lower with the broader commodity." },
-    { title:"Trump Says He'll Take a 'Second Run' at Removing Fed Governor Lisa Cook", tags:[{label:"Macro",cls:"tag-macro"}], summary:"President Trump said on CNBC he will pursue a second attempt to remove Fed Governor Lisa Cook and called the board under new Chair Kevin Warsh 'a little bit hostile.' Wall Street's reaction was muted — futures barely moved on the comments.", why:"Fed-independence headlines have become background noise this cycle, and today's shrug confirms it. But it's a live tail risk: an actual move against Cook, or further disputes over Fed composition, would be a real rate-path catalyst, unlike the noise priced in today. Markets are still betting on a hike, not a cut." },
-    { title:"Supreme Court Rules Presidents Can Fire Independent Regulators Without Cause", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The Supreme Court ruled that presidents have authority to remove independent regulatory officials without cause, a decision the New York Times reports is adding fresh political-uncertainty risk for industries — tech included — that depend on stable, predictable enforcement.", why:"A structural story, not a one-day trade. It raises the stakes on who runs the SEC, FTC, and FCC going forward and could shift antitrust and enforcement posture with every administration change. Not priced into today's tape, but worth tracking against any pending AI-related antitrust matters." },
-    { title:"SpaceX Set to Join the Nasdaq 100 Today", tags:[{label:"Tech",cls:"tag-tech"}], summary:"SpaceX is joining the Nasdaq 100 index Tuesday, one of the most closely watched additions in the index's history following the company's recent IPO.", why:"Passive funds tracking the index now have to buy SpaceX shares, and its inclusion cements the growing weight of the 'AI/space-tech' cohort in the Nasdaq 100 — even as chip stocks, the index's more traditional AI proxy, sell off hard today. A clean example of how much the composition of 'the AI trade' is shifting under the surface." }
+    { title:"June CPI Cools to 3.5%, Giving Fed 'Sigh of Relief' Room to Hold Rates", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The Consumer Price Index rose 3.5% year-over-year in June — its biggest month-over-month drop since 2020 — as the earlier pause in the Iran conflict eased price pressure. Fed Chair Kevin Warsh testified before the House Financial Services Committee the same day.", why:"The single biggest driver of today's risk-on tape — VIX down over 4%, NDX up 1.3% — as it removes near-term pressure for a rate hike. A durable positive for long-duration growth and AI-infrastructure valuations, directly supporting names like NVDA and AMD in today's rally." },
+    { title:"Fed Chair Warsh Says Central Bank Has 'No Tolerance' for Elevated Inflation", tags:[{label:"Macro",cls:"tag-macro"}], summary:"In testimony before the House Financial Services Committee, Fed Chair Kevin Warsh said the central bank has no tolerance for persistently elevated inflation and reiterated the Fed doesn't want to be in the 'bailout business,' including for crypto.", why:"A hawkish-sounding counterweight to today's cooler CPI — Warsh is keeping optionality open even as markets price in relief. Worth watching for tone shifts ahead of the next Fed decision, especially given how sensitive today's AI-stock rally is to rate expectations." },
+    { title:"Wall Street Banks Post Surging Q2 Earnings on Trading and M&A Strength", tags:[{label:"Macro",cls:"tag-macro"}], summary:"Major U.S. banks reporting this week posted a strong lift in Q2 earnings from trading revenue and M&A advisory fees, though lenders flagged risks to the economy and markets ahead.", why:"Kicks off bank-earnings week on a strong note and is itself a read on market structure — elevated trading revenue tracks elevated volatility, consistent with yesterday's VIX spike now unwinding. An early signal for how the rest of earnings season plays out." },
+    { title:"NVDA and AMD Surge as China Chip Clarity and Analyst Upgrades Fuel AI Rally", tags:[{label:"Tech",cls:"tag-tech"}], summary:"Nvidia rose as a U.S. trade official confirmed only a small quantity of H200 chips have shipped to China, easing export-control uncertainty, while Zacks upgraded the stock to Buy. AMD jumped over 4% after KeyBanc, Bank of America, and TD Cowen raised price targets on AI and server optimism.", why:"Directly explains today's Tech & AI panel and the NDX's outperformance — a sharp reversal from yesterday's chip-sector selloff. Worth watching whether this rotation into hardware continues into bank and tech earnings season, an important read-through for Tyler's AI-infrastructure exposure." },
+    { title:"Commerce Official Signals New Regulatory Action Coming on Chips and AI", tags:[{label:"Tech",cls:"tag-tech"}], summary:"A U.S. Commerce Department official overseeing export controls told a congressional hearing Tuesday that regulatory action on chips and AI 'is coming,' without specifying details.", why:"A headline risk sitting underneath today's chip rally — new export-control or AI regulation could reverse today's NVDA/AMD gains quickly. Worth flagging as a catalyst to watch even as today's price action is unambiguously positive for the sector." }
   ],
 
   tech_stocks: [
-    { ticker:"INTC", name:"Intel Corp",       price:"$109.51", perf:"-10.38%", up:false, note:"Leads the chip rout on the Samsung read-through; its 50-day MA of $114.52 is now broken to the downside." },
-    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$506.48", perf:"-8.25%", up:false, note:"Craters alongside Intel and Applied Materials — no AMD-specific news, pure sector contagion." },
-    { ticker:"NVDA", name:"NVIDIA Corp",      price:"$192.83", perf:"-1.39%", up:false, note:"Holding up far better than peers — the 'flight to quality' name within today's chip selloff." },
-    { ticker:"MSFT", name:"Microsoft Corp",   price:"$393.28", perf:"+1.69%", up:true,  note:"Bucking the tech selloff entirely; mega-cap software diverging sharply from hardware/semis today." }
+    { ticker:"NVDA", name:"NVIDIA Corp",      price:"$211.26", perf:"+3.80%", up:true, note:"Leading today's chip rally on confirmation only a small volume of H200 chips reached China and a fresh Zacks Buy upgrade; up 10% off its June low." },
+    { ticker:"AAPL", name:"Apple Inc.",       price:"$314.90", perf:"-0.76%", up:false, note:"One of today's few mega-cap laggards as capital rotates into semis; still holding just below its $323.45 year high." },
+    { ticker:"MSFT", name:"Microsoft Corp",   price:"$386.65", perf:"-1.11%", up:false, note:"Pulling back alongside Apple as chip names outperform software today; still well below its $555.45 year high." },
+    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$556.73", perf:"+4.18%", up:true, note:"Today's standout gainer after KeyBanc, Bank of America, and TD Cowen all raised price targets on AI and server strength." }
   ],
 
   energy_stocks: [
-    { ticker:"XOM", name:"ExxonMobil",     price:"$140.61", perf:"+3.06%", up:true, note:"Leading energy higher as crude jumps on the Russia-refinery and Strait of Hormuz headlines." },
-    { ticker:"CVX", name:"Chevron Corp",   price:"$171.87", perf:"+2.24%", up:true, note:"Tracking crude's bounce; still well off its 52-week high of $214.71." },
-    { ticker:"EQT", name:"EQT Corporation", price:"$51.88", perf:"+0.33%", up:true, note:"Barely budging — natural gas is rangebound today, so gas-weighted names lag the oil-driven energy rally." }
+    { ticker:"XOM", name:"ExxonMobil",      price:"$144.37", perf:"-0.10%", up:false, note:"Roughly flat even as WTI holds above $80 — Zacks flags Permian upside as prices sit well above shut-in breakevens." },
+    { ticker:"CVX", name:"Chevron Corp",    price:"$181.18", perf:"-0.56%", up:false, note:"Modestly lower despite the firmer crude tape; earnings-season valuation compression is drawing analyst attention." },
+    { ticker:"EQT", name:"EQT Corporation", price:"$49.40",  perf:"-0.64%", up:false, note:"Slipping as analysts flag a likely earnings decline in EQT's upcoming report, even as it forms a new $600M venture fund for its tech stakes." }
   ],
 
   watchlist: [
-    { ticker:"INTC", company:"Intel Corp",        desc:"Down over 10% as Samsung's earnings miss triggers a broad chip selloff — the sharpest single mover in the sector today.", change:"-10.38%", up:false },
-    { ticker:"AMD",  company:"Advanced Micro Devices", desc:"Down 8.25% in the same trade as Intel — sector contagion from Samsung's report, not a company-specific catalyst.", change:"-8.25%", up:false },
-    { ticker:"AGIO", company:"Agios Pharmaceuticals", desc:"Up 13.3% on a real, dated catalyst — FDA granted Priority Review to its sickle cell disease drug today — but volume only ran 1.1x average, so it didn't clear the Radar bar.", change:"+13.32%", up:true }
+    { ticker:"NVDA", company:"NVIDIA Corp",              desc:"Leading today's AI-chip rally, up 3.8% on eased China-shipment concerns and a Zacks Buy upgrade — watch for follow-through into bank and tech earnings season.", change:"+3.80%", up:true },
+    { ticker:"AMD",  company:"Advanced Micro Devices",   desc:"Today's biggest mega-cap mover, up 4.2% after three separate sell-side price-target hikes on AI and server demand — the standout reversal from yesterday's chip-sector selloff.", change:"+4.18%", up:true },
+    { ticker:"XOM",  company:"ExxonMobil",                desc:"Roughly flat even as WTI holds above $80 for a second day — worth watching whether energy equities start pricing in the Hormuz risk premium or continue lagging the commodity.", change:"-0.10%", up:false }
   ]
 };
 // ═══════════════════════════════════════════════════════
