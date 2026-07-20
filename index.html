@@ -9,56 +9,56 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  date: "Tuesday, July 14, 2026",
-  sentiment: "risk-on",
+  date: "Friday, July 17, 2026",
+  sentiment: "risk-off",
 
   ticker_bar: [
-    { label:"SPX",  value:"7,550",   change:"+0.47%", up:true  },
-    { label:"NDX",  value:"29,657",  change:"+1.34%", up:true  },
-    { label:"DOW",  value:"52,468",  change:"-0.06%", up:false  },
-    { label:"VIX",  value:"16.39",   change:"-4.49%", up:false, neutral:true },
-    { label:"WTI",  value:"$79.08",  change:"+1.20%", up:true  },
-    { label:"NG",   value:"$2.89",   change:"-0.14%", up:false  }
+    { label:"SPX",  value:"7,481",   change:"-0.70%", up:false },
+    { label:"NDX",  value:"28,592",  change:"-1.49%", up:false },
+    { label:"DOW",  value:"52,537",  change:"-0.03%", up:false },
+    { label:"VIX",  value:"18.07",   change:"+8.01%", up:true, neutral:true },
+    { label:"WTI",  value:"$81.01",  change:"+2.61%", up:true  },
+    { label:"NG",   value:"$2.89",   change:"+1.15%", up:true  }
   ],
 
   snapshot: [
-    { label:"S&P 500",    value:"7,550",  change:"+0.47%", up:true, note:"Extending its climb after a much cooler-than-expected June CPI print (3.5% y/y) gives the Fed room to hold rates, with tech leading the advance" },
-    { label:"Nasdaq 100", value:"29,657", change:"+1.34%", up:true, note:"Outpacing the broader tape as chip stocks roar back — NVDA (+3.8%) and AMD (+4.2%) rally on easing China-chip uncertainty and bullish analyst calls, even as AAPL and MSFT lag" }
+    { label:"S&P 500",    value:"7,481",  change:"-0.70%", up:false, note:"Sliding as a global chip-stock selloff drags the broader tape lower, though losses are far more contained than the Nasdaq's given the S&P's lighter AI weighting" },
+    { label:"Nasdaq 100", value:"28,592", change:"-1.49%", up:false, note:"Leading today's decline as Chinese startup Moonshot's new Kimi K3 open-source AI model reignites 'DeepSeek moment' fears — AMD fell as much as 5% intraday and NVDA briefly lost its title as the world's most valuable company to Apple" }
   ],
 
-  vix: { value:"16.39", pct:33, note:"Falling over 4% as the cooler CPI print removes a near-term catalyst for volatility — a sharp reversal from yesterday's Hormuz-driven spike, though still above its 52-week low of 13.38" },
+  vix: { value:"18.07", pct:36, note:"Jumping 8% as Moonshot's Kimi K3 model triggers a global AI and semiconductor selloff — the sharpest single-day spike in over a week, though still well below its 52-week high of 35.30" },
 
   commodities: [
-    { label:"WTI Crude Oil", value:"$79.08", change:"+1.20%", up:true, note:"Holding above $80 intraday after yesterday's Hormuz-blockade spike, with Exxon's Permian upside back in focus as prices sit well above shut-in breakevens" },
-    { label:"Brent Crude",   value:"$84.62", change:"+1.58%", up:true, note:"Tracking WTI higher, still carrying the geopolitical risk premium from the Strait of Hormuz standoff" },
-    { label:"Natural Gas",   value:"$2.89",  change:"-0.14%", up:false, note:"Little changed and continuing to diverge from the crude complex, with mild-weather demand and ample supply keeping a lid on prices" }
+    { label:"WTI Crude Oil", value:"$81.01", change:"+2.61%", up:true, note:"Extending its climb on Strait of Hormuz risk as Chevron moves to hedge the chokepoint threat with a new Iraq pipeline plan, underscoring how seriously the market is treating Iran-conflict supply risk" },
+    { label:"Brent Crude",   value:"$86.37", change:"+2.54%", up:true, note:"Tracking WTI higher on the same Hormuz risk premium, with commentary from energy strategists describing the physical market's supply picture as increasingly tight" },
+    { label:"Natural Gas",   value:"$2.89",  change:"+1.15%", up:true, note:"Modestly firmer but still decoupled from the sharper move in crude, with ample supply continuing to cap upside" }
   ],
 
   news: [
-    { title:"June CPI Cools to 3.5%, Giving Fed 'Sigh of Relief' Room to Hold Rates", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The Consumer Price Index rose 3.5% year-over-year in June — its biggest month-over-month drop since 2020 — as the earlier pause in the Iran conflict eased price pressure. Fed Chair Kevin Warsh testified before the House Financial Services Committee the same day.", why:"The single biggest driver of today's risk-on tape — VIX down over 4%, NDX up 1.3% — as it removes near-term pressure for a rate hike. A durable positive for long-duration growth and AI-infrastructure valuations, directly supporting names like NVDA and AMD in today's rally." },
-    { title:"Fed Chair Warsh Says Central Bank Has 'No Tolerance' for Elevated Inflation", tags:[{label:"Macro",cls:"tag-macro"}], summary:"In testimony before the House Financial Services Committee, Fed Chair Kevin Warsh said the central bank has no tolerance for persistently elevated inflation and reiterated the Fed doesn't want to be in the 'bailout business,' including for crypto.", why:"A hawkish-sounding counterweight to today's cooler CPI — Warsh is keeping optionality open even as markets price in relief. Worth watching for tone shifts ahead of the next Fed decision, especially given how sensitive today's AI-stock rally is to rate expectations." },
-    { title:"Wall Street Banks Post Surging Q2 Earnings on Trading and M&A Strength", tags:[{label:"Macro",cls:"tag-macro"}], summary:"Major U.S. banks reporting this week posted a strong lift in Q2 earnings from trading revenue and M&A advisory fees, though lenders flagged risks to the economy and markets ahead.", why:"Kicks off bank-earnings week on a strong note and is itself a read on market structure — elevated trading revenue tracks elevated volatility, consistent with yesterday's VIX spike now unwinding. An early signal for how the rest of earnings season plays out." },
-    { title:"NVDA and AMD Surge as China Chip Clarity and Analyst Upgrades Fuel AI Rally", tags:[{label:"Tech",cls:"tag-tech"}], summary:"Nvidia rose as a U.S. trade official confirmed only a small quantity of H200 chips have shipped to China, easing export-control uncertainty, while Zacks upgraded the stock to Buy. AMD jumped over 4% after KeyBanc, Bank of America, and TD Cowen raised price targets on AI and server optimism.", why:"Directly explains today's Tech & AI panel and the NDX's outperformance — a sharp reversal from yesterday's chip-sector selloff. Worth watching whether this rotation into hardware continues into bank and tech earnings season, an important read-through for Tyler's AI-infrastructure exposure." },
-    { title:"Commerce Official Signals New Regulatory Action Coming on Chips and AI", tags:[{label:"Tech",cls:"tag-tech"}], summary:"A U.S. Commerce Department official overseeing export controls told a congressional hearing Tuesday that regulatory action on chips and AI 'is coming,' without specifying details.", why:"A headline risk sitting underneath today's chip rally — new export-control or AI regulation could reverse today's NVDA/AMD gains quickly. Worth flagging as a catalyst to watch even as today's price action is unambiguously positive for the sector." }
+    { title:"Moonshot's Kimi K3 Sparks a 'DeepSeek Moment 2.0' — AI and Chip Stocks Slide Worldwide", tags:[{label:"Tech",cls:"tag-tech"}], summary:"Chinese startup Moonshot (backed by Alibaba) unveiled Kimi K3, a 2.8-trillion-parameter open-weight AI model it says rivals top offerings from OpenAI and Anthropic on coding and agentic benchmarks, with full model weights due July 27. The release triggered a global tech selloff — Taipei -6.5%, Tokyo -4%, Shanghai -3% — and the Philadelphia Semiconductor Index is now down more than 18% from its recent highs.", why:"Directly explains today's chip-led Nasdaq weakness (AMD -5% intraday before paring, NVDA -1.8%) and the VIX's 8% jump. Goldman is calling it a 'deleveraging event' that could reshape AI-capex assumptions — a direct read-through for Tyler's Tech/AI exposure via NVDA and AMD." },
+    { title:"Apple Dethrones Nvidia as World's Most Valuable Company", tags:[{label:"Tech",cls:"tag-tech"}], summary:"Apple's market cap overtook Nvidia's intraday Friday as the chip selloff hit NVDA harder than AAPL, briefly ending Nvidia's long run at the top spot. Apple shares are up roughly 14% this month even as the stock dipped modestly today alongside the broader tape.", why:"A visible symptom of today's capital rotation out of AI-infrastructure plays and into diversified mega-cap tech. Worth watching whether this is a durable leadership change or a one-day artifact of the Kimi K3 scare — the two names remain within roughly 1% of each other by market cap." },
+    { title:"Chevron to Explore Iraq Pipeline Bypassing the Strait of Hormuz", tags:[{label:"Energy",cls:"tag-energy"}], summary:"Chevron is signing MOUs with Iraq on the West Qurna 2 and Nassiriya oilfields and is exploring investment in a pipeline that would let Iraqi oil bypass the Strait of Hormuz — a route that has sat shut since war damage in 2003 — as a direct hedge against the ongoing Iran conflict's chokepoint risk.", why:"Names the exact catalyst behind CVX's gain today and explains why WTI and Brent are both carrying a geopolitical premium, up over 2.5%. Directly relevant to Tyler's energy holdings and a name to watch if Hormuz tensions escalate further." },
+    { title:"Consumer Sentiment Climbs in July as Gasoline Prices Cool", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The University of Michigan's preliminary July survey showed consumer sentiment improving as gasoline prices eased earlier in the month — a rare bright spot in an otherwise risk-off session.", why:"A modestly positive counterweight to today's tape; worth watching whether the recent oil price spike back above $81 reverses this sentiment gain when the survey is finalized." },
+    { title:"Nasdaq 100 Flagged at Risk of a Multi-Week Corrective Decline", tags:[{label:"Tech",cls:"tag-tech"},{label:"Macro",cls:"tag-macro"}], summary:"Seeking Alpha notes the Nasdaq 100 has become the weakest major U.S. benchmark this week, underperforming the S&P 500, Dow, and Russell 2000 as investors rotate out of richly valued AI and semiconductor names despite strong Q2 bank earnings, with leveraged unwinding in memory-chip names and capex concerns driving a valuation reset.", why:"Frames today's move as part of a broader multi-day rotation rather than a one-off shock — useful context for judging how long the current chip weakness might persist before stabilizing." }
   ],
 
   tech_stocks: [
-    { ticker:"NVDA", name:"NVIDIA Corp",      price:"$211.26", perf:"+3.80%", up:true, note:"Leading today's chip rally on confirmation only a small volume of H200 chips reached China and a fresh Zacks Buy upgrade; up 10% off its June low." },
-    { ticker:"AAPL", name:"Apple Inc.",       price:"$314.90", perf:"-0.76%", up:false, note:"One of today's few mega-cap laggards as capital rotates into semis; still holding just below its $323.45 year high." },
-    { ticker:"MSFT", name:"Microsoft Corp",   price:"$386.65", perf:"-1.11%", up:false, note:"Pulling back alongside Apple as chip names outperform software today; still well below its $555.45 year high." },
-    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$556.73", perf:"+4.18%", up:true, note:"Today's standout gainer after KeyBanc, Bank of America, and TD Cowen all raised price targets on AI and server strength." }
+    { ticker:"NVDA", name:"NVIDIA Corp",      price:"$203.69", perf:"-1.79%", up:false, note:"Briefly lost its title as the world's most valuable company to Apple as Moonshot's Kimi K3 model stokes fresh 'DeepSeek moment' fears across chip stocks." },
+    { ticker:"AAPL", name:"Apple Inc.",       price:"$332.85", perf:"-0.12%", up:false, note:"Reclaimed the title of world's most valuable company as capital rotates out of the chip-heavy AI trade and into diversified mega-caps; up 14% for the month." },
+    { ticker:"MSFT", name:"Microsoft Corp",   price:"$391.28", perf:"-2.45%", up:false, note:"Caught up in the broad AI-infrastructure selloff on questions of whether cheaper open-source Chinese models will slow hyperscaler capex growth." },
+    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$488.37", perf:"-2.51%", up:false, note:"Fell as much as 5% intraday before paring losses, leading today's semiconductor rout as Kimi K3 challenges the 'more compute' thesis behind premium chip valuations." }
   ],
 
   energy_stocks: [
-    { ticker:"XOM", name:"ExxonMobil",      price:"$144.37", perf:"-0.10%", up:false, note:"Roughly flat even as WTI holds above $80 — Zacks flags Permian upside as prices sit well above shut-in breakevens." },
-    { ticker:"CVX", name:"Chevron Corp",    price:"$181.18", perf:"-0.56%", up:false, note:"Modestly lower despite the firmer crude tape; earnings-season valuation compression is drawing analyst attention." },
-    { ticker:"EQT", name:"EQT Corporation", price:"$49.40",  perf:"-0.64%", up:false, note:"Slipping as analysts flag a likely earnings decline in EQT's upcoming report, even as it forms a new $600M venture fund for its tech stakes." }
+    { ticker:"XOM", name:"ExxonMobil",      price:"$147.94", perf:"+1.36%", up:true, note:"Gaining as WTI holds above $81 on Strait of Hormuz risk premium, with Zacks flagging long-term transformation upside into 2040." },
+    { ticker:"CVX", name:"Chevron Corp",    price:"$186.08", perf:"+1.21%", up:true, note:"Signing MOUs with Iraq on West Qurna 2 and Nassiriya and exploring a pipeline to bypass the Strait of Hormuz — a direct hedge against Iran-conflict chokepoint risk." },
+    { ticker:"EQT", name:"EQT Corporation", price:"$49.83",  perf:"+0.87%", up:true, note:"Declared its quarterly dividend of $0.165/share (August 5 record date); drifting higher with the broader energy tape even as natural gas holds roughly flat." }
   ],
 
   watchlist: [
-    { ticker:"NVDA", company:"NVIDIA Corp",              desc:"Leading today's AI-chip rally, up 3.8% on eased China-shipment concerns and a Zacks Buy upgrade — watch for follow-through into bank and tech earnings season.", change:"+3.80%", up:true },
-    { ticker:"AMD",  company:"Advanced Micro Devices",   desc:"Today's biggest mega-cap mover, up 4.2% after three separate sell-side price-target hikes on AI and server demand — the standout reversal from yesterday's chip-sector selloff.", change:"+4.18%", up:true },
-    { ticker:"XOM",  company:"ExxonMobil",                desc:"Roughly flat even as WTI holds above $80 for a second day — worth watching whether energy equities start pricing in the Hormuz risk premium or continue lagging the commodity.", change:"-0.10%", up:false }
+    { ticker:"NVDA", company:"NVIDIA Corp",              desc:"Briefly lost its 'world's most valuable company' crown to Apple amid the Kimi K3-driven chip selloff — watch whether the AI-capex narrative stabilizes into next week's hyperscaler earnings.", change:"-1.79%", up:false },
+    { ticker:"CVX",  company:"Chevron Corp",              desc:"Actively hedging Strait of Hormuz chokepoint risk with new Iraq pipeline plans and fresh oilfield MOUs — watch for details on the MOU signings and how energy majors price in the geopolitical premium.", change:"+1.21%", up:true },
+    { ticker:"AMD",  company:"Advanced Micro Devices",    desc:"Today's biggest high-beta mover in the chip rout, down as much as 5% intraday before paring — worth watching whether this is rotation-driven profit-taking or the start of a deeper AI-capex reassessment.", change:"-2.51%", up:false }
   ]
 };
 // ═══════════════════════════════════════════════════════
