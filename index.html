@@ -9,56 +9,241 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  date: "Thursday, September 24, 2026",
-  sentiment: "risk-off",
-
-  ticker_bar: [
-    { label:"SPX",     value:"7,676.54",  change:"-0.38%",  up:false },
-    { label:"NASDAQ",  value:"26,766.06", change:"-0.63%",  up:false },
-    { label:"DOW",     value:"51,385.69", change:"-0.24%",  up:false },
-    { label:"VIX",     value:"15.18",     change:"+6.83%",  up:true },
-    { label:"WTI",     value:"$93.80",    change:"+1.80%",  up:true },
-    { label:"NG",      value:"~$3.00",    change:"2-mo high", up:true }
+  "date": "Tuesday, September 29, 2026",
+  "sentiment": "neutral",
+  "ticker_bar": [
+    {
+      "label": "SPX",
+      "value": "7,657.32",
+      "change": "-0.34%",
+      "up": false
+    },
+    {
+      "label": "NASDAQ",
+      "value": "26,747.61",
+      "change": "-0.27%",
+      "up": false
+    },
+    {
+      "label": "DOW",
+      "value": "51,184.56",
+      "change": "-0.58%",
+      "up": false
+    },
+    {
+      "label": "VIX",
+      "value": "16.37",
+      "change": "+1.87%",
+      "up": true
+    },
+    {
+      "label": "WTI",
+      "value": "$92.03",
+      "change": "-0.62%",
+      "up": false
+    },
+    {
+      "label": "NG",
+      "value": "n/a",
+      "change": "--",
+      "up": false
+    }
   ],
-
-  snapshot: [
-    { label:"S&P 500", value:"7,676.54", change:"-0.38%", up:false, note:"Opened lower for a second straight day after Wednesday's 0.75% drop to 7,706. Pre-market futures were down as much as 0.6% as the 10-year Treasury yield pushed to 5.12–5.15% — its highest since 2007 — and the 30-year hit its highest since 2004. Better-than-expected jobless claims (197K vs. ~201–204K est.) added to the 'economy too hot, Fed must hike' read rather than helping." },
-    { label:"Nasdaq Composite", value:"26,766.06", change:"-0.63%", up:false, note:"Tech is the weakest sector early (IT down ~1%) after Nasdaq 100 futures fell 1% pre-bell. This is a rate-driven de-rating, not a stock-specific one: long-duration growth names are the most sensitive to a 5%+ 10-year, and the index is now ~1.8% off Tuesday's record close of 27,244." }
+  "snapshot": [
+    {
+      "label": "S&P 500 Futures",
+      "value": "7,753.25",
+      "change": "+0.08%",
+      "up": true,
+      "note": "Early-session futures read (Yahoo Finance) was flat-to-slightly-green; the cash index has since slipped to 7,657 (-0.34%) as tech gave back early gains. Oil and yields are easing, which should help, but the tape isn't rewarding it. Note: this run fired mid-session, not pre-market, so levels are intraday."
+    },
+    {
+      "label": "Nasdaq 100 Futures",
+      "value": "30,637.50",
+      "change": "+0.23%",
+      "up": true,
+      "note": "Futures were modestly higher on the AMD and Nvidia headlines, but the Nasdaq Composite is now -0.27% at 26,748. The Russell 2000 is weaker (-0.69%), so this is not a broad risk-on tape."
+    }
   ],
-
-  vix: { value:"15.18", pct:31, note:"Up ~6.8% to 15.18 from 14.21 — still low in absolute terms, but it has turned higher for a second day as bond volatility spills into equities. The gap between a calm VIX and a disorderly bond market is the thing to watch: if yields keep climbing, that gap usually closes with the VIX catching up." },
-
-  commodities: [
-    { label:"WTI Crude Oil", value:"$93.80", change:"+1.80%", up:true, note:"Rebounding for a second day after Wednesday's settle at $92.16 despite a bearish EIA print (crude inventories +3.0M bbl vs. an expected draw). The driver is Iran: an adviser to Supreme Leader Mojtaba Khamenei warned Tehran could extend the war to the Indian Ocean if attacked again, undoing earlier-week de-escalation hopes." },
-    { label:"Brent Crude",   value:"$105.22", change:"+2.10%", up:true, note:"Back above $105 after briefly dipping below $100 Monday through Wednesday. Goldman raised its December Brent forecast to $85 — still far below spot — flagging that the Hormuz closure is pushing up Asian energy and import prices." },
-    { label:"Natural Gas",   value:"~$3.00", change:"2-mo high", up:true, note:"Henry Hub futures moved above $3.00/MMBtu Wednesday for the first time since July 8 on lower Lower-48 production, South-Central heat through Oct 6, and short covering ahead of today's 10:30 ET EIA storage report. The storage surplus is estimated to have narrowed to ~3% over the 5-yr average. October contract expires Sept 28." }
+  "vix": {
+    "value": "16.37",
+    "pct": 33,
+    "note": "Up ~1.9% to 16.37 from 16.07 yesterday, sitting just above its 50-day average (15.9). Low in absolute terms; oil retreating and Iran talks progressing haven't pushed it lower, which is why the badge is neutral rather than risk-on."
+  },
+  "commodities": [
+    {
+      "label": "WTI Crude Oil",
+      "value": "$92.03",
+      "change": "-0.62%",
+      "up": false,
+      "note": "Slipping as indirect US-Iran talks via mediators advance and Gulf flows reportedly recover to over 90% of pre-war levels. Still historically elevated; a failed round of talks reverses this fast."
+    },
+    {
+      "label": "Brent Crude",
+      "value": "$104.80",
+      "change": "-0.47%",
+      "up": false,
+      "note": "Easing from Monday's highs. One data feed showed Brent near $97 (-8%), which conflicts with every news source and looks like a contract-roll artifact, so I'm using the news-reported level. Verify before trading on it."
+    },
+    {
+      "label": "Natural Gas",
+      "value": "n/a",
+      "change": "--",
+      "up": false,
+      "note": "Henry Hub quote unavailable this morning: the FMP plan blocks the natural gas commodity endpoint. Last reading was $3.13 on Sept 28. EQT (-1.8%) suggests gas is still soft."
+    }
   ],
-
-  news: [
-    { title:"10-Year Treasury Yield Hits 5.15%, Highest Since 2007; Markets Now Price ~73% Odds of an October Fed Hike", tags:[{label:"Macro",cls:"tag-macro"}], summary:"The bond sell-off deepened overnight: the 10-year yield rose to 5.12–5.15% and the 30-year reached 5.44%, its highest since 2004. The trigger chain started Wednesday with S&P Global's flash composite PMI jumping to 58.4 (highest since July 2021), and continued today with jobless claims falling to 197K and NY Fed President John Williams saying it would be reasonable to expect another hike in 2026. CME FedWatch now shows ~71–73% odds of a 25bp hike in October, up from ~58% on Tuesday.", why:"This is the dominant driver of the tape and the reason the badge is risk-off. A 5%+ 10-year compresses the multiples on long-duration growth stocks — Tyler's AMD and NVDA positions are the most exposed part of his book to this. Energy is the natural hedge today: XOM and CVX are green while tech is red." },
-    { title:"Oil Rebounds as Iran Threatens to Widen the War; Brent Back Above $105", tags:[{label:"Energy",cls:"tag-energy"},{label:"Geo",cls:"tag-geo"}], summary:"Brent jumped as much as 3% to $106.24 before settling near $105, and WTI is up ~1.8% to $93.80, reversing most of the five-day slide that had been driven by Iran's offer to reopen the Strait of Hormuz. An adviser to Iran's Supreme Leader warned via Fars that Tehran could extend the conflict to the Indian Ocean. Treasury Secretary Bessent separately said the new restrictions on Iranian aviation 'are working.' Talks show little progress.", why:"Higher crude feeds straight into the inflation/yield problem above, which is why oil and bonds are hurting stocks together. For Tyler's book it's a two-sided trade: supports XOM/CVX realized prices, but pressures the tech multiple via rates. Headline whipsaw risk remains high in both directions." },
-    { title:"Trump Hosts Xi at the White House Today; Nvidia China Exports on the Table", tags:[{label:"Tech",cls:"tag-tech"},{label:"Geo",cls:"tag-geo"}], summary:"President Trump is hosting Chinese President Xi Jinping for summit talks today, with a state dinner expected to include Jensen Huang, Tim Cook, and Sam Altman. Bessent announced a two-month extension of the US-China trade truce to January 10. AI chip export controls are a central sticking point — Nvidia's current guidance assumes zero China data-center sales — while China has showcased new domestic AI chips ahead of the meeting.", why:"This is a binary event for NVDA: any loosening of export rules for H200/Blackwell-class chips to China would be upside not in consensus numbers; no change or tighter rules is the base case. Don't expect clarity before the close — the dinner is tonight, so headlines may hit after hours." },
-    { title:"Everpure (formerly Pure Storage) Jumps ~19% on FY28 Outlook Far Above Consensus", tags:[{label:"Tech",cls:"tag-tech"}], summary:"At its 2026 Financial Analyst Meeting, Everpure reaffirmed FY27 guidance and issued a preliminary FY28 outlook with revenue and operating profit midpoints ~16% and ~36% above consensus (per Northland). It is pushing into AI data storage, data software, and hyperscale, targeting ~20% of revenue from those segments by FY2030. Price targets were raised across the Street, including Piper Sandler to $162, Northland to $167, and Morgan Stanley to $137.", why:"It's one of the few AI-infrastructure names rising on a tough tape, and the reason is actual guidance numbers, not sentiment. It supports the thesis that AI spending is spreading from GPUs into storage and data layers. At a $43B market cap it's far too big for the Radar tab, so it sits on the watchlist." },
-    { title:"Natural Gas Tops $3 for First Time Since July Ahead of EIA Storage Data", tags:[{label:"Energy",cls:"tag-energy"}], summary:"US natural gas futures closed above $3.00/MMBtu on Wednesday, a two-month high, as Lower-48 output fell to its lowest since early August and late-season heat lifted power burn. LNG feedgas is averaging ~18 bcf/d in September, up from 17.2 in August, with Europe's storage at only 68% full vs. an 84% seasonal norm. Today's EIA report (10:30 ET) covers the week to Sept 18.", why:"This is the first real price tailwind for Tyler's EQT position in months. EQT is down slightly this morning, so the market isn't paying for $3 gas yet. A smaller-than-expected injection today would be the confirmation; a big build would likely push prices back into the $2.80s." }
+  "news": [
+    {
+      "title": "AMD to Acquire Fei-Fei Li's World Labs for $8.2B",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "AMD agreed to buy World Labs, the spatial-intelligence startup founded by AI pioneer Fei-Fei Li, for $8.2 billion; Li becomes chief scientist. AMD trades around $612, near its 52-week high of $639, with a ~$1T market cap.",
+      "why": "A large software/AI-model acquisition marks a push beyond silicon toward the full AI stack, echoing Nvidia's platform strategy. Risk: $8.2B for a startup at a near-record share price invites execution and integration questions. Directly relevant to Tyler's AMD exposure."
+    },
+    {
+      "title": "Nvidia Announces Record $150B Buyback",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "Nvidia announced a record $150 billion share repurchase program. The stock is only +0.2% (~$229) on a ~$5.55T market cap, so the reaction is muted; volume is running well below average.",
+      "why": "A buyback that size is ~2.7% of market cap and signals huge free cash flow, but the flat reaction says it was expected or offset by the AI-safety headlines. Supports the floor under NVDA rather than a fresh catalyst."
+    },
+    {
+      "title": "AI Safety Headlines: Anthropic IPO Filing Warnings, OpenAI Shelves Model",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Leaked Anthropic IPO documents reportedly target a ~$2T valuation while warning of existential AI risk, and OpenAI delayed its GPT-6.1 model over failed internal safety tests. Reporting comes from a market-summary aggregator; treat details as reported, not confirmed.",
+      "why": "Regulatory or safety-driven slowdowns are a tail risk for AI capex names. It also helps explain why tech faded despite positive company news. Watch for any policy response."
+    },
+    {
+      "title": "Oil Eases as US-Iran Indirect Talks Progress; Yields Retreat from Highs",
+      "tags": [
+        {
+          "label": "Geo",
+          "cls": "tag-geo"
+        },
+        {
+          "label": "Energy",
+          "cls": "tag-energy"
+        },
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "WTI fell to ~$92 and Brent to ~$105 after separate indirect talks with mediators on Monday; Gulf flows are said to be back above 90% of pre-war levels. The 10-year yield is ~5.24%, easing from Monday's fresh highs but still near two-decade highs.",
+      "why": "Reverses yesterday's risk-off driver but hasn't lifted equities. Energy names give back some of Monday's gains (XOM -0.7%, CVX -0.9%), while rates stay the constraint on long-duration tech."
+    },
+    {
+      "title": "Movers: Carnival +12% on Q3 Beat; Bloom Energy +11%; FICO -22%",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Carnival beat Q3 earnings; Bloom Energy rose on a Jefferies price-target raise; Fair Isaac plunged ~22% on new competition in mortgage credit scoring. Data today: JOLTS and Conference Board confidence.",
+      "why": "Lower oil is a direct tailwind for cruise lines. Bloom's move (AI data-center power theme) is an analyst-driven move, not a fundamental event, and at ~$296 it is far above the small-cap radar range."
+    }
   ],
-
-  tech_stocks: [
-    { ticker:"NVDA", name:"NVIDIA Corp",      price:"$222.37", perf:"-1.39%", up:false, note:"Falling with the rate-sensitive tech complex ahead of the Trump-Xi summit. China export controls are the stock-specific swing factor. Jensen Huang is expected at tonight's state dinner." },
-    { ticker:"AAPL", name:"Apple Inc.",       price:"$336.55", perf:"-0.14%", up:false, note:"Holding up better than the rest of mega-cap tech. It has pulled back from its cup-base buy point near $344.57, which Tuesday's rally failed to clear." },
-    { ticker:"MSFT", name:"Microsoft Corp",   price:"$492.48", perf:"-1.62%", up:false, note:"The weakest of the big four this morning. Software multiples are taking the brunt of the 10-year's move to a 19-year high. There's no company-specific news." },
-    { ticker:"AMD",  name:"Advanced Micro Devices", price:"$614.35", perf:"-0.04%", up:true, note:"Flat and still sitting right at a ~$1.0T market cap. It's holding up surprisingly well given the Nasdaq is down, which suggests the Meta Muse / agentic-CPU demand thesis still has buyers even on a risk-off day." }
+  "tech_stocks": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp",
+      "price": "$229.30",
+      "perf": "+0.19%",
+      "up": true,
+      "note": "Barely moved on the $150B buyback; well under the 52-week high of $236.54. Volume light so far."
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "price": "$331.21",
+      "perf": "-2.12%",
+      "up": false,
+      "note": "Biggest decliner in the group with no company-specific catalyst found in my sources; treat the cause as unverified."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corp.",
+      "price": "$505.03",
+      "perf": "-0.82%",
+      "up": false,
+      "note": "Soft with software/large-cap tech as yields stay above 5.2%; roughly 9% below its 52-week high of $553.72."
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "price": "$612.19",
+      "perf": "+0.71%",
+      "up": true,
+      "note": "Holding gains on the $8.2B World Labs deal, within ~4% of its 52-week high ($639)."
+    }
   ],
-
-  energy_stocks: [
-    { ticker:"XOM", name:"ExxonMobil",      price:"$163.88", perf:"+1.64%", up:true, note:"Leading the energy tape as Brent rebounds above $105 on Iran threats. Energy was also the only S&P sector higher on Wednesday — it's acting as the portfolio hedge against rates and geopolitics." },
-    { ticker:"CVX", name:"Chevron Corp",    price:"$206.73", perf:"+0.59%", up:true, note:"Up with crude but lagging XOM. Still ~5% below its 52-week high of $217.78." },
-    { ticker:"EQT", name:"EQT Corporation", price:"$50.87",  perf:"-0.38%", up:false, note:"Slightly red even though Henry Hub just broke above $3. The stock hasn't priced in the gas move, so today's 10:30 ET EIA storage print is the near-term catalyst. It's trading near the low end of its $47.94–$68.24 52-week range." }
+  "energy_stocks": [
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "price": "$161.43",
+      "perf": "-0.67%",
+      "up": false,
+      "note": "Giving back part of Monday's gain as crude slips on Iran talk progress."
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corp",
+      "price": "$204.59",
+      "perf": "-0.86%",
+      "up": false,
+      "note": "Tracking oil lower; still ~6% below its 52-week high of $217.78."
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "price": "$48.95",
+      "perf": "-1.84%",
+      "up": false,
+      "note": "Now within ~2% of its 52-week low ($47.94); gas weakness keeps it on its own tape. A break below would be a technical warning."
+    }
   ],
-
-  watchlist: [
-    { ticker:"NVDA", company:"NVIDIA Corp", desc:"Binary catalyst tonight: the Trump-Xi summit and state dinner (Huang attending) could loosen or harden China AI-chip export rules. Current guidance assumes zero China data-center revenue, so the upside surprise is asymmetric — but the rate backdrop is a headwind either way.", change:"-1.39%", up:false },
-    { ticker:"P", company:"Everpure, Inc.", desc:"Up ~19% to ~$130 after analyst-day FY28 targets came in ~16% (revenue) and ~36% (op. profit) above consensus. It's a real guidance catalyst, but chasing a 19% gap on a risk-off, rising-yield day is the kind of entry that gets shaken out. Watch whether it holds the gap into the close.", change:"+18.61%", up:true },
-    { ticker:"EQT", company:"EQT Corporation", desc:"Gas is above $3 for the first time since July, but EQT is still near its 52-week low. Today's 10:30 ET EIA storage number is the test: a smaller-than-expected build would confirm the tightening story.", change:"-0.38%", up:false }
+  "watchlist": [
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "desc": "$8.2B World Labs acquisition adds an AI software layer, but it's priced near all-time highs. Watch whether the market rewards the deal or starts questioning the price paid.",
+      "change": "+0.71%",
+      "up": true
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "desc": "Record $150B buyback is a support story, yet the stock isn't reacting. The test is whether it can retake its $236.54 high or is capped by AI-safety headlines and 5%+ yields.",
+      "change": "+0.19%",
+      "up": true
+    },
+    {
+      "ticker": "EQT",
+      "company": "EQT Corporation",
+      "desc": "Drifting toward its 52-week low ($47.94) while oil-linked energy holds up better. A close below that level would be a negative technical signal for gas producers.",
+      "change": "-1.84%",
+      "up": false
+    }
   ]
 };
 // ═══════════════════════════════════════════════════════
