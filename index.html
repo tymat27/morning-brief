@@ -9,38 +9,38 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Tuesday, September 29, 2026",
+  "date": "Wednesday, September 30, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,657.32",
-      "change": "-0.34%",
+      "value": "7,726.75 (fut)",
+      "change": "-0.07%",
       "up": false
     },
     {
       "label": "NASDAQ",
-      "value": "26,747.61",
-      "change": "-0.27%",
+      "value": "30,562.25 (fut)",
+      "change": "-0.17%",
       "up": false
     },
     {
       "label": "DOW",
-      "value": "51,184.56",
-      "change": "-0.58%",
+      "value": "51,635.00 (fut)",
+      "change": "-0.13%",
       "up": false
     },
     {
       "label": "VIX",
-      "value": "16.37",
-      "change": "+1.87%",
+      "value": "16.17",
+      "change": "+0.81%",
       "up": true
     },
     {
       "label": "WTI",
-      "value": "$92.03",
-      "change": "-0.62%",
-      "up": false
+      "value": "$90.68",
+      "change": "+1.45%",
+      "up": true
     },
     {
       "label": "NG",
@@ -52,87 +52,83 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500 Futures",
-      "value": "7,753.25",
-      "change": "+0.08%",
-      "up": true,
-      "note": "Early-session futures read (Yahoo Finance) was flat-to-slightly-green; the cash index has since slipped to 7,657 (-0.34%) as tech gave back early gains. Oil and yields are easing, which should help, but the tape isn't rewarding it. Note: this run fired mid-session, not pre-market, so levels are intraday."
+      "value": "7,726.75",
+      "change": "-0.07%",
+      "up": false,
+      "note": "Yahoo Finance shows futures slightly lower ahead of the PCE print; TheStreet and premarket ETF data (SPY +0.44%) show modestly green after PCE. Sources conflict, so I'm calling it flat-to-mixed. Yields are the constraint: 10-yr ~5.26-5.3%, 30-yr ~5.6% (highest since 2002)."
     },
     {
       "label": "Nasdaq 100 Futures",
-      "value": "30,637.50",
-      "change": "+0.23%",
-      "up": true,
-      "note": "Futures were modestly higher on the AMD and Nvidia headlines, but the Nasdaq Composite is now -0.27% at 26,748. The Russell 2000 is weaker (-0.69%), so this is not a broad risk-on tape."
+      "value": "30,562.25",
+      "change": "-0.17%",
+      "up": false,
+      "note": "Also split by source (Yahoo -0.17%, TheStreet +0.34%). Russell 2000 futures are weaker (-0.25% to -0.35%), so no broad risk-on. Micron reports today, a read-through for AI memory demand."
     }
   ],
   "vix": {
-    "value": "16.37",
-    "pct": 33,
-    "note": "Up ~1.9% to 16.37 from 16.07 yesterday, sitting just above its 50-day average (15.9). Low in absolute terms; oil retreating and Iran talks progressing haven't pushed it lower, which is why the badge is neutral rather than risk-on."
+    "value": "16.17",
+    "pct": 32,
+    "note": "Up ~0.8% to 16.17. Low in absolute terms and barely changed, consistent with a neutral tape despite record-high yields."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "$92.03",
-      "change": "-0.62%",
-      "up": false,
-      "note": "Slipping as indirect US-Iran talks via mediators advance and Gulf flows reportedly recover to over 90% of pre-war levels. Still historically elevated; a failed round of talks reverses this fast."
+      "value": "$90.68",
+      "change": "+1.45%",
+      "up": true,
+      "note": "Bouncing (Nov contract) after two days of declines; another source has $90.17 (+0.9%). Iran's Revolutionary Guard says the war ends only if the US admits defeat and projectiles hit three vessels in Hormuz, undercutting the talks-progress narrative."
     },
     {
       "label": "Brent Crude",
-      "value": "$104.80",
-      "change": "-0.47%",
-      "up": false,
-      "note": "Easing from Monday's highs. One data feed showed Brent near $97 (-8%), which conflicts with every news source and looks like a contract-roll artifact, so I'm using the news-reported level. Verify before trading on it."
+      "value": "$103.30",
+      "change": "+0.66%",
+      "up": true,
+      "note": "Up modestly; Saudi Arabia resumed Red Sea tanker loadings, which caps the upside. Still historically elevated."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Henry Hub quote unavailable this morning: the FMP plan blocks the natural gas commodity endpoint. Last reading was $3.13 on Sept 28. EQT (-1.8%) suggests gas is still soft."
+      "note": "Henry Hub quote unavailable: FMP plan blocks the commodity/quote endpoints. EQT's CEO flagged Appalachian gas near $4; EQT sits near its 52-week low."
     }
   ],
   "news": [
     {
-      "title": "AMD to Acquire Fei-Fei Li's World Labs for $8.2B",
+      "title": "PCE Cools vs Forecasts; ADP Beats; Yields at Multi-Decade Highs",
       "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "AMD agreed to buy World Labs, the spatial-intelligence startup founded by AI pioneer Fei-Fei Li, for $8.2 billion; Li becomes chief scientist. AMD trades around $612, near its 52-week high of $639, with a ~$1T market cap.",
-      "why": "A large software/AI-model acquisition marks a push beyond silicon toward the full AI stack, echoing Nvidia's platform strategy. Risk: $8.2B for a startup at a near-record share price invites execution and integration questions. Directly relevant to Tyler's AMD exposure."
-    },
-    {
-      "title": "Nvidia Announces Record $150B Buyback",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "Nvidia announced a record $150 billion share repurchase program. The stock is only +0.2% (~$229) on a ~$5.55T market cap, so the reaction is muted; volume is running well below average.",
-      "why": "A buyback that size is ~2.7% of market cap and signals huge free cash flow, but the flat reaction says it was expected or offset by the AI-safety headlines. Supports the floor under NVDA rather than a fresh catalyst."
-    },
-    {
-      "title": "AI Safety Headlines: Anthropic IPO Filing Warnings, OpenAI Shelves Model",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Leaked Anthropic IPO documents reportedly target a ~$2T valuation while warning of existential AI risk, and OpenAI delayed its GPT-6.1 model over failed internal safety tests. Reporting comes from a market-summary aggregator; treat details as reported, not confirmed.",
-      "why": "Regulatory or safety-driven slowdowns are a tail risk for AI capex names. It also helps explain why tech faded despite positive company news. Watch for any policy response."
+      "summary": "August PCE rose 0.3% m/m (in line); headline 3.4% y/y vs 3.7% forecast and core 3.0% vs 3.3% forecast, per TheStreet (Yahoo's preview had core expected at 3.3%). ADP showed +90K jobs vs 68K expected. The 10-year is ~5.3% (2007 high) and the 30-year ~5.6%, a level not seen since 2002. NY Fed's Williams signaled 'no need for urgency' on hikes.",
+      "why": "A softer inflation print is the best case for rate relief, but yields still rose, which says the market fears supply/term premium more than the data. Long-duration tech is the most exposed; 30-yr mortgage rates hit 7.30% (sixth straight weekly rise)."
     },
     {
-      "title": "Oil Eases as US-Iran Indirect Talks Progress; Yields Retreat from Highs",
+      "title": "Micron Earnings Today; AI Memory Read-Through",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "Micron (MU), Conagra, Jabil and FactSet report. Memory costs are already biting: Apple is reported to be cutting costs amid rising memory chip prices.",
+      "why": "MU is the cleanest read on AI memory (HBM) demand and pricing. A strong print supports the NVDA/AMD complex; higher memory costs are a margin headwind for hardware buyers like Apple."
+    },
+    {
+      "title": "Apple Names John Ternus CEO; Reviews Product Cadence",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "Apple's new CEO is reportedly considering moving away from the spring/fall release cycle and trimming middle management. A $5.7B haptics patent verdict (to be appealed) is also in the news. AAPL ~$332, near its $345 high.",
+      "why": "Strategy shifts are a multi-quarter story, not a trade. The patent verdict is ~0.1% of market cap, so not thesis-changing."
+    },
+    {
+      "title": "Iran: Hostile Rhetoric, Vessels Hit in Hormuz",
       "tags": [
         {
           "label": "Geo",
@@ -141,108 +137,104 @@ const D = {
         {
           "label": "Energy",
           "cls": "tag-energy"
-        },
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
         }
       ],
-      "summary": "WTI fell to ~$92 and Brent to ~$105 after separate indirect talks with mediators on Monday; Gulf flows are said to be back above 90% of pre-war levels. The 10-year yield is ~5.24%, easing from Monday's fresh highs but still near two-decade highs.",
-      "why": "Reverses yesterday's risk-off driver but hasn't lifted equities. Energy names give back some of Monday's gains (XOM -0.7%, CVX -0.9%), while rates stay the constraint on long-duration tech."
+      "summary": "IRGC says the war ends only if the US admits defeat; Trump denied offering sanctions relief for nuclear concessions; unknown projectiles struck three vessels in the Strait of Hormuz. Saudi Arabia resumed Red Sea loadings.",
+      "why": "Yesterday's oil drop leaned on talks progress. Today's headlines put a floor under crude and explain the WTI bounce. Energy names benefit; airlines and consumers do not."
     },
     {
-      "title": "Movers: Carnival +12% on Q3 Beat; Bloom Energy +11%; FICO -22%",
+      "title": "Movers: HPE +4% on AI Infrastructure Deal; Concentrix -9%; NOC -3.7%; MRNA -7%",
       "tags": [
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Carnival beat Q3 earnings; Bloom Energy rose on a Jefferies price-target raise; Fair Isaac plunged ~22% on new competition in mortgage credit scoring. Data today: JOLTS and Conference Board confidence.",
-      "why": "Lower oil is a direct tailwind for cruise lines. Bloom's move (AI data-center power theme) is an analyst-driven move, not a fundamental event, and at ~$296 it is far above the small-cap radar range."
+      "summary": "HPE rose on a multibillion-dollar AI infrastructure deal; Concentrix missed Q3; Northrop lost a ~$20B Navy fighter contract to Boeing; Moderna fell on a Citi downgrade to Sell. Alliant Energy +7.6% on data-center power demand.",
+      "why": "The AI-power and AI-infrastructure theme keeps rewarding utilities and hardware integrators, relevant to Tyler's Tech/AI and Energy focus."
     }
   ],
   "tech_stocks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp",
-      "price": "$229.30",
-      "perf": "+0.19%",
+      "price": "$230.58",
+      "perf": "+1.48%",
       "up": true,
-      "note": "Barely moved on the $150B buyback; well under the 52-week high of $236.54. Volume light so far."
+      "note": "Up on buyback support (sources disagree on size: $150B vs $235B, so verify) and a CoreWeave Vera Rubin deployment. Still under its $236.54 high."
     },
     {
       "ticker": "AAPL",
       "name": "Apple Inc.",
-      "price": "$331.21",
-      "perf": "-2.12%",
-      "up": false,
-      "note": "Biggest decliner in the group with no company-specific catalyst found in my sources; treat the cause as unverified."
+      "price": "$332.50",
+      "perf": "+0.94%",
+      "up": true,
+      "note": "Bouncing after yesterday's -2%. New CEO Ternus, $5.7B patent verdict, and memory-cost pressure are the headlines. Above the $328 consensus target."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft Corp.",
-      "price": "$505.03",
-      "perf": "-0.82%",
-      "up": false,
-      "note": "Soft with software/large-cap tech as yields stay above 5.2%; roughly 9% below its 52-week high of $553.72."
+      "price": "$513.88",
+      "perf": "+0.97%",
+      "up": true,
+      "note": "Piper Sandler raised its target to $610; on track for its biggest quarterly gain in 28 years. Still ~7% below its $553.72 high."
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "price": "$612.19",
-      "perf": "+0.71%",
+      "price": "$609.45",
+      "perf": "+0.31%",
       "up": true,
-      "note": "Holding gains on the $8.2B World Labs deal, within ~4% of its 52-week high ($639)."
+      "note": "Holding the World Labs ($8.2B) deal gains; ~$995B market cap, within 5% of its $639 high. Price is at the analyst target, so limited consensus upside."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "XOM",
       "name": "ExxonMobil",
-      "price": "$161.43",
-      "perf": "-0.67%",
-      "up": false,
-      "note": "Giving back part of Monday's gain as crude slips on Iran talk progress."
+      "price": "$162.60",
+      "perf": "+0.77%",
+      "up": true,
+      "note": "Firmer with crude; negotiating a return to Venezuela and an Angola offshore discovery. Climate-liability Supreme Court push is a slow-burn risk."
     },
     {
       "ticker": "CVX",
       "name": "Chevron Corp",
-      "price": "$204.59",
-      "perf": "-0.86%",
-      "up": false,
-      "note": "Tracking oil lower; still ~6% below its 52-week high of $217.78."
+      "price": "$205.23",
+      "perf": "+0.42%",
+      "up": true,
+      "note": "Premarket price; closed -0.96% yesterday at $204.38. Still ~6% below its $217.78 high."
     },
     {
       "ticker": "EQT",
       "name": "EQT Corporation",
-      "price": "$48.95",
-      "perf": "-1.84%",
-      "up": false,
-      "note": "Now within ~2% of its 52-week low ($47.94); gas weakness keeps it on its own tape. A break below would be a technical warning."
+      "price": "$49.37",
+      "perf": "+1.00%",
+      "up": true,
+      "note": "Premarket bounce after a -2% close; sits ~3% above its 52-week low of $47.94, a level to watch."
     }
   ],
   "watchlist": [
     {
-      "ticker": "AMD",
-      "company": "Advanced Micro Devices",
-      "desc": "$8.2B World Labs acquisition adds an AI software layer, but it's priced near all-time highs. Watch whether the market rewards the deal or starts questioning the price paid.",
-      "change": "+0.71%",
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "desc": "Reports today. Read-through for AI memory demand and for NVDA/AMD; the reaction tells you whether the AI trade still has legs with 10-yr yields at 5.3%.",
+      "change": "earnings",
       "up": true
     },
     {
       "ticker": "NVDA",
       "company": "NVIDIA Corp",
-      "desc": "Record $150B buyback is a support story, yet the stock isn't reacting. The test is whether it can retake its $236.54 high or is capped by AI-safety headlines and 5%+ yields.",
-      "change": "+0.19%",
+      "desc": "Needs a close above $236.54 to confirm a breakout; MU's print is the near-term catalyst.",
+      "change": "+1.48%",
       "up": true
     },
     {
       "ticker": "EQT",
       "company": "EQT Corporation",
-      "desc": "Drifting toward its 52-week low ($47.94) while oil-linked energy holds up better. A close below that level would be a negative technical signal for gas producers.",
-      "change": "-1.84%",
-      "up": false
+      "desc": "Within ~3% of its 52-week low ($47.94). A break below is a negative technical signal for gas producers.",
+      "change": "+1.00% (pre)",
+      "up": true
     }
   ]
 };
