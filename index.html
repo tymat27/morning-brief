@@ -9,37 +9,37 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Friday, October 2, 2026",
-  "sentiment": "risk-on",
+  "date": "Monday, October 5, 2026",
+  "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "~7,762 (fut)",
-      "change": "+0.89%",
+      "value": "7,752",
+      "change": "+0.38%",
       "up": true
     },
     {
       "label": "NASDAQ",
-      "value": "~30,980 (NQ fut)",
-      "change": "+1.35%",
+      "value": "27,383",
+      "change": "+0.71%",
       "up": true
     },
     {
       "label": "DOW",
-      "value": "~51,540 (fut)",
-      "change": "+0.64%",
-      "up": true
-    },
-    {
-      "label": "VIX",
-      "value": "15.97",
-      "change": "-2.56%",
+      "value": "51,053",
+      "change": "-0.24%",
       "up": false
     },
     {
+      "label": "VIX",
+      "value": "15.52",
+      "change": "+1.37%",
+      "up": true
+    },
+    {
       "label": "WTI",
-      "value": "$89.39",
-      "change": "-3.75%",
+      "value": "$90.50",
+      "change": "-0.67%",
       "up": false
     },
     {
@@ -52,140 +52,140 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500",
-      "value": "7,762 (futures)",
-      "change": "+0.49% pre / +0.89% cash",
+      "value": "7,752 (midday)",
+      "change": "+0.38% to +0.60%",
       "up": true,
-      "note": "Futures were +0.49% before the jobs print; TheStreet shows the cash index +0.89% after it. Sources differ by timing. Cooler data pulled rate-hike bets down."
+      "note": "Run fired at ~2:55pm ET, so this is a midday read, not pre-market. Sources differ by timing (Yahoo +0.38%, TheStreet +0.60%). Within 1% of August records."
     },
     {
       "label": "Nasdaq 100",
-      "value": "30,980 (futures)",
-      "change": "+0.71% pre / +1.35% Comp",
+      "value": "Record intraday",
+      "change": "+0.57%",
       "up": true,
-      "note": "Tech leads as yields fall from 24-year highs. Russell 2000 only +0.35%, so breadth is narrower than the headline."
+      "note": "Composite +0.71%. Dow lags (-0.2%) as the 10-yr sits near 5.3%, a ~20-year high. Russell 2000 +0.1% to +0.9% depending on source."
     }
   ],
   "vix": {
-    "value": "15.97",
-    "pct": 32,
-    "note": "Down 2.6% to 15.97. Low and falling as the 10-yr eased to ~5.24% from 24-year highs."
+    "value": "15.52",
+    "pct": 31,
+    "note": "Up 1.4% but low. Calm tape despite 10-yr yield ~5.25-5.32%. ISM Services prices index jumped to 74 (from 72.6), which keeps rate-hike risk alive."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "$89.39",
-      "change": "-3.75%",
+      "value": "$90.50",
+      "change": "-0.67%",
       "up": false,
-      "note": "Reversal from $91-92 yesterday on reports the EU is discussing diesel and crude stockpile releases, despite 9,000 more US troops heading to the Middle East."
+      "note": "Roughly flat-to-lower around $90.5-90.7. Little follow-through after Friday's EU stock-release headlines."
     },
     {
       "label": "Brent Crude",
-      "value": "$99.92",
-      "change": "-2.34%",
-      "up": false,
-      "note": "TheStreet shows $99.92; Yahoo shows ~$102. Sources conflict, so treat the level as approximate."
+      "value": "$102.90",
+      "change": "+0.64%",
+      "up": true,
+      "note": "Brent-WTI spread widened to ~$12 (TheStreet quote). Single source, treat as approximate."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Henry Hub quote unavailable (FMP plan blocks it). Gold $4,214 (+0.3%), silver $61.42 (+0.4%)."
+      "note": "Henry Hub quote unavailable (FMP plan blocks commodities). Gold ~$4,175-4,190 (+0.3-0.65%), silver ~$62.19 (+2.9%)."
     }
   ],
   "news": [
     {
-      "title": "September Payrolls Miss: +29K vs 84K Expected",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "Nonfarm payrolls added 29,000 vs ~84,000 consensus; unemployment rose to 4.2% from 4.1%. The 10-yr yield fell to ~5.24% and traders pared October rate-hike odds.",
-      "why": "Bad-news-is-good-news for now: lower yields relieve long-duration tech and small caps. If weakness persists, the story flips from rate relief to growth worry. Watch revisions."
-    },
-    {
-      "title": "ON Semi Goes All-Cash at $123 for Synaptics",
+      "title": "Schneider Electric Buys PTC for ~$22.6B in Cash",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "ON Semiconductor shifted its Synaptics bid to an all-cash $123/share deal. SYNA jumped ~13-15% to ~$120.5; ON rose ~7.9%.",
-      "why": "SYNA now trades as merger arbitrage near the $123 cap, so upside is limited to the spread and deal risk. It confirms strategic appetite for analog and edge-AI chip assets."
+      "summary": "PTC jumped ~35% (TheStreet reports an all-cash deal valued near $22.6B). An earlier report had it as advanced talks near $20B, so sources conflict on the amount and on whether it is announced or reported. Verify the filing before acting.",
+      "why": "Industrial software (CAD/PLM) is being priced as strategic infrastructure for factory digitization and AI. Read-through is positive for peers like Autodesk, Dassault and Siemens-adjacent names, but PTC itself is now deal-capped."
     },
     {
-      "title": "Nike Falls 7-10% on Weak Q1 and Grim Outlook",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "Revenue was $11.21B vs $11.33B expected (-4% y/y), EPS $0.48 slightly missed, and management guided to a high-single-digit FY27 revenue decline with layoffs planned. Gross margin rose 60 bps to 42.8%.",
-      "why": "Consumer read-through after a 12-year-low confidence print. Margin held, but the top-line guide is the problem. Negative for discretionary and apparel."
-    },
-    {
-      "title": "Oil Slides as EU Weighs Stock Releases; Troop Build-Up Continues",
+      "title": "Brazil Election Shock Sends Brazilian Assets Soaring",
       "tags": [
         {
           "label": "Geo",
           "cls": "tag-geo"
         },
         {
-          "label": "Energy",
-          "cls": "tag-energy"
+          "label": "Macro",
+          "cls": "tag-macro"
         }
       ],
-      "summary": "WTI fell ~3.75% to ~$89.4 and Brent to ~$100 on reports of EU diesel and crude reserve release talks, even as the US sent ~9,000 more troops to the Middle East and warned Iran of strikes.",
-      "why": "The geopolitical premium is fragile and headline-driven. Pressure on XOM/CVX near term; a break in talks or a strike would reverse it quickly."
+      "summary": "Flavio Bolsonaro reportedly took ~47% in the first round, beating polls. Itau +17%, XP +34%, StoneCo +22%, leveraged Brazil ETFs +25%+, and the real gained over 4%.",
+      "why": "A one-day political repricing, not an earnings event. It is a runoff story with real reversal risk. Not a fit for your Tech/Energy focus; relevant only to Petrobras-linked oil exposure."
     },
     {
-      "title": "Deal Flow: First Citizens +17%, Western Digital -7%, FICO -7%",
+      "title": "10-Yr Near 5.3% as ISM Services Stays Hot",
       "tags": [
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "FCNCA surged ~17% after BMO's acquisition completed and upgrades. WDC fell ~7% on Toshiba's hard-disk expansion. FICO fell ~7% after FHFA opened mortgage credit scoring to competition. Paramount Skydance-WBD closes Oct 6.",
-      "why": "WDC is a competitive-supply signal for AI storage. FICO is a regulatory moat risk. Mostly stock-specific, not a market driver."
+      "summary": "ISM Services PMI 55.9 vs 55.4 prior, prices index 74. Friday's weak payrolls (+29K) have not cooled yields. Fed September minutes come Wednesday.",
+      "why": "Weak jobs plus hot services prices is a stagflation-flavored mix. Long-duration tech is holding for now, but a hawkish minutes read is the near-term risk."
+    },
+    {
+      "title": "Intel -3% as TSMC Joins Musk's Terafab",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "TSMC confirmed it is joining Terafab, the Musk-linked chip venture. INTC -3.3%, GlobalFoundries -3.8%.",
+      "why": "Negative for the 'domestic foundry alternative' thesis at Intel and GFS; positive signal for TSMC's role in US capacity."
+    },
+    {
+      "title": "Cerebras Jumps After Altman Calls It a 'Close Partner'",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "CBRS surged premarket after OpenAI's Sam Altman cited deep engagement on speed. Also: Nike -2.9% on S&P downgrade to A; C.H. Robinson -12% on Global Forwarding sale.",
+      "why": "AI-compute partnership headlines keep moving non-Nvidia names. Executive praise is not a signed contract, so size accordingly."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "SYNA",
-      "name": "Synaptics",
-      "price": "$120.51",
-      "perf": "+13.53%",
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "price": "$192.50",
+      "perf": "+33.65%",
       "up": true,
-      "note": "ON Semi all-cash $123 offer. Capped by the deal price."
+      "note": "Schneider Electric takeover. Now trades as merger-arb."
     },
     {
-      "ticker": "MXL",
-      "name": "MaxLinear",
-      "price": "$103.81",
-      "perf": "+12.68%",
-      "up": true,
-      "note": "Top-gainer list; I did not verify a named catalyst. Likely sympathy with the SYNA deal, but that is an inference."
-    },
-    {
-      "ticker": "ON",
-      "name": "ON Semiconductor",
+      "ticker": "CBRS",
+      "name": "Cerebras",
       "price": "n/a",
-      "perf": "+7.89%",
+      "perf": "n/a",
       "up": true,
-      "note": "Acquirer rising on the all-cash Synaptics terms (TheStreet)."
+      "note": "Surged premarket on Altman 'close partner' comment. No live quote available."
     },
     {
-      "ticker": "WDC",
-      "name": "Western Digital",
+      "ticker": "INTC",
+      "name": "Intel",
       "price": "n/a",
-      "perf": "-7.36%",
+      "perf": "-3.29%",
       "up": false,
-      "note": "Toshiba hard-disk expansion announcement raises supply concerns for AI storage."
+      "note": "TSMC confirmed joining Terafab."
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries",
+      "price": "n/a",
+      "perf": "-3.79%",
+      "up": false,
+      "note": "Same Terafab read-through."
     },
     {
       "ticker": "NVDA/AAPL/MSFT/AMD",
@@ -193,7 +193,7 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "FMP quote endpoints are blocked on the current plan, so live prices were unavailable. Nasdaq futures +0.7% suggests a firm tape."
+      "note": "FMP quote endpoints are blocked on the current plan and Bigdata credits are exhausted, so no live prices. Nasdaq 100 at a record suggests mega-caps are firm."
     }
   ],
   "energy_stocks": [
@@ -203,7 +203,7 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "Live quotes unavailable. WTI -3.75% implies a soft open for the majors."
+      "note": "No live quotes. WTI is roughly flat near $90.5, so no strong signal."
     },
     {
       "ticker": "EQT",
@@ -211,38 +211,30 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "No quote or Henry Hub data this morning (FMP plan). Last known near its 52-week low."
-    },
-    {
-      "ticker": "SPCX",
-      "name": "SpaceX",
-      "price": "$156.94",
-      "perf": "+5.99%",
-      "up": true,
-      "note": "Triple rocket launch within 13 hours. Not energy, but the day's notable momentum name."
+      "note": "No quote or Henry Hub data (FMP plan)."
     }
   ],
   "watchlist": [
     {
-      "ticker": "NKE",
-      "company": "Nike",
-      "desc": "Reaction to the weak guide and layoffs. Test whether -7% holds or if value buyers step in; margin expansion is the bull point.",
-      "change": "-7.26%",
-      "up": false
-    },
-    {
-      "ticker": "SYNA",
-      "company": "Synaptics",
-      "desc": "Trades as merger-arb under the $123 cash offer. Only relevant for the spread; not a growth entry.",
-      "change": "+13.53%",
+      "ticker": "PTC",
+      "company": "PTC Inc.",
+      "desc": "Deal-capped after +35%. Only matters for the spread and as a read-through on industrial software M&A. Not a fresh entry.",
+      "change": "+33.65%",
       "up": true
     },
     {
-      "ticker": "WDC",
-      "company": "Western Digital",
-      "desc": "Toshiba's expansion hits pricing power in AI storage. Watch if the dip is a re-entry or the start of a supply story.",
-      "change": "-7.36%",
+      "ticker": "INTC",
+      "company": "Intel",
+      "desc": "Test whether the Terafab selloff holds or buyers defend. Thesis risk: foundry-alternative narrative weakening.",
+      "change": "-3.29%",
       "up": false
+    },
+    {
+      "ticker": "CBRS",
+      "company": "Cerebras",
+      "desc": "Momentum on OpenAI partnership talk. No contract details, so a fragile catalyst; wait for a filing or confirmed deal.",
+      "change": "n/a",
+      "up": true
     }
   ]
 };
