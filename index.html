@@ -9,37 +9,37 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Monday, October 5, 2026",
-  "sentiment": "neutral",
+  "date": "Tuesday, October 6, 2026",
+  "sentiment": "risk-on",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,752",
-      "change": "+0.38%",
+      "value": "7,840",
+      "change": "+0.85%",
       "up": true
     },
     {
       "label": "NASDAQ",
-      "value": "27,383",
-      "change": "+0.71%",
+      "value": "27,691",
+      "change": "+0.78%",
       "up": true
     },
     {
       "label": "DOW",
-      "value": "51,053",
-      "change": "-0.24%",
-      "up": false
-    },
-    {
-      "label": "VIX",
-      "value": "15.52",
-      "change": "+1.37%",
+      "value": "51,634",
+      "change": "+0.71%",
       "up": true
     },
     {
+      "label": "VIX",
+      "value": "15.23",
+      "change": "-1.87%",
+      "up": false
+    },
+    {
       "label": "WTI",
-      "value": "$90.50",
-      "change": "-0.67%",
+      "value": "$87.77",
+      "change": "-1.86%",
       "up": false
     },
     {
@@ -52,189 +52,189 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500",
-      "value": "7,752 (midday)",
-      "change": "+0.38% to +0.60%",
+      "value": "7,840 (midday)",
+      "change": "+0.85%",
       "up": true,
-      "note": "Run fired at ~2:55pm ET, so this is a midday read, not pre-market. Sources differ by timing (Yahoo +0.38%, TheStreet +0.60%). Within 1% of August records."
+      "note": "Run fired ~12:45pm ET, so this is a midday read, not pre-market. Nasdaq touched a record; 10-yr eased to ~5.26% from 5.3%+ highs, and falling oil let investors refocus on earnings."
     },
     {
-      "label": "Nasdaq 100",
-      "value": "Record intraday",
-      "change": "+0.57%",
+      "label": "Nasdaq Composite",
+      "value": "27,691 (midday)",
+      "change": "+0.78%",
       "up": true,
-      "note": "Composite +0.71%. Dow lags (-0.2%) as the 10-yr sits near 5.3%, a ~20-year high. Russell 2000 +0.1% to +0.9% depending on source."
+      "note": "Dow +0.71% (51,634), Russell 2000 only +0.07% to +0.5% depending on source. FactSet has upcoming-season earnings growth estimates near 30%. Tech-led, narrow-ish rally."
     }
   ],
   "vix": {
-    "value": "15.52",
-    "pct": 31,
-    "note": "Up 1.4% but low. Calm tape despite 10-yr yield ~5.25-5.32%. ISM Services prices index jumped to 74 (from 72.6), which keeps rate-hike risk alive."
+    "value": "15.23",
+    "pct": 30,
+    "note": "Down 1.9% and low. Complacent against a 10-yr near 5.3% and 30-yr above 5.6% (highest since 2002). Fed September minutes are Wednesday."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "$90.50",
-      "change": "-0.67%",
+      "value": "$87.77",
+      "change": "-1.86%",
       "up": false,
-      "note": "Roughly flat-to-lower around $90.5-90.7. Little follow-through after Friday's EU stock-release headlines."
+      "note": "Yahoo shows Nov crude at $88.78 (-0.73%); sources differ by timing. Down from ~$90.5 yesterday."
     },
     {
       "label": "Brent Crude",
-      "value": "$102.90",
-      "change": "+0.64%",
-      "up": true,
-      "note": "Brent-WTI spread widened to ~$12 (TheStreet quote). Single source, treat as approximate."
+      "value": "$98.67",
+      "change": "-1.64%",
+      "up": false,
+      "note": "Brent fell below $100, widening relief for inflation expectations."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Henry Hub quote unavailable (FMP plan blocks commodities). Gold ~$4,175-4,190 (+0.3-0.65%), silver ~$62.19 (+2.9%)."
+      "note": "Henry Hub quote unavailable (FMP plan blocks quotes). Gold $4,186-4,192 (+0.7-0.9%), silver ~$61.31."
     }
   ],
   "news": [
     {
-      "title": "Schneider Electric Buys PTC for ~$22.6B in Cash",
+      "title": "Constellation Energy +12-14% on 20-Year Google Nuclear Deal",
       "tags": [
         {
-          "label": "Tech",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "PTC jumped ~35% (TheStreet reports an all-cash deal valued near $22.6B). An earlier report had it as advanced talks near $20B, so sources conflict on the amount and on whether it is announced or reported. Verify the filing before acting.",
-      "why": "Industrial software (CAD/PLM) is being priced as strategic infrastructure for factory digitization and AI. Read-through is positive for peers like Autodesk, Dassault and Siemens-adjacent names, but PTC itself is now deal-capped."
-    },
-    {
-      "title": "Brazil Election Shock Sends Brazilian Assets Soaring",
-      "tags": [
-        {
-          "label": "Geo",
-          "cls": "tag-geo"
+          "label": "Energy",
+          "cls": "tag-energy"
         },
         {
-          "label": "Macro",
-          "cls": "tag-macro"
+          "label": "Tech",
+          "cls": "tag-tech"
         }
       ],
-      "summary": "Flavio Bolsonaro reportedly took ~47% in the first round, beating polls. Itau +17%, XP +34%, StoneCo +22%, leveraged Brazil ETFs +25%+, and the real gained over 4%.",
-      "why": "A one-day political repricing, not an earnings event. It is a runoff story with real reversal risk. Not a fit for your Tech/Energy focus; relevant only to Petrobras-linked oil exposure."
+      "summary": "CEG jumped ~12-13% after a 20-year power agreement with Alphabet, reported alongside a $4.3B nuclear expansion commitment. Talen Energy (TLN) also rose ~13.6% in sympathy.",
+      "why": "Hyperscaler demand for firm power is the cleanest bridge between your Tech/AI and Energy themes. It re-rates independent nuclear/gas generators, but a one-day 13% move prices a lot in already. Verify the deal terms in the filing."
     },
     {
-      "title": "10-Yr Near 5.3% as ISM Services Stays Hot",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "ISM Services PMI 55.9 vs 55.4 prior, prices index 74. Friday's weak payrolls (+29K) have not cooled yields. Fed September minutes come Wednesday.",
-      "why": "Weak jobs plus hot services prices is a stagflation-flavored mix. Long-duration tech is holding for now, but a hawkish minutes read is the near-term risk."
-    },
-    {
-      "title": "Intel -3% as TSMC Joins Musk's Terafab",
+      "title": "Marvell +7% on Raised Long-Term Revenue Targets",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "TSMC confirmed it is joining Terafab, the Musk-linked chip venture. INTC -3.3%, GlobalFoundries -3.8%.",
-      "why": "Negative for the 'domestic foundry alternative' thesis at Intel and GFS; positive signal for TSMC's role in US capacity."
+      "summary": "MRVL rose ~7.1% after lifting long-term revenue targets on AI demand. AMD's CEO said compute demand 'continues to outrun supply'; NVDA +1.2% near a $6T market cap after authorizing another $150B buyback.",
+      "why": "AI custom-silicon and networking guidance is still being revised up, supporting semis. Risk: Seagate (-8%) and Western Digital (-6.9%) sold off on Toshiba capacity-expansion worries, so AI storage is not a uniform winner."
     },
     {
-      "title": "Cerebras Jumps After Altman Calls It a 'Close Partner'",
+      "title": "10-Yr Eases from 5.3% as Oil Slides",
       "tags": [
         {
-          "label": "Tech",
-          "cls": "tag-tech"
+          "label": "Macro",
+          "cls": "tag-macro"
         }
       ],
-      "summary": "CBRS surged premarket after OpenAI's Sam Altman cited deep engagement on speed. Also: Nike -2.9% on S&P downgrade to A; C.H. Robinson -12% on Global Forwarding sale.",
-      "why": "AI-compute partnership headlines keep moving non-Nvidia names. Executive praise is not a signed contract, so size accordingly."
+      "summary": "10-yr at ~5.26% after touching 5.3%+ (2002 levels); 30-yr near 5.66-5.7%. WTI -1.9% to ~$88. Fed September minutes come Wednesday.",
+      "why": "Falling oil is what is letting long-duration tech rally despite extreme yields. A hawkish minutes read or an oil rebound would quickly reverse that."
+    },
+    {
+      "title": "Option Care Health +33% on $5B+ Buyout Interest",
+      "tags": [
+        {
+          "label": "Deals",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "OPCH surged ~33% on reports McKesson and Clayton Dubilier & Rice are pursuing a $5B+ buyout.",
+      "why": "Reported pursuit, not a signed deal, and healthcare is outside your focus. Excluded from On the Radar for that reason."
+    },
+    {
+      "title": "Apogee Raises FY27 Guidance, Stock +20%",
+      "tags": [
+        {
+          "label": "Industrials",
+          "cls": "tag-other"
+        }
+      ],
+      "summary": "APOG Q2 sales $391.1M (+9.2%), adj. EPS $1.17 vs $0.98. FY sales guide raised to $1.46-1.50B and EPS to $3.00-3.40.",
+      "why": "Nonresidential construction demand is holding up at 5%+ yields. Small-cap read-through for building-products names; see On the Radar."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "PTC",
-      "name": "PTC Inc.",
-      "price": "$192.50",
-      "perf": "+33.65%",
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "price": "n/a",
+      "perf": "+1.16%",
       "up": true,
-      "note": "Schneider Electric takeover. Now trades as merger-arb."
+      "note": "Approaching $6T market cap; added $150B buyback authorization."
     },
     {
-      "ticker": "CBRS",
-      "name": "Cerebras",
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
       "price": "n/a",
-      "perf": "n/a",
+      "perf": "+7.14%",
       "up": true,
-      "note": "Surged premarket on Altman 'close partner' comment. No live quote available."
+      "note": "Raised long-term revenue targets on AI demand."
     },
     {
-      "ticker": "INTC",
-      "name": "Intel",
+      "ticker": "STX/WDC",
+      "name": "Seagate / Western Digital",
       "price": "n/a",
-      "perf": "-3.29%",
+      "perf": "-7.98% / -6.92%",
       "up": false,
-      "note": "TSMC confirmed joining Terafab."
+      "note": "Toshiba hard-drive capacity expansion concerns."
     },
     {
-      "ticker": "GFS",
-      "name": "GlobalFoundries",
-      "price": "n/a",
-      "perf": "-3.79%",
-      "up": false,
-      "note": "Same Terafab read-through."
-    },
-    {
-      "ticker": "NVDA/AAPL/MSFT/AMD",
+      "ticker": "AAPL/MSFT/AMD",
       "name": "Mega-cap quotes",
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "FMP quote endpoints are blocked on the current plan and Bigdata credits are exhausted, so no live prices. Nasdaq 100 at a record suggests mega-caps are firm."
+      "note": "FMP quote endpoints blocked on current plan and Bigdata credits exhausted, so no live prices. AMD CEO commentary on compute demand is supportive."
     }
   ],
   "energy_stocks": [
     {
-      "ticker": "XOM/CVX",
-      "name": "Majors",
-      "price": "n/a",
-      "perf": "n/a",
-      "up": false,
-      "note": "No live quotes. WTI is roughly flat near $90.5, so no strong signal."
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "price": "$305.86",
+      "perf": "+14.29%",
+      "up": true,
+      "note": "Google 20-year nuclear power deal."
     },
     {
-      "ticker": "EQT",
-      "name": "EQT Corp.",
+      "ticker": "TLN",
+      "name": "Talen Energy",
+      "price": "$376.84",
+      "perf": "+13.55%",
+      "up": true,
+      "note": "Sympathy move on AI power demand."
+    },
+    {
+      "ticker": "XOM/CVX/EQT",
+      "name": "Oil & gas names",
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "No quote or Henry Hub data (FMP plan)."
+      "note": "No live quotes. WTI -1.9% is a modest headwind for E&Ps."
     }
   ],
   "watchlist": [
     {
-      "ticker": "PTC",
-      "company": "PTC Inc.",
-      "desc": "Deal-capped after +35%. Only matters for the spread and as a read-through on industrial software M&A. Not a fresh entry.",
-      "change": "+33.65%",
+      "ticker": "CEG",
+      "company": "Constellation Energy",
+      "desc": "Fits both of your themes, but +14% in a day makes chasing risky. Watch whether the gap holds and for filing details on deal pricing.",
+      "change": "+14.29%",
       "up": true
     },
     {
-      "ticker": "INTC",
-      "company": "Intel",
-      "desc": "Test whether the Terafab selloff holds or buyers defend. Thesis risk: foundry-alternative narrative weakening.",
-      "change": "-3.29%",
+      "ticker": "MRVL",
+      "company": "Marvell Technology",
+      "desc": "Raised targets are a concrete catalyst. Thesis risk: custom AI silicon is lumpy and hyperscaler-concentrated.",
+      "change": "+7.14%",
+      "up": true
+    },
+    {
+      "ticker": "STX",
+      "company": "Seagate",
+      "desc": "Selloff on Toshiba capacity fears; test whether it is an overreaction to an AI-storage name or a real supply shift.",
+      "change": "-7.98%",
       "up": false
-    },
-    {
-      "ticker": "CBRS",
-      "company": "Cerebras",
-      "desc": "Momentum on OpenAI partnership talk. No contract details, so a fragile catalyst; wait for a filing or confirmed deal.",
-      "change": "n/a",
-      "up": true
     }
   ]
 };
