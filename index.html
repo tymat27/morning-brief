@@ -9,38 +9,38 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Friday, October 9, 2026",
+  "date": "Monday, October 12, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
-      "label": "SPX",
-      "value": "7,809",
-      "change": "+0.56%",
+      "label": "SPX fut",
+      "value": "7,861",
+      "change": "+0.02%",
       "up": true
     },
     {
-      "label": "NASDAQ",
-      "value": "27,356",
-      "change": "+0.60%",
-      "up": true
+      "label": "NDX fut",
+      "value": "31,036",
+      "change": "-0.23%",
+      "up": false
     },
     {
-      "label": "DOW",
-      "value": "51,615",
-      "change": "+0.75%",
+      "label": "DOW fut",
+      "value": "51,943",
+      "change": "+0.03%",
       "up": true
     },
     {
       "label": "VIX",
-      "value": "14.87",
-      "change": "-3.50%",
+      "value": "15.51",
+      "change": "+4.51%",
       "up": false
     },
     {
       "label": "WTI",
-      "value": "$91.2-91.5",
-      "change": "-0.3%",
-      "up": false
+      "value": "$92.99",
+      "change": "+1.24%",
+      "up": true
     },
     {
       "label": "NG",
@@ -51,77 +51,51 @@ const D = {
   ],
   "snapshot": [
     {
-      "label": "S&P 500",
-      "value": "7,809 (midday)",
-      "change": "+0.56%",
+      "label": "S&P 500 Futures",
+      "value": "7,861",
+      "change": "+0.02%",
       "up": true,
-      "note": "Run fired ~1:08pm ET, so this is a midday read, not pre-market. Tech rebounded after Thursday's sell-off; S&P and Nasdaq are on track for weekly gains after record highs earlier this week. Bank earnings start Tuesday."
+      "note": "Pre-market read (~6am ET). Flat tape ahead of Tuesday's bank earnings; no economic data or notable earnings today. US stocks are open for Columbus Day, but the bond market is closed."
     },
     {
-      "label": "Nasdaq Composite",
-      "value": "27,356 (midday)",
-      "change": "+0.60%",
-      "up": true,
-      "note": "Dow +0.75% (51,615). 10-yr yield ~5.26%, near a 24-year high. UMich preliminary sentiment 46.3, lowest since May."
+      "label": "Nasdaq 100 Futures",
+      "value": "31,036",
+      "change": "-0.23%",
+      "up": false,
+      "note": "Tech lags slightly. Dow futures 51,943 (+0.03%), Russell 2000 futures 2,821 (-0.04%). 10-yr yield 5.24% (Friday close), a 24-year-high zone. CME FedWatch shows ~19% odds of a hike after the October meeting."
     }
   ],
   "vix": {
-    "value": "14.87",
-    "pct": 29,
-    "note": "Down 3.5% and low against a 10-yr near 5.26% and weak consumer sentiment (46.3). Volatility pricing looks complacent for the rate backdrop."
+    "value": "15.51",
+    "pct": 31,
+    "note": "Up 4.5% but still low against a 5.24% 10-yr and an Iran/Hormuz standoff. Pricing looks complacent for the macro backdrop."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "$91.2-91.5",
-      "change": "-0.3%",
-      "up": false,
-      "note": "Eased after Trump said the US would not attack Iran before the midterms, but Hormuz traffic is down, Gulf tanker freight is at records, and a hurricane shut in Gulf of Mexico output. Sources differ by timing."
+      "value": "$92.99",
+      "change": "+1.24%",
+      "up": true,
+      "note": "Sources differ (Benzinga ~$92.58, +0.8%). Iran stepped up attacks near Hormuz and rejected US terms as 'inadequate'; offset by Trump saying Russia and Ukraine agreed to halt strikes on energy facilities (unconfirmed by Moscow)."
     },
     {
       "label": "Brent Crude",
-      "value": "~$103-104",
-      "change": "-0.5% to -1%",
+      "value": "~$103",
+      "change": "n/a",
       "up": false,
-      "note": "Fell but stayed above $100."
+      "note": "No live quote; reported near $103 per Yahoo's live blog. Sources conflict on direction."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Henry Hub quote unavailable (FMP plan blocks quotes). Gold ~$4,212 (+1.3%)."
+      "note": "Henry Hub quote unavailable (FMP plan blocks quotes). Gold ~$4,195 (-0.5%)."
     }
   ],
   "news": [
     {
-      "title": "Tech Rebounds After Thursday Sell-Off; OpenAI Revenue Reports Conflict",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "Nasdaq +0.6% at midday. An FT report put OpenAI annualized revenue near $50B, below estimates; Bloomberg countered that OpenAI expects $70B+ by year-end. Software names that sold off on AI-disruption fears rallied back.",
-      "why": "AI-capex sentiment is hostage to OpenAI's revenue trajectory. A real shortfall would hit AI infrastructure and semis hardest; the conflicting reports mean this is unresolved, not settled."
-    },
-    {
-      "title": "Verizon, AT&T, T-Mobile Each Fall 7%+ on SpaceX Wireless Push",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "The three carriers dropped more than 7% as investors treated SpaceX's low-band spectrum deal as a credible subscriber threat. SpaceX (SPCX) rose 1.6%, about 8% above its $150 IPO price.",
-      "why": "A rare rotation story: satellite-to-device competition re-rates telecom incumbents. Spectrum owners and tower names (CCI +10%, AMT +7%) moved the other way, though no catalyst was reported for the tower move."
-    },
-    {
-      "title": "Oil Slips as Trump Says No Iran Strike Before Midterms",
+      "title": "Iran Escalates Near Hormuz, Rejects US Peace Terms as 'Inadequate'",
       "tags": [
         {
           "label": "Energy",
@@ -132,60 +106,66 @@ const D = {
           "cls": "tag-geo"
         }
       ],
-      "summary": "WTI around $91, Brent above $100. Traders doubt the conflict is ending: Hormuz traffic is down, tanker freight is at records, and a hurricane has shut in Gulf output.",
-      "why": "Downside in crude looks capped by physical supply stress. Falling oil helps long-duration tech and eases inflation expectations, but E&Ps keep a floor."
+      "summary": "Iran stepped up attacks on shipping near the Strait of Hormuz over the weekend and threatened regional digital infrastructure. Reports say Tehran rejected Washington's latest proposals; prediction markets show low odds of near-term resolution. Separately, Houthi strikes on Saudi Arabia's main airport killed 12, and Trump suggested the US may join Saudi attacks on the Houthis.",
+      "why": "Supply-risk premium stays in crude with WTI back near $93. That supports XOM/CVX/E&Ps but pressures transports (Delta cut guidance on fuel Friday) and feeds inflation fears into Wednesday's CPI."
     },
     {
-      "title": "Delta Misses Q3 and Cuts Guidance on Fuel",
+      "title": "Bond Yields, Not Oil, Now Driving the Tape",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "10-yr Treasury yield is 5.24% and rising globally; mortgage rates have surged. Fed funds futures price ~19% odds of a hike after the October meeting. CPI and the Beige Book come Wednesday, retail sales Thursday.",
+      "why": "Higher-for-longer rates compress valuations on long-duration AI/tech names. A hot CPI would be the main downside catalyst for your Tech/AI exposure this week."
+    },
+    {
+      "title": "Big Bank Earnings Start Tuesday: JPM, GS, C",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "No notable earnings or economic data today. JPMorgan, Goldman Sachs and Citi report Tuesday; BofA, Wells Fargo and Morgan Stanley follow this week.",
+      "why": "First read on credit quality and capital markets activity at 5%+ yields. Expect a quiet, range-bound session today as positioning waits for these prints."
+    },
+    {
+      "title": "Oil Eased Overnight on Russia-Ukraine Energy-Strike Pause Claim",
       "tags": [
         {
           "label": "Energy",
           "cls": "tag-energy"
         },
         {
-          "label": "Macro",
-          "cls": "tag-macro"
+          "label": "Geo",
+          "cls": "tag-geo"
         }
       ],
-      "summary": "Adj. EPS $1.72 vs $1.82 expected; revenue $17.58B vs $17.76B. Higher fuel costs drove the guidance cut.",
-      "why": "The first hard read on how $90+ oil is hitting earnings. Expect more fuel-cost warnings from transports as earnings season starts."
+      "summary": "Trump said Russia and Ukraine agreed to stop attacking each other's energy facilities; Zelenskiy said he was still awaiting details and Russia did not comment. ICE gasoil fell 3% to $1,436/bbl.",
+      "why": "If confirmed, more Russian supply is a headwind for oil. Unconfirmed, so treat the overnight dip as fragile given Gulf risks."
     },
     {
-      "title": "Humana +12% on Improved 2027 Medicare Star Ratings",
+      "title": "AI Trade Backdrop: S&P +13.5% YTD, Led by AI",
       "tags": [
         {
-          "label": "Healthcare",
-          "cls": "tag-macro"
+          "label": "Tech",
+          "cls": "tag-tech"
         }
       ],
-      "summary": "HUM jumped ~12% to about $435 after CMS ratings put 95% of members in plans rated 4+ stars, and it reaffirmed FY26 adjusted EPS guidance. Moderna rose ~9% to its highest since 2021 on a NYT cancer-vaccine report.",
-      "why": "Large-cap, outside your Tech/Energy focus, so excluded from On the Radar. Useful as a read on rotation into beaten-down defensives."
+      "summary": "Ex-AI stocks, the US market has slightly lagged Europe's STOXX 600 (about 5.5% vs 5.6%). Worries about an AI bubble and debt persist while indexes sit near records.",
+      "why": "Index strength depends on a narrow AI leadership group, so Nasdaq futures lagging on a flat day is worth watching."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "FSLY",
-      "name": "Fastly",
-      "price": "$29.38",
-      "perf": "+16.15%",
-      "up": true,
-      "note": "Oppenheimer upgrade to Outperform, $35 target. An upgrade alone is not a vetted catalyst."
-    },
-    {
-      "ticker": "NN",
-      "name": "NextNav",
-      "price": "$12.34",
-      "perf": "+6.38%",
-      "up": true,
-      "note": "Spectrum-linked name moving with the SpaceX wireless headlines; volume only about 1.25x average."
-    },
-    {
-      "ticker": "VZ/T/TMUS",
-      "name": "US carriers",
-      "price": "n/a",
-      "perf": "-7%+",
+      "ticker": "NDX fut",
+      "name": "Nasdaq 100 futures",
+      "price": "31,036",
+      "perf": "-0.23%",
       "up": false,
-      "note": "SpaceX low-band spectrum deal seen as a subscriber threat."
+      "note": "Tech lags; QQQ pre-market -0.13% (~$750)."
     },
     {
       "ticker": "NVDA/AAPL/MSFT/AMD",
@@ -193,25 +173,17 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "FMP quote endpoints blocked on current plan and Bigdata credits exhausted, so no live prices."
+      "note": "FMP quote endpoints blocked on current plan and Bigdata credits exhausted, so no live prices or stock-specific news."
     }
   ],
   "energy_stocks": [
     {
-      "ticker": "DAL",
-      "name": "Delta Air Lines",
-      "price": "n/a",
-      "perf": "slipped",
-      "up": false,
-      "note": "Q3 miss and guidance cut on fuel costs; an oil-sensitivity read for transports."
-    },
-    {
-      "ticker": "AUGO",
-      "name": "Aura Minerals",
-      "price": "$91.33",
-      "perf": "+10.72%",
+      "ticker": "WTI",
+      "name": "Crude proxy",
+      "price": "$92.99",
+      "perf": "+1.24%",
       "up": true,
-      "note": "Prelim Q3 output 95,557 gold-equivalent oz, +29% y/y, with gold above $4,200."
+      "note": "Hormuz escalation supports E&Ps; Russia-Ukraine pause claim is the offset."
     },
     {
       "ticker": "XOM/CVX/EQT",
@@ -219,30 +191,23 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "No live quotes. WTI roughly flat to slightly lower; hurricane shut-ins and Hormuz stress support prices."
+      "note": "No live quotes (FMP plan limit)."
     }
   ],
   "watchlist": [
     {
-      "ticker": "FSLY",
-      "company": "Fastly",
-      "desc": "+16% on an analyst upgrade after a big run (52-week range 7.74 to 34.82). Momentum is real but the catalyst is an opinion; wait for a pullback or earnings confirmation.",
-      "change": "+16.15%",
-      "up": true
+      "ticker": "JPM/GS/C",
+      "company": "Big bank earnings (Tue)",
+      "desc": "Not a pick: the first hard read of earnings season and credit quality at 5%+ yields. Sets tone for rate-sensitive tech.",
+      "change": "n/a",
+      "up": false
     },
     {
-      "ticker": "NN",
-      "company": "NextNav",
-      "desc": "Sits at the center of the SpaceX spectrum story, but volume is only 1.25x average and the thesis depends on regulatory outcomes. Watch for a volume breakout.",
-      "change": "+6.38%",
-      "up": true
-    },
-    {
-      "ticker": "AUGO",
-      "company": "Aura Minerals",
-      "desc": "Production up 29% y/y with gold at $4,200+ ties to your commodities theme. Market cap ($7.7B) puts it above the radar ceiling and volume ran light, so this is a watch, not a pick.",
-      "change": "+10.72%",
-      "up": true
+      "ticker": "XOM/CVX",
+      "company": "Oil majors",
+      "desc": "Hormuz escalation keeps WTI near $93. Watch whether the Russia-Ukraine energy-strike pause is confirmed; that is the downside risk.",
+      "change": "n/a",
+      "up": false
     }
   ]
 };
