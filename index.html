@@ -9,38 +9,38 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Monday, October 12, 2026",
+  "date": "Tuesday, October 13, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX fut",
-      "value": "7,861",
-      "change": "+0.02%",
-      "up": true
+      "value": "~7,802",
+      "change": "-0.06%",
+      "up": false
     },
     {
       "label": "NDX fut",
-      "value": "31,036",
-      "change": "-0.23%",
+      "value": "n/a",
+      "change": "-0.71%",
       "up": false
     },
     {
       "label": "DOW fut",
-      "value": "51,943",
-      "change": "+0.03%",
+      "value": "n/a",
+      "change": "+0.84%",
       "up": true
     },
     {
       "label": "VIX",
-      "value": "15.51",
-      "change": "+4.51%",
+      "value": "n/a",
+      "change": "--",
       "up": false
     },
     {
       "label": "WTI",
-      "value": "$92.99",
-      "change": "+1.24%",
-      "up": true
+      "value": "$92.85",
+      "change": "-1.0%",
+      "up": false
     },
     {
       "label": "NG",
@@ -52,138 +52,158 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500 Futures",
-      "value": "7,861",
-      "change": "+0.02%",
-      "up": true,
-      "note": "Pre-market read (~6am ET). Flat tape ahead of Tuesday's bank earnings; no economic data or notable earnings today. US stocks are open for Columbus Day, but the bond market is closed."
+      "value": "~7,802",
+      "change": "-0.06%",
+      "up": false,
+      "note": "Reuters 8:43am ET: S&P E-minis -4.75 pts. Index flat while rotation is visible: Dow futures +440 (+0.84%) on bank earnings, Nasdaq 100 -218 (-0.71%) on a second day of chip selling."
     },
     {
       "label": "Nasdaq 100 Futures",
-      "value": "31,036",
-      "change": "-0.23%",
+      "value": "n/a",
+      "change": "-0.71%",
       "up": false,
-      "note": "Tech lags slightly. Dow futures 51,943 (+0.03%), Russell 2000 futures 2,821 (-0.04%). 10-yr yield 5.24% (Friday close), a 24-year-high zone. CME FedWatch shows ~19% odds of a hike after the October meeting."
+      "note": "Level unavailable (FMP quotes blocked). Chips sold off on reports of CXMT (China memory) advances. 10-yr yield eased to ~5.20% on softer inflation/jobs data cutting rate-hike bets."
     }
   ],
   "vix": {
-    "value": "15.51",
+    "value": "n/a",
     "pct": 31,
-    "note": "Up 4.5% but still low against a 5.24% 10-yr and an Iran/Hormuz standoff. Pricing looks complacent for the macro backdrop."
+    "note": "No VIX quote available (FMP blocked). Last read 15.51 Monday; gauge left at prior position. Dow-up/Nasdaq-down rotation suggests no panic."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "$92.99",
-      "change": "+1.24%",
-      "up": true,
-      "note": "Sources differ (Benzinga ~$92.58, +0.8%). Iran stepped up attacks near Hormuz and rejected US terms as 'inadequate'; offset by Trump saying Russia and Ukraine agreed to halt strikes on energy facilities (unconfirmed by Moscow)."
+      "value": "$92.85",
+      "change": "-1.0%",
+      "up": false,
+      "note": "TheStreet had $91.78 (-2.1%) at 7am ET; Reuters $92.85 (-1%) by 8:43am. Drags: administration temporarily eased Russian diesel restrictions. Support: Saudi-Houthi conflict, Riyadh airport suspension extended to Saturday."
     },
     {
       "label": "Brent Crude",
-      "value": "~$103",
-      "change": "n/a",
+      "value": "$105.19",
+      "change": "-1.4%",
       "up": false,
-      "note": "No live quote; reported near $103 per Yahoo's live blog. Sources conflict on direction."
+      "note": "Reuters 8:43am ET. Still near four-year highs."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Henry Hub quote unavailable (FMP plan blocks quotes). Gold ~$4,195 (-0.5%)."
+      "note": "Henry Hub quote unavailable. Gold futures $4,210 (+0.5%), silver $60.62 (+0.2%)."
     }
   ],
   "news": [
     {
-      "title": "Iran Escalates Near Hormuz, Rejects US Peace Terms as 'Inadequate'",
-      "tags": [
-        {
-          "label": "Energy",
-          "cls": "tag-energy"
-        },
-        {
-          "label": "Geo",
-          "cls": "tag-geo"
-        }
-      ],
-      "summary": "Iran stepped up attacks on shipping near the Strait of Hormuz over the weekend and threatened regional digital infrastructure. Reports say Tehran rejected Washington's latest proposals; prediction markets show low odds of near-term resolution. Separately, Houthi strikes on Saudi Arabia's main airport killed 12, and Trump suggested the US may join Saudi attacks on the Houthis.",
-      "why": "Supply-risk premium stays in crude with WTI back near $93. That supports XOM/CVX/E&Ps but pressures transports (Delta cut guidance on fuel Friday) and feeds inflation fears into Wednesday's CPI."
-    },
-    {
-      "title": "Bond Yields, Not Oil, Now Driving the Tape",
+      "title": "Bank Earnings: Goldman Beats Big, JPM and Wells Miss, Citi Beats but Slips",
       "tags": [
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "10-yr Treasury yield is 5.24% and rising globally; mortgage rates have surged. Fed funds futures price ~19% odds of a hike after the October meeting. CPI and the Beige Book come Wednesday, retail sales Thursday.",
-      "why": "Higher-for-longer rates compress valuations on long-duration AI/tech names. A hot CPI would be the main downside catalyst for your Tech/AI exposure this week."
+      "summary": "Goldman Sachs EPS $17.01 vs $13.02 est; equities revenue +72% to $6.44B; stock ~+3.5% premarket. JPMorgan EPS $5.57 vs $5.90 est ($5.75 ex-$658M securities losses), revenue +8% to $50.2B; shares ~-0.7%. Wells Fargo missed on net interest income (~-2.9%). Citi beat but traded ~-0.4%.",
+      "why": "Trading/dealmaking strength (GS) versus NII pressure (WFC) shows a capital-markets-driven quarter, not a lending-driven one. Funds are rotating into Dow-type value/financials and out of Nasdaq, which is the opposite of your Tech/AI exposure this morning."
     },
     {
-      "title": "Big Bank Earnings Start Tuesday: JPM, GS, C",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "No notable earnings or economic data today. JPMorgan, Goldman Sachs and Citi report Tuesday; BofA, Wells Fargo and Morgan Stanley follow this week.",
-      "why": "First read on credit quality and capital markets activity at 5%+ yields. Expect a quiet, range-bound session today as positioning waits for these prints."
-    },
-    {
-      "title": "Oil Eased Overnight on Russia-Ukraine Energy-Strike Pause Claim",
-      "tags": [
-        {
-          "label": "Energy",
-          "cls": "tag-energy"
-        },
-        {
-          "label": "Geo",
-          "cls": "tag-geo"
-        }
-      ],
-      "summary": "Trump said Russia and Ukraine agreed to stop attacking each other's energy facilities; Zelenskiy said he was still awaiting details and Russia did not comment. ICE gasoil fell 3% to $1,436/bbl.",
-      "why": "If confirmed, more Russian supply is a headwind for oil. Unconfirmed, so treat the overnight dip as fragile given Gulf risks."
-    },
-    {
-      "title": "AI Trade Backdrop: S&P +13.5% YTD, Led by AI",
+      "title": "Chip Selloff Extends on China CXMT Memory Reports",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "Ex-AI stocks, the US market has slightly lagged Europe's STOXX 600 (about 5.5% vs 5.6%). Worries about an AI bubble and debt persist while indexes sit near records.",
-      "why": "Index strength depends on a narrow AI leadership group, so Nasdaq futures lagging on a flat day is worth watching."
+      "summary": "Second straight day of semis weakness. Micron ~-4.8%, Western Digital ~-7.7% (UBS target cut), Seagate ~-7.3%, Sandisk ~-6%, Marvell ~-3%, AMD ~-1.9%, Nvidia ~-0.8%.",
+      "why": "Memory/storage names are taking the brunt; NVDA holding up relatively well says this is crowded-trade profit taking more than an AI-demand break. Still the main near-term risk to your semis holdings."
+    },
+    {
+      "title": "Oil Slips as US Eases Russian Diesel Curbs; Gulf Risk Persists",
+      "tags": [
+        {
+          "label": "Energy",
+          "cls": "tag-energy"
+        },
+        {
+          "label": "Geo",
+          "cls": "tag-geo"
+        }
+      ],
+      "summary": "WTI ~$92.85 (-1%), Brent ~$105 (-1.4%). Saudi Arabia extended the Riyadh airport suspension to Saturday after Houthi attacks; Houthi shelling killed five civilians in Taiz.",
+      "why": "A policy-driven supply add is capping crude, but Gulf escalation keeps the floor high. Energy equities (XOM/CVX/EQT) are supported while Brent holds above $100; a de-escalation headline is the downside risk."
+    },
+    {
+      "title": "Yields Ease: 10-yr ~5.20% Ahead of CPI, PPI, Retail Sales",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "10-yr fell ~0.9% to ~5.20%; 30-yr ~5.55%. Softer inflation and weak jobs data trimmed rate-hike bets. September CPI, PPI and retail sales land this week; Fed's Barkin and Collins speak today.",
+      "why": "Falling yields help long-duration tech, but a hot CPI would reverse that quickly. S&P Q3 earnings are tracking ~+30.6% growth (LSEG), led by tech and energy, which supports both of your sectors."
+    },
+    {
+      "title": "UnitedHealth Beats and Raises",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "UNH ~+4.4% to +5% premarket after beating Q3 estimates and raising its 2026 profit forecast. J&J -2.2% despite a profit beat.",
+      "why": "Defensive/healthcare strength adds to the rotation away from tech. Not a direct holding read-through, but a reason the Dow outperforms today."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "NDX fut",
-      "name": "Nasdaq 100 futures",
-      "price": "31,036",
-      "perf": "-0.23%",
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "price": "n/a",
+      "perf": "~-0.8%",
       "up": false,
-      "note": "Tech lags; QQQ pre-market -0.13% (~$750)."
+      "note": "Premarket per Reuters; holding up better than peers."
     },
     {
-      "ticker": "NVDA/AAPL/MSFT/AMD",
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "price": "n/a",
+      "perf": "~-1.9%",
+      "up": false,
+      "note": "Premarket per Reuters."
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron",
+      "price": "n/a",
+      "perf": "~-4.8%",
+      "up": false,
+      "note": "Hit by China CXMT competition reports."
+    },
+    {
+      "ticker": "WDC/STX",
+      "name": "Western Digital / Seagate",
+      "price": "n/a",
+      "perf": "~-7%",
+      "up": false,
+      "note": "WDC -7.7% on UBS target cut; STX -7.3%."
+    },
+    {
+      "ticker": "AAPL/MSFT",
       "name": "Mega-cap quotes",
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "FMP quote endpoints blocked on current plan and Bigdata credits exhausted, so no live prices or stock-specific news."
+      "note": "No quotes (FMP blocked)."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "WTI",
       "name": "Crude proxy",
-      "price": "$92.99",
-      "perf": "+1.24%",
-      "up": true,
-      "note": "Hormuz escalation supports E&Ps; Russia-Ukraine pause claim is the offset."
+      "price": "$92.85",
+      "perf": "-1.0%",
+      "up": false,
+      "note": "Brent $105.19 (-1.4%). Russian diesel easing offsets Gulf risk."
     },
     {
       "ticker": "XOM/CVX/EQT",
@@ -191,21 +211,28 @@ const D = {
       "price": "n/a",
       "perf": "n/a",
       "up": false,
-      "note": "No live quotes (FMP plan limit)."
+      "note": "No live quotes (FMP plan limit). Expect a mild drag from crude, supported by Brent above $100."
     }
   ],
   "watchlist": [
     {
-      "ticker": "JPM/GS/C",
-      "company": "Big bank earnings (Tue)",
-      "desc": "Not a pick: the first hard read of earnings season and credit quality at 5%+ yields. Sets tone for rate-sensitive tech.",
-      "change": "n/a",
+      "ticker": "NVDA",
+      "company": "Nvidia",
+      "desc": "Fell only ~0.8% while memory peers dropped 5-8%. Watch whether it holds or gets dragged on the CXMT story; CPI Wednesday is the bigger swing factor.",
+      "change": "~-0.8%",
       "up": false
+    },
+    {
+      "ticker": "GS",
+      "company": "Goldman Sachs",
+      "desc": "Equities revenue +72% and EPS well above consensus. Not a Tech/AI pick, but the cleanest read on capital-markets strength this earnings season.",
+      "change": "~+3.5%",
+      "up": true
     },
     {
       "ticker": "XOM/CVX",
       "company": "Oil majors",
-      "desc": "Hormuz escalation keeps WTI near $93. Watch whether the Russia-Ukraine energy-strike pause is confirmed; that is the downside risk.",
+      "desc": "Brent $105 supports earnings; downside trigger is Gulf de-escalation or more Russian supply.",
       "change": "n/a",
       "up": false
     }
