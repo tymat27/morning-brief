@@ -9,31 +9,31 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Monday, October 19, 2026",
-  "sentiment": "risk-on",
+  "date": "Tuesday, October 20, 2026",
+  "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,698.79",
+      "value": "7,681.84",
+      "change": "-0.12%",
+      "up": false
+    },
+    {
+      "label": "NDX",
+      "value": "n/a (Nasdaq Comp 26,236)",
+      "change": "-0.74%",
+      "up": false
+    },
+    {
+      "label": "DOW",
+      "value": "52,229.22",
       "change": "+0.51%",
       "up": true
     },
     {
-      "label": "NDX",
-      "value": "n/a (QQQ 718.43)",
-      "change": "+1.22%",
-      "up": true
-    },
-    {
-      "label": "DOW",
-      "value": "51,953.66",
-      "change": "-0.09%",
-      "up": false
-    },
-    {
       "label": "VIX",
-      "value": "17.99",
-      "change": "-10.0%",
+      "value": "18.60",
+      "change": "+0.9%",
       "up": false
     },
     {
@@ -52,23 +52,23 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500 (early session)",
-      "value": "7,698.79",
-      "change": "+0.51%",
-      "up": true,
-      "note": "Reclaiming part of Friday's -1.09% (7,659.44 close). Day range 7,695-7,706; 50-day avg 7,706, so the index is testing it. Futures feed unavailable; this is the cash index quote."
+      "value": "7,681.84",
+      "change": "-0.12%",
+      "up": false,
+      "note": "Slipping back below its 50-day avg (7,705) after yesterday's failed reclaim (prior close 7,690.73). Day range 7,673-7,686. Futures feed unavailable; cash index quote."
     },
     {
-      "label": "Nasdaq 100 proxy (QQQ)",
-      "value": "$718.43",
-      "change": "+1.22%",
-      "up": true,
-      "note": "Tech-led bounce after Friday's -2.1% Nasdaq rout. Dow flat (-0.09%), the reverse of last week's split. SOXL +8.5% implies semis rebounding roughly 2.5-3%."
+      "label": "Nasdaq Composite (QQQ quote blocked)",
+      "value": "26,236",
+      "change": "-0.74%",
+      "up": false,
+      "note": "Monday's tech bounce is fading; Nasdaq is lower while the Dow is +0.51% to 52,229 (rotation out of tech into cyclicals/value). Below its 50-day avg (26,626)."
     }
   ],
   "vix": {
-    "value": "17.99",
-    "pct": 36,
-    "note": "VIX -10% from 19.99, giving back about half of Friday's spike. Still above the 15.5 reading of 13 Oct and its 50-day avg (15.6). 10-yr and rate-hike odds not refreshed today (last: 5.09%, 74% Dec hike)."
+    "value": "18.60",
+    "pct": 37,
+    "note": "VIX +0.9% to 18.60 after yesterday's drop; above its 50-day avg (15.7) and 200-day (18.1). Not a calm tape. Rates/hike odds not refreshed (last: 10-yr 5.09%, 74% Dec hike)."
   },
   "commodities": [
     {
@@ -76,153 +76,97 @@ const D = {
       "value": "n/a",
       "change": "--",
       "up": true,
-      "note": "Commodity quotes blocked on current FMP plan. Last verified Brent $109.86 (Fri). Check Sunday-night open manually."
+      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
     },
     {
       "label": "Brent Crude",
       "value": "n/a",
       "change": "--",
       "up": true,
-      "note": "Not refreshed. XLE flat (-0.05%) suggests no big oil move overnight, but that is an inference."
+      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Not available."
+      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
     }
   ],
   "news": [
     {
-      "title": "Tech Bounces: QQQ +1.2%, Semis Rebound, VIX -10%",
+      "title": "Tech Bounce Fades: Nasdaq -0.74%, Dow +0.5%",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "Early session: SPX +0.51%, QQQ +1.22%, SOXL +8.5%, AMZN +2.4%, INTC +4.6% to $93.98. CoreWeave +3.0% to $63.24 and Nebius +3.1% to $170.64 after both fell ~11-12% Friday. NVDA +0.3% to $214.80.",
-      "why": "A first bounce after a -4.5% Nasdaq week is not a trend change. The neocloud credit worry (CRWV >$51B debt) is unresolved; a +3% move on a stock down 25% in a week is relief, not a fix. Watch whether the SPX holds its 50-day (~7,706) at the close."
+      "summary": "Early session: S&P 500 -0.12% (7,681.84), Nasdaq Composite -0.74% (26,236), Dow +0.51% (52,229). Yesterday's tech-led rebound did not follow through.",
+      "why": "A one-day bounce that reverses is the pattern of a market still de-risking AI/neocloud exposure. The S&P is back under its 50-day (7,705); a close below Friday's 7,659 would confirm the bounce failed."
     },
     {
-      "title": "Rate and Credit Overhang Unchanged",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "Last verified: 10-yr 5.09%, December hike odds 74.3%, FY26 deficit $1.99T. Not refreshed today (news and rates feeds were unavailable this run).",
-      "why": "Hike pricing is what compresses tech multiples. Any hot data or weak auction this week reopens the downside; the bounce is vulnerable until rates stabilize."
-    },
-    {
-      "title": "Earnings Week: Netflix Tue, Meta and Tesla Wed",
+      "title": "Earnings Week: Netflix Today, Meta and Tesla Wednesday",
       "tags": [
         {
           "label": "Earnings",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Netflix (-1.2% to $69.70) reports Oct 20; Meta and Tesla (TSLA $358.06, +0.9%) report Oct 21. Carried from last briefing; dates not re-verified.",
-      "why": "Meta's capex guidance is the direct read on the AI-spend debate that drove last week's selloff."
+      "summary": "Carried from prior briefing; dates not re-verified this run (news feeds unavailable: FMP news plan-blocked, Bigdata.com out of credits).",
+      "why": "Meta's capex guidance is the direct read on the AI-spend debate behind the recent selloff; positioning into the print is the risk."
+    },
+    {
+      "title": "Data Gap: Rates, Oil and Headlines Not Refreshed",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Last verified: 10-yr 5.09%, December hike odds 74%, Brent ~$110. No live news or commodity source worked today.",
+      "why": "Hike pricing compresses tech multiples; treat tech/energy reads as stale until you check rates and crude manually."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "NVDA",
-      "name": "Nvidia",
-      "price": "$214.80",
-      "perf": "+0.31%",
-      "up": true,
-      "note": "Laggard in the bounce after holding up Friday; relative strength cuts both ways."
-    },
-    {
-      "ticker": "INTC",
-      "name": "Intel",
-      "price": "$93.98",
-      "perf": "+4.60%",
-      "up": true,
-      "note": "Leading the chip rebound."
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave",
-      "price": "$63.24",
-      "perf": "+3.01%",
-      "up": true,
-      "note": "Relief bounce; debt overhang intact."
-    },
-    {
-      "ticker": "NBIS",
-      "name": "Nebius",
-      "price": "$170.64",
-      "perf": "+3.12%",
-      "up": true,
-      "note": "Neocloud bounce after Friday's ~-11%."
-    },
-    {
-      "ticker": "SMCI",
-      "name": "Super Micro",
-      "price": "$32.59",
-      "perf": "+3.04%",
-      "up": true,
-      "note": "AI server beta."
-    },
-    {
-      "ticker": "AMZN",
-      "name": "Amazon",
-      "price": "$255.91",
-      "perf": "+2.36%",
-      "up": true,
-      "note": "Mega-cap leader today. AAPL/MSFT/AMD quotes unavailable (plan limit)."
+      "ticker": "IXIC",
+      "name": "Nasdaq Composite",
+      "price": "26,236",
+      "perf": "-0.74%",
+      "up": false,
+      "note": "Single-stock quotes (NVDA, INTC, CRWV, etc.) blocked on FMP plan today; index only."
     }
   ],
   "energy_stocks": [
     {
-      "ticker": "XLE",
-      "name": "Energy Select Sector SPDR",
-      "price": "$68.21",
-      "perf": "-0.05%",
-      "up": false,
-      "note": "Flat after Friday's ~+2.5% sector gain; rotation into tech pausing energy."
-    },
-    {
-      "ticker": "XOM",
-      "name": "Exxon Mobil",
+      "ticker": "n/a",
+      "name": "Energy equities",
       "price": "n/a",
       "perf": "n/a",
       "up": true,
-      "note": "Quote blocked on plan."
-    },
-    {
-      "ticker": "CVX",
-      "name": "Chevron",
-      "price": "n/a",
-      "perf": "n/a",
-      "up": true,
-      "note": "Quote blocked on plan. EQT not available."
+      "note": "XLE/XOM/CVX quotes blocked on plan; not refreshed."
     }
   ],
   "watchlist": [
     {
       "ticker": "CRWV",
       "company": "CoreWeave",
-      "desc": "Up 3% off a -25% week. Thesis is entirely about financing: a debt raise or bond stabilization confirms the bounce, further bond weakness kills it.",
-      "change": "+3.0%",
+      "desc": "Prices not refreshed (quotes blocked). Thesis unchanged: financing news (debt raise/bond stabilization) confirms the bounce; bond weakness kills it. Neocloud names are the high-beta tell if Nasdaq keeps sliding.",
+      "change": "n/a",
       "up": true
     },
     {
       "ticker": "NVDA",
       "company": "Nvidia",
-      "desc": "Held up Friday but is lagging today's chip bounce. If it fails to participate while INTC and SOXL rip, rotation is happening inside semis.",
-      "change": "+0.3%",
+      "desc": "Prices not refreshed. Watch whether Nvidia holds up as Nasdaq fades; relative weakness would signal broader AI de-risking.",
+      "change": "n/a",
       "up": true
     },
     {
       "ticker": "META",
       "company": "Meta Platforms",
-      "desc": "Reports Wednesday. Capex guidance sets the tone for the whole AI-spend trade; positioning into the print is the risk.",
+      "desc": "Reports Wednesday (date not re-verified). Capex guidance sets the tone for the AI-spend trade.",
       "change": "n/a",
       "up": true
     }
