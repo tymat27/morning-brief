@@ -9,31 +9,37 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Wednesday, October 21, 2026",
+  "date": "Monday, October 26, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
-      "label": "SPX",
-      "value": "7,681.84",
-      "change": "-0.12%",
+      "label": "SPY",
+      "value": "765.67",
+      "change": "+0.75%",
+      "up": true
+    },
+    {
+      "label": "QQQ",
+      "value": "n/a",
+      "change": "--",
       "up": false
     },
     {
-      "label": "NDX",
-      "value": "n/a (Nasdaq Comp 26,236)",
-      "change": "-0.74%",
-      "up": false
+      "label": "NVDA",
+      "value": "216.54",
+      "change": "+2.64%",
+      "up": true
     },
     {
-      "label": "DOW",
-      "value": "52,229.22",
-      "change": "+0.51%",
+      "label": "AMD",
+      "value": "532.79",
+      "change": "+3.10%",
       "up": true
     },
     {
       "label": "VIX",
-      "value": "18.60",
-      "change": "+0.9%",
+      "value": "n/a",
+      "change": "--",
       "up": false
     },
     {
@@ -41,133 +47,178 @@ const D = {
       "value": "n/a",
       "change": "--",
       "up": false
-    },
-    {
-      "label": "NG",
-      "value": "n/a",
-      "change": "--",
-      "up": false
     }
   ],
   "snapshot": [
     {
-      "label": "S&P 500 (early session)",
-      "value": "7,681.84",
-      "change": "-0.12%",
-      "up": false,
-      "note": "Slipping back below its 50-day avg (7,705) after yesterday's failed reclaim (prior close 7,690.73). Day range 7,673-7,686. Futures feed unavailable; cash index quote."
+      "label": "S&P 500 proxy (SPY ETF, ~3:20pm ET)",
+      "value": "765.67",
+      "change": "+0.75%",
+      "up": true,
+      "note": "Prior close 759.97 (Fri), Thu 763.96, Wed 773.09. Rebounds Friday's low but still under Wednesday's level. Index and futures feeds are plan-blocked; SPY is the proxy. Run fired mid-afternoon, so these are intraday, not pre-market."
     },
     {
-      "label": "Nasdaq Composite (QQQ quote blocked)",
-      "value": "26,236",
-      "change": "-0.74%",
+      "label": "Nasdaq proxy",
+      "value": "n/a",
+      "change": "--",
       "up": false,
-      "note": "Monday's tech bounce is fading; Nasdaq is lower while the Dow is +0.51% to 52,229 (rotation out of tech into cyclicals/value). Below its 50-day avg (26,626)."
+      "note": "QQQ history blocked. Mega-cap tech tells: NVDA +2.6%, AMD +3.1%, MSFT +1.4%, AAPL -1.1%."
     }
   ],
   "vix": {
-    "value": "18.60",
-    "pct": 37,
-    "note": "VIX +0.9% to 18.60 after yesterday's drop; above its 50-day avg (15.7) and 200-day (18.1). Not a calm tape. Rates/hike odds not refreshed (last: 10-yr 5.09%, 74% Dec hike)."
+    "value": "n/a",
+    "pct": 40,
+    "note": "VIX not available this run (index feed blocked). Gauge left at last known level (~19.7 on Oct 22); do not read it as current."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
       "value": "n/a",
       "change": "--",
-      "up": true,
-      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
+      "up": false,
+      "note": "Commodity quotes blocked on FMP plan."
     },
     {
       "label": "Brent Crude",
       "value": "n/a",
       "change": "--",
-      "up": true,
-      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
+      "up": false,
+      "note": "Not refreshed. Last verified $109.86 (10/16)."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "Commodity quotes blocked on current FMP plan; not refreshed. Last verified Brent $109.86 (Fri 10/16)."
+      "note": "Not refreshed. Gas producer RRC +16.4% today on 7.2x volume suggests a gas-price or company-specific catalyst; cause unverified."
     }
   ],
   "news": [
     {
-      "title": "Prices Are Stale: Index Levels Below Are Tuesday's Early-Session Data",
+      "title": "Tech Rebounds After Thursday's Selloff: NVDA +2.6%, AMD +3.1%",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "FMP index/quote/news/commodity endpoints are plan-blocked and Bigdata.com is out of credits, so no live Oct 21 levels were available. Verified Tuesday 10/20 Nasdaq sector averages: Healthcare +2.04%, Real Estate +1.44%, Financials +1.13%, Industrials +0.79%, Technology +0.33%, Energy -0.76%, Comm Services -0.52%. Super Micro (SMCI) was the day's notable AI-hardware mover at +14.0% to $37.03 on 17.5M shares so far (avg 48.5M); catalyst not verified.",
-      "why": "Energy lagging while healthcare/financials led fits the rotation-out-of-tech pattern. Treat every index and VIX number on this page as the prior session until a data source is restored."
+      "summary": "SPY is +0.75% at 765.67 vs Friday's 759.97. NVDA 216.54 (Fri 210.96; volume 63M vs 125M on the Oct 22 selloff day), AMD 532.79 (Fri 516.79), MSFT 531.76 (+1.4%). AAPL is the laggard at 343.93 (-1.1%). NVDA is still below its Oct 21 close of 221.97 and AMD well below 552.72.",
+      "why": "A partial retrace on falling volume is a bounce, not a reversal. The Oct 21 closes are the levels that would show the AI de-risking is over; neither NVDA nor AMD has reclaimed them."
     },
     {
-      "title": "Earnings Week: Netflix Today, Meta and Tesla Wednesday",
-      "tags": [
-        {
-          "label": "Earnings",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "Carried from prior briefing; dates not re-verified this run (news feeds unavailable: FMP news plan-blocked, Bigdata.com out of credits).",
-      "why": "Meta's capex guidance is the direct read on the AI-spend debate behind the recent selloff; positioning into the print is the risk."
-    },
-    {
-      "title": "Data Gap: Rates, Oil and Headlines Not Refreshed",
+      "title": "Surgery Partners +47% on Take-Private Deal (~$5.7B)",
       "tags": [
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Last verified: 10-yr 5.09%, December hike odds 74%, Brent ~$110. No live news or commodity source worked today.",
-      "why": "Hike pricing compresses tech multiples; treat tech/energy reads as stale until you check rates and crude manually."
+      "summary": "SGRY trades 23.24 on ~27x average volume after reports of a take-private by a Bon Secours-affiliated buyer (HealthSpan Partners), headline value $5.7B; one headline cites $23.50/share. Not verified against a primary filing.",
+      "why": "Healthcare, outside your focus sectors. Relevant as a signal that strategic/PE buyers are active in mid-caps, but upside is now capped near the offer price."
+    },
+    {
+      "title": "Natural Gas Producer RRC +16.4% on 7x Volume",
+      "tags": [
+        {
+          "label": "Energy",
+          "cls": "tag-energy"
+        }
+      ],
+      "summary": "Range Resources is 52.97 (+7.45), at its 52-week high (range 32.68-53.65) on 20.8M shares vs 2.87M average. Catalyst not found: web search returned only stale earnings articles.",
+      "why": "A move this size in a $12B gas producer is either a gas-price spike or deal news. Check NG and peers (EQT) before chasing; EQT history was plan-blocked."
+    },
+    {
+      "title": "Data Gap: News, Rates, Oil, VIX Not Refreshed",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "FMP quotes/news/commodities/indexes are plan-blocked and Bigdata.com is out of credits. Prices above come from the FMP daily chart endpoint and web search only.",
+      "why": "Last verified macro: 10-yr 5.09%, 74% December hike odds (Oct 22). Treat as stale."
     }
   ],
   "tech_stocks": [
     {
-      "ticker": "IXIC",
-      "name": "Nasdaq Composite",
-      "price": "26,236",
-      "perf": "-0.74%",
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "price": "216.54",
+      "perf": "+2.64%",
+      "up": true,
+      "note": "Fri 210.96. Oct 21 close 221.97 is the reclaim level."
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "price": "532.79",
+      "perf": "+3.10%",
+      "up": true,
+      "note": "Fri 516.79. Oct 21 close 552.72; Oct 22 low-close 507.93."
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "price": "531.76",
+      "perf": "+1.38%",
+      "up": true,
+      "note": "Fri 524.51; back near Oct 21 close of 532.95."
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "price": "343.93",
+      "perf": "-1.09%",
       "up": false,
-      "note": "Single-stock quotes (NVDA, INTC, CRWV, etc.) blocked on FMP plan today; index only."
+      "note": "Fri 347.73. Not participating in the rebound."
     }
   ],
   "energy_stocks": [
     {
-      "ticker": "n/a",
-      "name": "Energy equities",
-      "price": "n/a",
-      "perf": "n/a",
+      "ticker": "XOM",
+      "name": "Exxon Mobil",
+      "price": "184.48",
+      "perf": "+0.69%",
       "up": true,
-      "note": "XLE/XOM/CVX quotes blocked on plan; not refreshed."
+      "note": "Fri 183.21; up from 178.09 on Oct 21."
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "price": "232.36",
+      "perf": "-0.36%",
+      "up": false,
+      "note": "Fri 233.21."
+    },
+    {
+      "ticker": "RRC",
+      "name": "Range Resources",
+      "price": "52.97",
+      "perf": "+16.39%",
+      "up": true,
+      "note": "7.2x avg volume, at 52-week high. Catalyst unverified. EQT quote blocked."
     }
   ],
   "watchlist": [
     {
-      "ticker": "CRWV",
-      "company": "CoreWeave",
-      "desc": "Prices not refreshed (quotes blocked). Thesis unchanged: financing news (debt raise/bond stabilization) confirms the bounce; bond weakness kills it. Neocloud names are the high-beta tell if Nasdaq keeps sliding.",
-      "change": "n/a",
-      "up": true
-    },
-    {
       "ticker": "NVDA",
       "company": "Nvidia",
-      "desc": "Prices not refreshed. Watch whether Nvidia holds up as Nasdaq fades; relative weakness would signal broader AI de-risking.",
-      "change": "n/a",
+      "desc": "Bounce on lower volume. A close above 221.97 would be the first real sign the AI selloff is over; below Friday's 210.96 invalidates it.",
+      "change": "+2.64%",
       "up": true
     },
     {
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "desc": "Reports Wednesday (date not re-verified). Capex guidance sets the tone for the AI-spend trade.",
-      "change": "n/a",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "desc": "Highest-beta name in the group (+3.1%) and still 3.6% under its Oct 21 close. Moves harder than NVDA in both directions.",
+      "change": "+3.10%",
+      "up": true
+    },
+    {
+      "ticker": "RRC",
+      "company": "Range Resources",
+      "desc": "Gas exposure fits your energy focus, but a 16% day at a 52-week high with no confirmed catalyst is a chase. Find the cause first.",
+      "change": "+16.39%",
       "up": true
     }
   ]
