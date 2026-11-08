@@ -9,13 +9,13 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Tuesday, November 3, 2026",
+  "date": "Friday, November 6, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,555.60",
-      "change": "+0.19%",
+      "value": "7,388.02",
+      "change": "+0.47%",
       "up": true
     },
     {
@@ -26,20 +26,20 @@ const D = {
     },
     {
       "label": "DOW",
-      "value": "51,693.30",
-      "change": "-0.56%",
+      "value": "51,451.67",
+      "change": "-0.14%",
       "up": false
     },
     {
       "label": "VIX",
-      "value": "20.94",
-      "change": "-0.99%",
+      "value": "25.65",
+      "change": "-8.98%",
       "up": false
     },
     {
       "label": "Brent",
-      "value": "103.66",
-      "change": "-1.06%",
+      "value": "97.38",
+      "change": "-0.93%",
       "up": false
     },
     {
@@ -51,24 +51,24 @@ const D = {
   ],
   "snapshot": [
     {
-      "label": "S&P 500 (index, early session)",
-      "value": "7,555.60",
-      "change": "+0.19%",
+      "label": "S&P 500 (index, midday)",
+      "value": "7,388.02",
+      "change": "+0.47%",
       "up": true,
-      "note": "Prev close 7,541.40; range 7,545-7,562. Still below the 50-day (7,694) and 3.7% under the 52-wk high 7,844.52. Futures feed plan-blocked, so this is the index print."
+      "note": "Prev close 7,353.73; range 7,369.55-7,444.20. Bouncing after yesterday's flush but still below its 50-day (7,687) and only 0.9% above the 200-day (7,323). Futures feed unavailable; this is the index print at ~1:20pm ET."
     },
     {
       "label": "Nasdaq 100",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "NDX feed plan-blocked. Tech tells: NVDA +3.0%, AMD +4.6%, MSFT +0.3%, AAPL -3.1%. Dow -0.56% (51,693) diverges from the S&P bounce."
+      "note": "NDX feed plan-blocked. Tech tells: NVDA +2.3%, AMD +8.3%, MSFT -0.7%, AAPL -0.1%. Dow -0.14%."
     }
   ],
   "vix": {
-    "value": "20.94",
-    "pct": 42,
-    "note": "VIX 20.94, -1.0% (range 20.52-21.91). Holding above the 50-day (16.29) and 200-day (18.26): fear has not unwound after yesterday's jump."
+    "value": "25.65",
+    "pct": 51,
+    "note": "VIX 25.65, -9.0% from yesterday's 28.18 close (range 23.49-27.76). Off the highs but still far above the 50-day (16.70) and 200-day (18.35): fear is easing, not gone."
   },
   "commodities": [
     {
@@ -80,10 +80,10 @@ const D = {
     },
     {
       "label": "Brent Crude",
-      "value": "103.66",
-      "change": "-1.06%",
+      "value": "97.38",
+      "change": "-0.93%",
       "up": false,
-      "note": "Prev 104.77; range 100.82-107.24 (wide). Roughly at its 50-day (102.88). Cause not verified (news feeds down)."
+      "note": "Prev 98.29; range 96.65-100.92. Sitting on its 200-day (96.22); 50-day 103.77 overhead. Faded from a 100.92 spike. Cause not verified."
     },
     {
       "label": "Natural Gas",
@@ -95,100 +95,115 @@ const D = {
   ],
   "news": [
     {
-      "title": "Tech Bounces Off Lows, Apple Breaks the Other Way",
+      "title": "Stocks Stabilize: S&P 500 +0.5%, VIX Falls to 25.65",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "S&P 500 7,388.02 (+0.47%) off yesterday's 7,353.73 close; Dow 51,452 (-0.14%); VIX 25.65 vs 28.18.",
+      "why": "A dead-cat bounce versus a base is unresolved. The 200-day (7,323) is the line: a hold there with VIX sliding supports a bounce; a break reopens the selloff. Cause of the earlier drop is unverified."
+    },
+    {
+      "title": "Semis Bounce: AMD +8.3%, NVDA +2.3%",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "AI",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "AMD 437.83 (prev 404.40) on 29M shares; NVDA 185.80 (prev 181.60) on 113M shares, still 16% under its 50-day (220.64).",
+      "why": "Partial retracement of the semis unwind, not a trend change. AMD is back above its 200-day (415.00) but 20% under its 50-day (547). Trigger for either leg is unverified."
+    },
+    {
+      "title": "Mega-Cap Software and Hardware Flat to Soft",
       "tags": [
         {
           "label": "Tech",
           "cls": "tag-tech"
         }
       ],
-      "summary": "AMD +4.6% to 488.41 and NVDA +3.0% to 208.20 recoup part of yesterday's losses. AAPL -3.1% to 327.82, under its 50-day (333.62).",
-      "why": "Semis are bouncing but both remain below their 50-days (AMD 548, NVDA 221). A dead-cat bounce is the base case until they reclaim those. AAPL's break lowers the odds this is a clean risk-on day."
+      "summary": "MSFT 532.44 (-0.7%) and AAPL 343.75 (-0.1%), both holding above their 50-days (516 and 335).",
+      "why": "Lagging the semis bounce but intact. MSFT loses 516 or AAPL loses 335 and the quality-tech bid is cracking."
     },
     {
-      "title": "S&P Edges Up, VIX Stays Above 20",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "S&P 500 +0.19% to 7,555.60 while the Dow is -0.56%. VIX 20.94 is down only 1% after yesterday's 9% jump.",
-      "why": "Mixed breadth plus an elevated VIX means no all-clear. The 50-day (7,694) is overhead resistance; 7,312 (200-day) is the downside marker."
-    },
-    {
-      "title": "Energy Flat, Brent Slips to 103.66",
+      "title": "Energy Equities Edge Up While Brent Fades",
       "tags": [
         {
           "label": "Energy",
           "cls": "tag-energy"
         }
       ],
-      "summary": "XOM 179.63 (flat) and CVX 227.01 (-0.3%) stabilize after yesterday's selloff. Brent -1.1% with a very wide 100.82-107.24 range.",
-      "why": "Energy equities held yesterday's low while crude chops. Brent at its 50-day (102.88) is the line that matters for XOM/CVX."
+      "summary": "XOM 166.19 (+0.5%), CVX 213.87 (+0.4%); Brent 97.38 (-0.9%) after touching 100.92.",
+      "why": "Equities are firmer than crude, and Brent is pinned to its 200-day (96.22). A close under it would pressure the group; XOM is under its 50-day (168.64)."
     },
     {
-      "title": "Data Gap: Headlines, Rates and Earnings Still Not Retrieved",
+      "title": "Data Gap: Headlines Still Not Retrieved",
       "tags": [
         {
           "label": "Macro",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Bigdata.com is out of credits; FMP news, WTI, NG, NDX, EQT and small-cap quotes are plan-blocked. No verified headlines today.",
-      "why": "Causes of today's moves are unverified. Last verified macro (Oct 22): 10-yr 5.09%, 74% December hike odds. Stale; context only."
+      "summary": "Bigdata.com is out of credits; FMP news, WTI, NG, NDX, EQT and small-cap quotes are plan-blocked. Web search returned only 2025 articles, which I discarded.",
+      "why": "Treat the price action as fact and the explanations as unknown."
     }
   ],
   "tech_stocks": [
     {
       "ticker": "NVDA",
       "name": "Nvidia",
-      "price": "208.20",
-      "perf": "+3.04%",
+      "price": "185.80",
+      "perf": "+2.31%",
       "up": true,
-      "note": "Prev 202.06; below 50-day 221.50, above 200-day 204.46."
+      "note": "Prev 181.60; 50-day 220.64 and 200-day 204.66 both overhead; 52-wk low 164.27."
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "price": "488.41",
-      "perf": "+4.62%",
+      "price": "437.83",
+      "perf": "+8.27%",
       "up": true,
-      "note": "Prev 466.84; 50-day 548 is resistance."
+      "note": "Prev 404.40; reclaimed 200-day (415.00); 50-day 547.37; year high 658.52."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft",
-      "price": "508.77",
-      "perf": "+0.32%",
-      "up": true,
-      "note": "Prev 507.12; just under 50-day 513.39."
+      "price": "532.44",
+      "perf": "-0.65%",
+      "up": false,
+      "note": "Prev 535.93; year high 559.15; above 50-day 516.13."
     },
     {
       "ticker": "AAPL",
       "name": "Apple",
-      "price": "327.82",
-      "perf": "-3.10%",
+      "price": "343.75",
+      "perf": "-0.12%",
       "up": false,
-      "note": "Prev 338.32; lost 50-day 333.62."
+      "note": "Prev 344.17; year high 355.38; above 50-day 335.46."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "179.63",
-      "perf": "-0.02%",
-      "up": false,
-      "note": "Prev 179.67; year high 188.50; 50-day 168.05."
+      "price": "166.19",
+      "perf": "+0.54%",
+      "up": true,
+      "note": "Prev 165.30; below 50-day 168.64; above 200-day 155.44; year high 188.50."
     },
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "227.01",
-      "perf": "-0.33%",
-      "up": false,
-      "note": "Prev 227.77; year high 236.48."
+      "price": "213.87",
+      "perf": "+0.44%",
+      "up": true,
+      "note": "Prev 212.93; at 50-day 214.64; year high 236.48."
     },
     {
       "ticker": "EQT",
@@ -203,23 +218,23 @@ const D = {
     {
       "ticker": "AMD",
       "company": "Advanced Micro Devices",
-      "desc": "488.41, +4.6% bounce. Needs a reclaim of 512 to matter; 548 (50-day) is the fade zone.",
-      "change": "+4.62%",
+      "desc": "437.83, +8.3%, back above its 200-day (415.00). The hold is the first bullish tell; a close back under 415 means the bounce failed. 50-day (547) is the real resistance.",
+      "change": "+8.27%",
       "up": true
     },
     {
-      "ticker": "AAPL",
-      "company": "Apple",
-      "desc": "327.82, -3.1% through its 50-day (333.62). Reason unverified; watch whether it holds the 325 day low.",
-      "change": "-3.10%",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "desc": "532.44, -0.7%, relative strength intact. Support is the 50-day (516); that is the line for a Tech/AI core holding.",
+      "change": "-0.65%",
       "up": false
     },
     {
       "ticker": "XOM",
       "company": "Exxon Mobil",
-      "desc": "179.63, flat after -4%. Holds if Brent stays above 102.9 (its 50-day).",
-      "change": "-0.02%",
-      "up": false
+      "desc": "166.19, +0.5%, still under its 50-day (168.64) with Brent on its 200-day (96.22). Needs a reclaim of 168.6 to confirm; thesis weak below 164.",
+      "change": "+0.54%",
+      "up": true
     }
   ]
 };
