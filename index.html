@@ -9,37 +9,37 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Wednesday, November 11, 2026",
+  "date": "Thursday, November 12, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,577.35",
-      "change": "+0.75%",
-      "up": true
+      "value": "7,596.04",
+      "change": "-0.31%",
+      "up": false
     },
     {
       "label": "IXIC",
-      "value": "25,360.14",
-      "change": "+1.17%",
-      "up": true
+      "value": "25,345.39",
+      "change": "-0.47%",
+      "up": false
     },
     {
       "label": "DOW",
-      "value": "52,060.64",
-      "change": "-0.33%",
-      "up": false
+      "value": "52,508.11",
+      "change": "+0.04%",
+      "up": true
     },
     {
       "label": "VIX",
-      "value": "18.19",
-      "change": "-6.53%",
-      "up": false
+      "value": "18.31",
+      "change": "+4.69%",
+      "up": true
     },
     {
       "label": "Brent",
-      "value": "94.20",
-      "change": "+2.96%",
+      "value": "93.39",
+      "change": "+0.68%",
       "up": true
     },
     {
@@ -51,51 +51,85 @@ const D = {
   ],
   "snapshot": [
     {
-      "label": "S&P 500 (index, intraday)",
-      "value": "7,577.35",
-      "change": "+0.75%",
-      "up": true,
-      "note": "Prev close 7,520.93; range 7,571.88-7,603.52. Faded from the open (+1.05%). Still under the 50-day (7,673), above the 200-day (7,331). Index level, not futures."
+      "label": "S&P 500 (index, ~9:40 ET)",
+      "value": "7,596.04",
+      "change": "-0.31%",
+      "up": false,
+      "note": "Prev close 7,619.38. Opened at the low (7,550.84, -0.9%) on the Nvidia CEO news and has clawed back most of it. Still under the 50-day (7,673), above the 200-day (7,334). Index level, not futures."
     },
     {
-      "label": "Nasdaq Composite (intraday)",
-      "value": "25,360.14",
-      "change": "+1.17%",
-      "up": true,
-      "note": "Prev 25,065.87; reclaimed the 200-day (25,114) after closing below it Tuesday. Dow -0.33% and Russell 2000 about -0.7% at the open: the rally is narrow, AI-only."
+      "label": "Nasdaq Composite (~9:40 ET)",
+      "value": "25,345.39",
+      "change": "-0.47%",
+      "up": false,
+      "note": "Prev 25,466.19; low 25,068 (-1.6%) at the open, now back near the 200-day (25,123). Dow flat: this is an Nvidia-specific hit, not a broad selloff. AMD and Broadcom are up."
     }
   ],
   "vix": {
-    "value": "18.19",
-    "pct": 36,
-    "note": "VIX 18.19, -6.5% from 19.46 (range 18.08-18.96). Back near its 200-day (18.43), still above the 50-day (17.08)."
+    "value": "18.31",
+    "pct": 37,
+    "note": "VIX 18.31, +4.7% from 17.49 (range 18.13-19.34). Spiked to 19.34 at the open and faded. Right at its 200-day (18.43); not a panic reading."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "~86.6",
-      "change": "~+0.7%",
+      "value": "n/a",
+      "change": "--",
       "up": true,
-      "note": "From news reports only (TheStreet, early session); WTI quote blocked on FMP plan."
+      "note": "WTI quote plan-blocked on FMP; no reliable same-day web quote found."
     },
     {
       "label": "Brent Crude",
-      "value": "94.20",
-      "change": "+2.96%",
+      "value": "93.39",
+      "change": "+0.68%",
       "up": true,
-      "note": "Prev 91.49; bounced off a sub-$90 low. Driver: fading hopes for a quick US-Iran resolution plus a tanker reportedly hitting a mine in the Strait of Hormuz. Still under the 200-day (96.42)."
+      "note": "Prev 92.76; range 91.19-94.34. Gave back part of Wednesday's Hormuz-tanker pop and is now trying to hold 93. Still under the 200-day (96.55) and well under the 50-day (103.89)."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "NG quote blocked on FMP plan."
+      "note": "NG quote plan-blocked on FMP. EIA storage report is Friday (delayed by Veterans Day); last read was 1.4% above the 5-yr average."
     }
   ],
   "news": [
     {
-      "title": "CoreWeave Beats and Raises; Stock +20%, Lifts AI Complex",
+      "title": "Jensen Huang Resigns as Nvidia CEO; CFO Colette Kress Named Interim CEO",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "AI",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "Governance",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Nvidia's board said Huang resigned as President, CEO and director, effective immediately. CFO Colette Kress is interim CEO while staying CFO; ex-Synopsys CEO Harvey Jones becomes Nvidia's first Chair. The board is searching internally and externally for a permanent CEO. Follows a week of reports (WSJ/NYT) on a board probe into Huang's personal conduct, including an alleged link to a suspected Chinese intelligence asset. Q3 results stay on Tuesday, Nov 17.",
+      "why": "NVDA hit 148.81 at the open (-14%), a new 52-week low, then bounced to ~160 (-8%) on 206M shares in the first 10 minutes. Removing the founder removes the governance unknown but creates a strategy unknown. Watch whether customers or suppliers (TSMC, hyperscalers) say anything before Nov 17; the earnings call is now the first test of Kress as CEO."
+    },
+    {
+      "title": "Money Rotates Into AMD and Broadcom",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "AI",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "AVGO +5.8% to 365.19 and AMD +3.3% to 571.23 while NVDA falls. No company-specific news found for either; this reads as investors swapping within AI chips rather than leaving them. CoreWeave gave back about 8% after Wednesday's +20% beat-and-raise pop.",
+      "why": "This is the healthiest sign in the tape: the AI capex story is not being questioned, only who leads it. AMD is now above its 50-day (550), the level it failed at yesterday. If the rotation holds into the close, the Nasdaq hit stays contained."
+    },
+    {
+      "title": "Nebius Sales Up 571% but Pushes Out $7B Run-Rate Target; Stock -11%",
       "tags": [
         {
           "label": "Tech",
@@ -110,11 +144,11 @@ const D = {
           "cls": "tag-macro"
         }
       ],
-      "summary": "Q3 revenue about $3.66B (+168% YoY) vs $3.54B consensus; net loss $709M ($1.27/sh). Backlog $132.5B. 2026 revenue guide raised to $13.0-13.3B (consensus $12.86B). Plans GPU-backed loans at roughly 7-7.5% and about $9B of customer prepayments; CEO says no unsecured debt at current yields.",
-      "why": "The bear case on AI infrastructure was financing, not demand (its CDS spreads had widened past 11%). Secured, contract-backed funding takes the near-term solvency fear off the table, which is why NBIS, ORCL, DELL, SMCI and memory names are all moving with it. Losses are still widening; this is a financing reprieve, not profitability."
+      "summary": "NBIS Q3 revenue $980.8M (+571% y/y), but it moved its $7B annual revenue run-rate goal from December to February. Shares fell about 11% pre-market (StockTitan). Applied Materials and Cisco report after the close today.",
+      "why": "A two-month slip in an AI cloud build-out target gets punished hard at these valuations. AMAT tonight is the next read on whether chip-equipment orders are holding up."
     },
     {
-      "title": "Yields Near 5% After Hot CPI; Fed Hike Now Fully Priced",
+      "title": "Rates Still the Background Risk: 10-Yr Near 5%, PPI Friday",
       "tags": [
         {
           "label": "Macro",
@@ -125,131 +159,109 @@ const D = {
           "cls": "tag-macro"
         }
       ],
-      "summary": "Tuesday: October CPI +0.4% m/m (vs 0.3%), core +0.3% (vs 0.2%), a third straight upside surprise. 10-yr +11bp to 4.99%, 2-yr +17bp to 4.74%. Waller backed a December hike; markets price December plus two more by June. Cash Treasuries are closed today for Veterans Day.",
-      "why": "This is the real risk under today's AI bounce. A 10-yr at 5% compresses long-duration tech multiples. Expect rates to reprice Thursday when cash bonds reopen; the bounce has not been tested against them yet."
+      "summary": "10-yr Treasury closed Tuesday at 4.98% (2-yr 4.73%) after the hot October CPI; cash bonds reopen today after Veterans Day. October PPI is due Friday at 8:30 ET. Weekly jobless claims and existing home sales are also out today; I could not confirm today's claims figure.",
+      "why": "The Nvidia news is grabbing headlines, but a 5% 10-yr is what caps tech multiples. A hot PPI Friday would add to December-hike pricing and hit the same long-duration names that are already wobbling."
     },
     {
-      "title": "Nvidia Rebounds +2.4% After Two-Day, $430B Drawdown",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "AI",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "NVDA 172.89 vs prev 168.89 on 88M shares. Board probe (Wachtell) into reports linking Jensen Huang to an executive US intelligence flagged as a potential Beijing asset continues. Baird cut to Neutral, PT $200 from $500; Morgan Stanley dropped it as Top Pick under its stop-loss rule (keeps OW, $300).",
-      "why": "The bounce is CoreWeave read-through, not resolution of the governance issue. 52-week low (164.27) remains the line; the probe outcome is the binary risk."
-    },
-    {
-      "title": "AMD +4.3%, Memory Names Rip; Microsoft -2.1%",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "AI",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "AMD 537.54 (+4.3%), Micron 2x ETFs +20% (MU roughly +9-10%), SK Hynix proxies +18%. MSFT 521.70 (-2.1%) after -2.2% Tuesday. Single-source report (TradingKey) says Anthropic's IPO prospectus names AMD, Micron, Nvidia and Microsoft among planned private-placement investors.",
-      "why": "Capital is rotating toward AI hardware and away from software platforms. I could not confirm a stated reason for MSFT's second straight decline; it is now nearly back to its 50-day (517.80). Do not treat the Anthropic IPO details as confirmed."
-    },
-    {
-      "title": "Oil Rebounds on Hormuz Tanker Incident",
+      "title": "Oil Holds ~$93 Brent After Hormuz Bounce",
       "tags": [
         {
           "label": "Energy",
           "cls": "tag-energy"
         }
       ],
-      "summary": "Brent +3.0% to 94.20 after touching its lowest since Aug 31 earlier this week. Iran's army said a tanker struck a mine and caught fire in the Strait of Hormuz; hopes for a quick diplomatic resolution are fading.",
-      "why": "Reverses two days of peace-hope selling. XOM/CVX bounce with it. Brent under its 200-day still caps the energy trade; one tanker incident is not a trend."
+      "summary": "Brent 93.39 (+0.7%), off a 91.19 overnight low. US-Iran talks have not resolved Hormuz shipping risk; Wednesday's tanker-mine report caused the bounce. OPEC+ meets Nov 29.",
+      "why": "XOM and CVX are up about 0.6% each but both are just under their 50-day averages. Energy is a defensive hedge today, not a breakout."
     }
   ],
   "tech_stocks": [
     {
       "ticker": "NVDA",
       "name": "Nvidia",
-      "price": "172.89",
-      "perf": "+2.37%",
+      "price": "159.80",
+      "perf": "-8.02%",
+      "up": false,
+      "note": "Prev 173.73; opened 150.99, low 148.81 = new 52-wk low (old 164.27). 206M shares by 9:40. 50-day 217, 200-day 204."
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "price": "365.19",
+      "perf": "+5.78%",
       "up": true,
-      "note": "Prev 168.89; 52-wk low 164.27; 50-day 218.00, 200-day 204.54 overhead. Volume 88.2M."
+      "note": "Prev 345.22; best large-cap chip today. No named catalyst found; rotation from NVDA. Year range 289.77-495."
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "price": "537.54",
-      "perf": "+4.33%",
+      "price": "571.23",
+      "perf": "+3.32%",
       "up": true,
-      "note": "Prev 515.21; day high 546.31 tagged the 50-day (548.56) and faded. Year high 658.52."
+      "note": "Prev 552.90; now above the 50-day (550.43) it failed at Wednesday. Day high 574.17; year high 658.52."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft",
-      "price": "521.70",
-      "perf": "-2.15%",
-      "up": false,
-      "note": "Prev 533.16; opened at the high (543.41) and sold off. 50-day 517.80 is next support."
+      "price": "523.48",
+      "perf": "+0.45%",
+      "up": true,
+      "note": "Prev 521.13; holding just above the 50-day (518.20) after two down days."
     },
     {
       "ticker": "AAPL",
       "name": "Apple",
-      "price": "353.54",
-      "perf": "+1.44%",
+      "price": "356.88",
+      "perf": "+0.43%",
       "up": true,
-      "note": "Prev 348.51; year high 355.38, 0.5% away."
+      "note": "Prev 355.36; new 52-wk high at 358.91 this morning. Acting as a safe haven inside big tech."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "166.39",
-      "perf": "+1.17%",
+      "price": "167.65",
+      "perf": "+0.56%",
       "up": true,
-      "note": "Prev 164.47; held 160 support; 50-day 169.06 overhead; 200-day 155.90."
+      "note": "Prev 166.71; still under the 50-day (169.10); 200-day 156.05."
     },
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "212.84",
-      "perf": "+0.77%",
+      "price": "214.49",
+      "perf": "+0.57%",
       "up": true,
-      "note": "Prev 211.22; just under the 50-day (215.17); year high 236.48."
+      "note": "Prev 213.28; right at the 50-day (215.22). Year high 236.48."
     },
     {
       "ticker": "EQT",
       "name": "EQT Corp",
-      "price": "n/a",
-      "perf": "--",
-      "up": null,
-      "note": "Quote plan-blocked; not refreshed."
+      "price": "52.46",
+      "perf": "-0.44%",
+      "up": false,
+      "note": "Profile-endpoint price (quote is plan-blocked). Range 47.94-68.24; 4 points off its low. EIA storage Friday."
     }
   ],
   "watchlist": [
     {
-      "ticker": "AMD",
-      "company": "Advanced Micro Devices",
-      "desc": "537.54, +4.3%. Hit the 50-day (548.56) intraday and got rejected. A close above it confirms the rotation out of NVDA; failure there means it was just a beta bounce.",
-      "change": "+4.33%",
-      "up": true
-    },
-    {
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "desc": "521.70, -2.1%. Second straight loss with no confirmed catalyst; 50-day (517.80) is right below. A break there would be the first real crack in mega-cap software.",
-      "change": "-2.15%",
+      "ticker": "NVDA",
+      "company": "Nvidia",
+      "desc": "159.80, -8%. Bounced 7% off a new 52-wk low (148.81). Where it closes vs. 148.81 tells you if the open was the flush. Don't buy a CEO-search headline before seeing Nov 17 guidance.",
+      "change": "-8.02%",
       "up": false
     },
     {
-      "ticker": "NVDA",
-      "company": "Nvidia",
-      "desc": "172.89, +2.4%. Relief bounce on CoreWeave, but the board probe is unresolved and 5% above the 52-week low. Don't mistake one green day for a bottom.",
-      "change": "+2.37%",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "desc": "571.23, +3.3%. Back above the 50-day (550). A close above it confirms money is moving from NVDA to AMD rather than leaving AI chips.",
+      "change": "+3.32%",
+      "up": true
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "desc": "365.19, +5.8%. Biggest beneficiary of the Nvidia news with no news of its own. Watch whether it holds the gain or fades with the tape; a move on rotation alone can reverse fast.",
+      "change": "+5.78%",
       "up": true
     }
   ]
