@@ -9,37 +9,37 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Thursday, November 12, 2026",
-  "sentiment": "neutral",
+  "date": "Friday, November 13, 2026",
+  "sentiment": "risk-off",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,596.04",
-      "change": "-0.31%",
+      "value": "7,552.27",
+      "change": "-0.53%",
       "up": false
     },
     {
       "label": "IXIC",
-      "value": "25,345.39",
-      "change": "-0.47%",
+      "value": "25,121.69",
+      "change": "-0.96%",
       "up": false
     },
     {
       "label": "DOW",
-      "value": "52,508.11",
-      "change": "+0.04%",
-      "up": true
+      "value": "52,290.79",
+      "change": "-0.01%",
+      "up": false
     },
     {
       "label": "VIX",
-      "value": "18.31",
-      "change": "+4.69%",
+      "value": "19.02",
+      "change": "+1.71%",
       "up": true
     },
     {
       "label": "Brent",
-      "value": "93.39",
-      "change": "+0.68%",
+      "value": "95.96",
+      "change": "+0.15%",
       "up": true
     },
     {
@@ -51,51 +51,66 @@ const D = {
   ],
   "snapshot": [
     {
-      "label": "S&P 500 (index, ~9:40 ET)",
-      "value": "7,596.04",
-      "change": "-0.31%",
+      "label": "S&P 500 (index, ~2:35 ET)",
+      "value": "7,552.27",
+      "change": "-0.53%",
       "up": false,
-      "note": "Prev close 7,619.38. Opened at the low (7,550.84, -0.9%) on the Nvidia CEO news and has clawed back most of it. Still under the 50-day (7,673), above the 200-day (7,334). Index level, not futures."
+      "note": "Prev close 7,592.40. Opened higher (7,616.85, high 7,621.78), then sold to 7,499.40 after PPI and the chip reversal. Below the 50-day (7,671) for a second day; 200-day 7,337. Late run: index level, not futures."
     },
     {
-      "label": "Nasdaq Composite (~9:40 ET)",
-      "value": "25,345.39",
-      "change": "-0.47%",
+      "label": "Nasdaq Composite (~2:35 ET)",
+      "value": "25,121.69",
+      "change": "-0.96%",
       "up": false,
-      "note": "Prev 25,466.19; low 25,068 (-1.6%) at the open, now back near the 200-day (25,123). Dow flat: this is an Nvidia-specific hit, not a broad selloff. AMD and Broadcom are up."
+      "note": "Prev 25,366.09; low 24,872.41 (-1.9%). Now sitting on the 200-day (25,130); a close below it is the first since spring. Dow flat: this is a chip and rates selloff, not a broad one."
     }
   ],
   "vix": {
-    "value": "18.31",
-    "pct": 37,
-    "note": "VIX 18.31, +4.7% from 17.49 (range 18.13-19.34). Spiked to 19.34 at the open and faded. Right at its 200-day (18.43); not a panic reading."
+    "value": "19.02",
+    "pct": 38,
+    "note": "VIX 19.02, +1.7% from 18.70; range 17.64-20.92. Touched 20.9 midday and faded. Just above its 200-day (18.44) and well above its 50-day (17.22). Elevated, not panic."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "n/a",
-      "change": "--",
-      "up": true,
-      "note": "WTI quote plan-blocked on FMP; no reliable same-day web quote found."
+      "value": "~88.60",
+      "change": "-0.16%",
+      "up": false,
+      "note": "From the Yahoo quote box (Dec contract) cited pre-market; FMP still plan-blocks WTI, so this is not a live quote."
     },
     {
       "label": "Brent Crude",
-      "value": "93.39",
-      "change": "+0.68%",
+      "value": "95.96",
+      "change": "+0.15%",
       "up": true,
-      "note": "Prev 92.76; range 91.19-94.34. Gave back part of Wednesday's Hormuz-tanker pop and is now trying to hold 93. Still under the 200-day (96.55) and well under the 50-day (103.89)."
+      "note": "Prev 95.82; range 95.07-97.12. Up about $2.50 from Thursday morning's 93.39. Still under the 50-day (103.90), right at the 200-day (96.62)."
     },
     {
       "label": "Natural Gas",
       "value": "n/a",
       "change": "--",
       "up": false,
-      "note": "NG quote plan-blocked on FMP. EIA storage report is Friday (delayed by Veterans Day); last read was 1.4% above the 5-yr average."
+      "note": "NG quote plan-blocked on FMP. The delayed EIA storage report was due today; I did not find the figure."
     }
   ],
   "news": [
     {
-      "title": "Jensen Huang Resigns as Nvidia CEO; CFO Colette Kress Named Interim CEO",
+      "title": "Chip Rally Reverses: AMD -9%, Broadcom -5% as Nvidia Turmoil Spreads",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "AI",
+          "cls": "tag-tech"
+        }
+      ],
+      "summary": "Thursday's rotation out of Nvidia and into AMD and Broadcom has unwound. AMD is down about 9% at 532.49 (low 520.01) and Broadcom about 5% at 345.57. Motley Fool ties the drop to a chip-sector selloff over the Nvidia scandal, plus profit-taking after AMD rose almost 50% in the week before Friday. No AMD-specific bad news was found.",
+      "why": "Yesterday's read was 'AI capex is fine, only the leader changes.' Today's tape says investors are now pricing risk across all AI chips. AMD gave back the 50-day (553) it reclaimed Thursday. A rotation trade with no news behind it can reverse this fast, as flagged yesterday."
+    },
+    {
+      "title": "Nvidia Off Another 2% as CEO-Exit Fallout Continues",
       "tags": [
         {
           "label": "Tech",
@@ -110,45 +125,11 @@ const D = {
           "cls": "tag-macro"
         }
       ],
-      "summary": "Nvidia's board said Huang resigned as President, CEO and director, effective immediately. CFO Colette Kress is interim CEO while staying CFO; ex-Synopsys CEO Harvey Jones becomes Nvidia's first Chair. The board is searching internally and externally for a permanent CEO. Follows a week of reports (WSJ/NYT) on a board probe into Huang's personal conduct, including an alleged link to a suspected Chinese intelligence asset. Q3 results stay on Tuesday, Nov 17.",
-      "why": "NVDA hit 148.81 at the open (-14%), a new 52-week low, then bounced to ~160 (-8%) on 206M shares in the first 10 minutes. Removing the founder removes the governance unknown but creates a strategy unknown. Watch whether customers or suppliers (TSMC, hyperscalers) say anything before Nov 17; the earnings call is now the first test of Kress as CEO."
+      "summary": "NVDA 162.45 (-2.3%), range 158.39-170.00; it opened above Thursday's close and faded. Thursday closed at 166.19 after a 148.80 low. Reports about Huang's personal conduct keep coming; Yahoo carries a headline about allegations of a third affair, which I have not verified. Q3 results remain Tuesday, Nov 17.",
+      "why": "Nvidia is falling less than AMD today, which means the selling has moved from 'Nvidia problem' to 'AI chip problem'. Tuesday's earnings call, the first with Colette Kress as interim CEO, decides whether this settles or spreads."
     },
     {
-      "title": "Money Rotates Into AMD and Broadcom",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "AI",
-          "cls": "tag-tech"
-        }
-      ],
-      "summary": "AVGO +5.8% to 365.19 and AMD +3.3% to 571.23 while NVDA falls. No company-specific news found for either; this reads as investors swapping within AI chips rather than leaving them. CoreWeave gave back about 8% after Wednesday's +20% beat-and-raise pop.",
-      "why": "This is the healthiest sign in the tape: the AI capex story is not being questioned, only who leads it. AMD is now above its 50-day (550), the level it failed at yesterday. If the rotation holds into the close, the Nasdaq hit stays contained."
-    },
-    {
-      "title": "Nebius Sales Up 571% but Pushes Out $7B Run-Rate Target; Stock -11%",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "AI",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "Earnings",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "NBIS Q3 revenue $980.8M (+571% y/y), but it moved its $7B annual revenue run-rate goal from December to February. Shares fell about 11% pre-market (StockTitan). Applied Materials and Cisco report after the close today.",
-      "why": "A two-month slip in an AI cloud build-out target gets punished hard at these valuations. AMAT tonight is the next read on whether chip-equipment orders are holding up."
-    },
-    {
-      "title": "Rates Still the Background Risk: 10-Yr Near 5%, PPI Friday",
+      "title": "October PPI +6.5% Y/Y, Highest Since 2022; 10-Yr Above 5.1%",
       "tags": [
         {
           "label": "Macro",
@@ -159,109 +140,124 @@ const D = {
           "cls": "tag-macro"
         }
       ],
-      "summary": "10-yr Treasury closed Tuesday at 4.98% (2-yr 4.73%) after the hot October CPI; cash bonds reopen today after Veterans Day. October PPI is due Friday at 8:30 ET. Weekly jobless claims and existing home sales are also out today; I could not confirm today's claims figure.",
-      "why": "The Nvidia news is grabbing headlines, but a 5% 10-yr is what caps tech multiples. A hot PPI Friday would add to December-hike pricing and hit the same long-duration names that are already wobbling."
+      "summary": "Headline PPI +0.3% m/m vs +0.4% expected; core +0.3% in line. Year over year, headline is +6.5% (consensus 6.6%) and core +5.0%. The 10-yr Treasury traded about 5.10-5.14%, the 2-yr about 4.85%. Zacks says Fed members are discussing a 50 bp hike at the Dec 8-9 meeting; no named official confirms it.",
+      "why": "A slight miss on the monthly number did not help, because the level is still hot and the 10-yr broke 5%. That is what is crushing long-duration tech multiples. Watch the Dec meeting pricing: a hike debate, not a cut debate, is the backdrop."
     },
     {
-      "title": "Oil Holds ~$93 Brent After Hormuz Bounce",
+      "title": "Modine +29% on Reported Samsung Takeover Interest",
+      "tags": [
+        {
+          "label": "Tech",
+          "cls": "tag-tech"
+        },
+        {
+          "label": "M&A",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Modine (MOD), a maker of data-center cooling systems, is up about 29% to 136.98 on 4x average volume. Motley Fool says this follows reports that Samsung Electronics is exploring a bid. The company has not confirmed it.",
+      "why": "It shows strategic buyers still pay up for AI-infrastructure picks-and-shovels even while chip stocks sell off. Not a radar pick: the deal is a report, not a signed agreement, and the market cap ($7.3B) is above the $5B limit."
+    },
+    {
+      "title": "Brent Holds Near $96; Energy Is the Quiet Hedge",
       "tags": [
         {
           "label": "Energy",
           "cls": "tag-energy"
         }
       ],
-      "summary": "Brent 93.39 (+0.7%), off a 91.19 overnight low. US-Iran talks have not resolved Hormuz shipping risk; Wednesday's tanker-mine report caused the bounce. OPEC+ meets Nov 29.",
-      "why": "XOM and CVX are up about 0.6% each but both are just under their 50-day averages. Energy is a defensive hedge today, not a breakout."
+      "summary": "Brent 95.96 (+0.1%), up from 93 on Thursday morning. CVX +1.1% to 218.76, XOM flat at 169.92. OPEC+ meets Nov 29; the Hormuz shipping risk from Wednesday has not been resolved.",
+      "why": "Energy names are holding up on a day tech is sold, and CVX is now above its 50-day (215.31). This is a defensive offset, not a breakout; oil is still under its 50-day."
     }
   ],
   "tech_stocks": [
     {
       "ticker": "NVDA",
       "name": "Nvidia",
-      "price": "159.80",
-      "perf": "-8.02%",
+      "price": "162.45",
+      "perf": "-2.25%",
       "up": false,
-      "note": "Prev 173.73; opened 150.99, low 148.81 = new 52-wk low (old 164.27). 206M shares by 9:40. 50-day 217, 200-day 204."
-    },
-    {
-      "ticker": "AVGO",
-      "name": "Broadcom",
-      "price": "365.19",
-      "perf": "+5.78%",
-      "up": true,
-      "note": "Prev 345.22; best large-cap chip today. No named catalyst found; rotation from NVDA. Year range 289.77-495."
+      "note": "Prev 166.19; opened 169.89, faded to 158.39. 289M shares. 52-wk low 148.80 (Thursday). 50-day 216, 200-day 204. Earnings Nov 17."
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "price": "571.23",
-      "perf": "+3.32%",
-      "up": true,
-      "note": "Prev 552.90; now above the 50-day (550.43) it failed at Wednesday. Day high 574.17; year high 658.52."
+      "price": "532.49",
+      "perf": "-9.02%",
+      "up": false,
+      "note": "Prev 585.30; low 520.01. Back below the 50-day (552.99). 37M shares. Up almost 50% the prior week, so this is partly profit-taking."
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "price": "345.57",
+      "perf": "-5.16%",
+      "up": false,
+      "note": "Prev 364.36; gave back Thursday's +5.8%. Profile-endpoint price. Range 289.77-495."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft",
-      "price": "523.48",
-      "perf": "+0.45%",
+      "price": "524.75",
+      "perf": "+0.33%",
       "up": true,
-      "note": "Prev 521.13; holding just above the 50-day (518.20) after two down days."
+      "note": "Prev 523.00; low 513.82, recovered. Holding the 50-day (518.72). A Microsoft outage headline was seen but not verified."
     },
     {
       "ticker": "AAPL",
       "name": "Apple",
-      "price": "356.88",
-      "perf": "+0.43%",
+      "price": "357.88",
+      "perf": "+0.85%",
       "up": true,
-      "note": "Prev 355.36; new 52-wk high at 358.91 this morning. Acting as a safe haven inside big tech."
+      "note": "Prev 354.88; new 52-wk high 360.83 today. Still the big-tech safe haven."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "167.65",
-      "perf": "+0.56%",
+      "price": "169.92",
+      "perf": "+0.08%",
       "up": true,
-      "note": "Prev 166.71; still under the 50-day (169.10); 200-day 156.05."
+      "note": "Prev 169.78; range 169.21-171.71. Right at the 50-day (169.21); 200-day 156.21."
     },
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "214.49",
-      "perf": "+0.57%",
+      "price": "218.76",
+      "perf": "+1.11%",
       "up": true,
-      "note": "Prev 213.28; right at the 50-day (215.22). Year high 236.48."
+      "note": "Prev 216.35; now above the 50-day (215.31). Year high 236.48."
     },
     {
       "ticker": "EQT",
       "name": "EQT Corp",
-      "price": "52.46",
-      "perf": "-0.44%",
-      "up": false,
-      "note": "Profile-endpoint price (quote is plan-blocked). Range 47.94-68.24; 4 points off its low. EIA storage Friday."
+      "price": "52.79",
+      "perf": "+0.82%",
+      "up": true,
+      "note": "Profile-endpoint price (quote plan-blocked). Range 47.94-68.24. Volume light at 2.8M vs 7.7M average."
     }
   ],
   "watchlist": [
     {
-      "ticker": "NVDA",
-      "company": "Nvidia",
-      "desc": "159.80, -8%. Bounced 7% off a new 52-wk low (148.81). Where it closes vs. 148.81 tells you if the open was the flush. Don't buy a CEO-search headline before seeing Nov 17 guidance.",
-      "change": "-8.02%",
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "desc": "532.49, -9%. Lost the 50-day (553) one day after reclaiming it. If it closes near the 520 low, the rotation trade from Thursday is dead; wait for Nvidia's Nov 17 numbers before buying the dip.",
+      "change": "-9.02%",
       "up": false
     },
     {
-      "ticker": "AMD",
-      "company": "Advanced Micro Devices",
-      "desc": "571.23, +3.3%. Back above the 50-day (550). A close above it confirms money is moving from NVDA to AMD rather than leaving AI chips.",
-      "change": "+3.32%",
-      "up": true
+      "ticker": "NVDA",
+      "company": "Nvidia",
+      "desc": "162.45, -2.3%. The key level is Thursday's 148.80 low. Holding above it into Tuesday's earnings means the governance shock is priced; breaking it means the market is pricing a business risk too.",
+      "change": "-2.25%",
+      "up": false
     },
     {
-      "ticker": "AVGO",
-      "company": "Broadcom",
-      "desc": "365.19, +5.8%. Biggest beneficiary of the Nvidia news with no news of its own. Watch whether it holds the gain or fades with the tape; a move on rotation alone can reverse fast.",
-      "change": "+5.78%",
+      "ticker": "HAWK",
+      "company": "HawkEye 360",
+      "desc": "17.78, +21%. Beat and raise on Nov 12 (see On the Radar). Defense, not Tyler's core sectors, and it is still 50% below its post-IPO high.",
+      "change": "+21.20%",
       "up": true
     }
   ]
