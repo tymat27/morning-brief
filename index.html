@@ -9,38 +9,38 @@
 //  BRIEFING DATA — Claude updates this block each morning
 // ═══════════════════════════════════════════════════════
 const D = {
-  "date": "Tuesday, November 17, 2026",
+  "date": "Wednesday, November 18, 2026",
   "sentiment": "neutral",
   "ticker_bar": [
     {
       "label": "SPX",
-      "value": "7,401.43",
-      "change": "-0.20%",
+      "value": "7,339.68",
+      "change": "-0.01%",
       "up": false
     },
     {
       "label": "IXIC",
-      "value": "24,503.49",
-      "change": "-0.03%",
-      "up": false
+      "value": "24,379.15",
+      "change": "+0.21%",
+      "up": true
     },
     {
       "label": "DOW",
-      "value": "51,282.54",
-      "change": "-0.63%",
+      "value": "50,542.39",
+      "change": "-0.43%",
       "up": false
     },
     {
       "label": "VIX",
-      "value": "22.98",
-      "change": "+0.31%",
-      "up": true
+      "value": "24.86",
+      "change": "-2.36%",
+      "up": false
     },
     {
       "label": "Brent",
-      "value": "93.67",
-      "change": "+1.33%",
-      "up": true
+      "value": "92.76",
+      "change": "-0.41%",
+      "up": false
     },
     {
       "label": "NG",
@@ -52,38 +52,38 @@ const D = {
   "snapshot": [
     {
       "label": "S&P 500 (index, ~9:40 ET)",
-      "value": "7,401.43",
-      "change": "-0.20%",
+      "value": "7,339.68",
+      "change": "-0.01%",
       "up": false,
-      "note": "Prev close 7,416.59 after Monday's -1.92% (third straight down day). Opened 7,411, low 7,393.8. Below the 50-day (7,661); 200-day 7,343 is about 0.8% away. Futures were -0.34% at 5:23 a.m. ET (Reuters)."
+      "note": "Prev close 7,340.53 after Tuesday's -1.03% (fourth straight down day). Opened 7,355.69, high 7,367.68, faded to flat. Now sitting right on the 200-day (7,344.5); 50-day is 7,654.8. Futures were +0.13-0.3% pre-market (Yahoo/Upstox)."
     },
     {
       "label": "Nasdaq Composite (~9:40 ET)",
-      "value": "24,503.49",
-      "change": "-0.03%",
-      "up": false,
-      "note": "Prev 24,509.76 after Monday's -2.49%, the worst day since Nov 5. Flat at the open, so no follow-through selling, but still about 2.5% under the 200-day (25,143). Dow is the laggard today (-0.63%)."
+      "value": "24,379.15",
+      "change": "+0.21%",
+      "up": true,
+      "note": "Prev 24,328.38 (-0.74% Tue). Opened 24,486, so most of the Nvidia gap is already gone. Still ~3% under the 200-day (25,146). Dow is the laggard again (-0.43%) as energy sells off."
     }
   ],
   "vix": {
-    "value": "22.98",
-    "pct": 46,
-    "note": "VIX 22.98, flat vs 22.91 close; opened 23.11, high 24.19. Up from 21.09 at yesterday's open. Well above the 50-day (17.47) and 200-day (18.48). Elevated going into Nvidia's print tonight, not panicking."
+    "value": "24.86",
+    "pct": 50,
+    "note": "Down from 25.46 close after Nvidia cleared the bar, but still near 25 and far above the 50-day (17.66). Opened 24.22, high 24.91 -- it is drifting back up as the open fades. Event risk remains: Fed minutes today, Anthropic prices tonight."
   },
   "commodities": [
     {
       "label": "WTI Crude Oil",
-      "value": "~85.8",
-      "change": "~+0.2%",
-      "up": true,
-      "note": "From Reuters/Stocktwits 5 a.m. ET snapshots (85.63-85.84); FMP still plan-blocks WTI, so not a live quote."
+      "value": "~84.3-85.0",
+      "change": "~-0.4% to -1.2%",
+      "up": false,
+      "note": "From Yahoo (Dec crude 84.28, -0.44%) and HDFC Sky (~85, -1.15%) pre-market snapshots; FMP still plan-blocks WTI, so not a live quote."
     },
     {
       "label": "Brent Crude",
-      "value": "93.67",
-      "change": "+1.33%",
-      "up": true,
-      "note": "Prev 92.44; range 91.25-94.14. Bouncing on tanker attacks in Hormuz (at least four since Friday) even though the IEA now sees a Q4 surplus of ~1.7M bbl/d. Still under the 200-day (96.67) and 50-day (103.78)."
+      "value": "92.76",
+      "change": "-0.41%",
+      "up": false,
+      "note": "Prev 93.14; range 91.00-93.52. API showed crude +5.28M bbl, gasoline +5.12M last week -- bearish -- while US-Iran strikes (Qeshm Island) and Houthi drones on Saudi pipeline pumping stations keep a floor. Under the 200-day (96.56) and 50-day (103.69)."
     },
     {
       "label": "Natural Gas",
@@ -95,7 +95,7 @@ const D = {
   ],
   "news": [
     {
-      "title": "Nvidia Reports Tonight, Its First Print Since Huang Resigned",
+      "title": "Nvidia Beats and Raises -- and the Gap Is Already Fading",
       "tags": [
         {
           "label": "Tech",
@@ -106,41 +106,11 @@ const D = {
           "cls": "tag-tech"
         }
       ],
-      "summary": "Nvidia reports Q3 FY27 after the close. Jensen Huang resigned as CEO on Nov 12; Colette Kress is interim CEO. Reuters' sources say the board is not weighing his return, despite a campaign backed by Elon Musk. Shares are down ~28% in a month and have lost ~$410B in value since the resignation. At ~9:40 ET NVDA 155.42 (-0.5%), about 4% above the 148.80 52-week low.",
-      "why": "This is the event for the whole AI trade this week. The question is guidance (the earlier ~70% next-year growth outlook) and whether Kress keeps funding AI customers. A clean guide could reverse three days of chip selling; a cut would likely break 148.80. Correction to yesterday's brief: the 'Huang may return' angle is now contradicted by Reuters."
+      "summary": "Q3 FY27 revenue $115.8B (+103% y/y) vs ~$109.2B consensus; EPS $2.68 vs $2.47; data center $107.6B vs ~$101.9B. Q4 guide $127.4-132.6B vs ~$125.3B. New $150B buyback; FY28 growth outlook raised to 75% from 70%; cloud backlog $2.5T. Board says it will NOT reinstate Huang; Kress stays interim CEO and the search is open. Stock traded ~159.8 overnight (+2.8%), opened 159.19, now 156.84 (+0.9%).",
+      "why": "A clean beat-and-raise bought less than 1% by 9:40. That tells you the selloff is about leadership/governance (Huang exit, a reported SEC probe) and a 5%+ 10-year, not about demand. Watch receivables: $81B unpaid, ~64 days of sales -- the bear case now is customer financing, not orders. 148.80 is still the floor to defend."
     },
     {
-      "title": "US Tightens China AI-Chip Curbs as Trump Heads to Xi Talks",
-      "tags": [
-        {
-          "label": "Tech",
-          "cls": "tag-tech"
-        },
-        {
-          "label": "Geopolitics",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "Per Reuters, the US tightened curbs on China's access to advanced AI chips on Monday. Commerce also disclosed a probe since 2024 into Singapore cloud firm Megaspeed over possible chip diversion; Megaspeed was put on Nvidia's no-sell list in 2025. Asia closed lower (Nikkei -1.3%, Hang Seng -1.0%).",
-      "why": "Tighter export rules cap China revenue for NVDA and AMD just before tonight's guidance. Any headline from the Trump-Xi meeting this week hits the same names."
-    },
-    {
-      "title": "Fed: 97% Odds of a December Hike; Waller, Hammack, Williams Speak Today",
-      "tags": [
-        {
-          "label": "Macro",
-          "cls": "tag-macro"
-        },
-        {
-          "label": "Rates",
-          "cls": "tag-macro"
-        }
-      ],
-      "summary": "CME FedWatch shows a 97.4% chance of a 25 bp hike in December (Reuters). Waller, Hammack and Williams speak today; October FOMC minutes come Wednesday. October retail sales are out this morning (consensus about +0.1%). The 10-year sits near 5.12-5.15% (page snapshots, time unclear).",
-      "why": "A hike is priced; the risk is talk of a faster path. A 5%+ 10-year keeps pressure on long-duration tech multiples no matter what Nvidia says."
-    },
-    {
-      "title": "Anthropic Prices Its IPO Wednesday, Trades Thursday",
+      "title": "Anthropic Prices Tonight, Trades Thursday",
       "tags": [
         {
           "label": "AI",
@@ -151,114 +121,136 @@ const D = {
           "cls": "tag-macro"
         }
       ],
-      "summary": "Anthropic (NASDAQ: ANT) is set to price Wednesday, Nov 18 and start trading Thursday, Nov 19 (Reuters, Yahoo). The $70-78 range and ~$1.4T valuation in yesterday's brief are still not confirmed by these sources.",
-      "why": "Funds raising cash to buy ANT may trim other AI holdings this week. Back-to-back Nvidia print and Anthropic debut make Wed-Thu the highest-volatility window for AI names."
+      "summary": "Anthropic is expected to price after the close today and begin trading Thursday Nov 19 (Yahoo). Price range, final valuation and listing ticker are still not confirmed in the sources checked; a ~$1.4T valuation headline is circulating but unverified.",
+      "why": "Funds making room for the debut may keep trimming other AI names through Thursday -- one reason Nvidia's beat isn't holding. Expect elevated volatility in AI software and chips into tomorrow's open."
     },
     {
-      "title": "Energy Bounces While the Dow Lags; Disney and Home Depot Report",
+      "title": "Fed Minutes Today; Musalem Backs Multiple Hikes",
+      "tags": [
+        {
+          "label": "Macro",
+          "cls": "tag-macro"
+        },
+        {
+          "label": "Rates",
+          "cls": "tag-macro"
+        }
+      ],
+      "summary": "Minutes from the Oct 28 meeting come out at 2 p.m. ET. St. Louis Fed's Musalem signaled support for multiple rate hikes in coming months (Upstox). 10-year ~5.10-5.11% pre-market. Also: Oct housing starts (+4.4% expected), building permits.",
+      "why": "December's hike is priced; Musalem shifts the debate to a hiking path. Hawkish minutes would hit long-duration tech harder than Nvidia's numbers can help it."
+    },
+    {
+      "title": "Energy Gives Back Tuesday's Bounce; CVX and XOM Lose the 50-Day",
       "tags": [
         {
           "label": "Energy",
           "cls": "tag-energy"
-        },
+        }
+      ],
+      "summary": "XOM 164.03 (-1.9%), CVX 210.30 (-1.9%), EQT 50.49 (+0.2%). Brent -0.4% on a large API build. Both majors are now below their 50-day averages (XOM 169.66, CVX 215.78).",
+      "why": "Yesterday's call that CVX was the cleaner hedge because it held its 50-day just broke. Energy is no longer offsetting tech weakness; it is adding to Dow weakness."
+    },
+    {
+      "title": "Retail Earnings: Target Beats but Falls; Lowe's Beats; Palo Alto After the Close",
+      "tags": [
         {
           "label": "Earnings",
           "cls": "tag-macro"
         }
       ],
-      "summary": "Brent +1.3% to 93.67 on Hormuz tanker attacks. XOM 168.84 (+1.2%), CVX 219.07 (+0.9%), EQT 51.74 (+1.0%). TipRanks headlines: Disney beat Q4 estimates and raised its dividend 33% with a $3B cost plan; Home Depot named Richard McPhail CEO and beat Q3. Deutsche Bank fell ~5% in Europe on an FT report of suspicious Epstein-linked payments.",
-      "why": "Energy is acting as the hedge again after failing to yesterday. CVX is now about 1.6% above its 50-day; XOM is testing its 50-day (169.53) from below."
+      "summary": "Target Q3 sales $27.1B vs $26.5B est, EPS $2.65 vs $2.08 (includes $0.50 tariff-refund benefit), comps +5.6% -- shares fell pre-market anyway. Lowe's also beat. PANW (313.84, +1.5%) reports after the close; TJX reported this morning. Intel is cutting more jobs.",
+      "why": "Target selling a beat mirrors Nvidia: the market is discounting quality-of-earnings (one-off tariff refund) and fading good news. PANW tonight is the read-through for AI-era security spend."
     }
   ],
   "tech_stocks": [
     {
       "ticker": "NVDA",
       "name": "Nvidia",
-      "price": "155.42",
-      "perf": "-0.46%",
-      "up": false,
-      "note": "Prev 156.14 (fell >4% Monday). Low 154.81. 52-wk low 148.80; 50-day 213.16. Reports after the close."
+      "price": "156.84",
+      "perf": "+0.89%",
+      "up": true,
+      "note": "Prev 155.46; opened 159.19, high 159.70, low 155.91. Beat and raised, $150B buyback. 52-wk low 148.80; 50-day 211.76. Heavy early volume (52M by 9:40)."
     },
     {
       "ticker": "AMD",
       "name": "Advanced Micro Devices",
-      "price": "508.39",
-      "perf": "+0.82%",
-      "up": true,
-      "note": "Prev 504.28; opened 512.12. Michael Burry questioned AMD's valuation on Substack. Below the 50-day (555.09), above the 200-day (424.46)."
+      "price": "501.49",
+      "perf": "-0.38%",
+      "up": false,
+      "note": "Prev 503.41; opened 511.60, high 519.80 -- a full reversal of the Nvidia sympathy pop. Below the 50-day (555.04)."
     },
     {
       "ticker": "AVGO",
       "name": "Broadcom",
-      "price": "339.02",
-      "perf": "+1.69%",
+      "price": "344.58",
+      "perf": "+0.87%",
       "up": true,
-      "note": "Profile-endpoint price. First bounce after three down days. Range 289.77-495."
+      "note": "Profile-endpoint price. Rose >1% after hours on Nvidia; holding part of it. Range 289.77-495."
     },
     {
       "ticker": "MSFT",
       "name": "Microsoft",
-      "price": "512.13",
-      "perf": "-1.13%",
+      "price": "504.00",
+      "perf": "-0.44%",
       "up": false,
-      "note": "Prev 517.99; now below the 50-day (519.36). Weakest megacap this morning."
+      "note": "Prev 506.24. Still below the 50-day (519.61) for a second day -- did not reclaim it after Nvidia."
     },
     {
       "ticker": "AAPL",
       "name": "Apple",
-      "price": "353.05",
-      "perf": "+0.08%",
+      "price": "355.01",
+      "perf": "+0.88%",
       "up": true,
-      "note": "Prev 352.78; still well above the 50-day (339.69). Holding as the safe-haven megacap."
+      "note": "Prev 351.91; near the 360.83 year high and well above the 50-day (340.41). Still the defensive megacap."
     }
   ],
   "energy_stocks": [
     {
       "ticker": "XOM",
       "name": "Exxon Mobil",
-      "price": "168.84",
-      "perf": "+1.18%",
-      "up": true,
-      "note": "Prev 166.87; at the day high, just under the 50-day (169.53). 200-day 156.49."
+      "price": "164.03",
+      "perf": "-1.90%",
+      "up": false,
+      "note": "Prev 167.21; low 163.36. Back below the 50-day (169.66); 200-day 156.63."
     },
     {
       "ticker": "CVX",
       "name": "Chevron",
-      "price": "219.07",
-      "perf": "+0.89%",
-      "up": true,
-      "note": "Prev 217.14; held the 50-day (215.65) through Monday's selloff. Year high 236.48."
+      "price": "210.30",
+      "perf": "-1.89%",
+      "up": false,
+      "note": "Prev 214.35; low 209.43. Broke below the 50-day (215.78) it had held Monday-Tuesday. 200-day 196.21."
     },
     {
       "ticker": "EQT",
       "name": "EQT Corp",
-      "price": "51.74",
-      "perf": "+0.97%",
+      "price": "50.49",
+      "perf": "+0.25%",
       "up": true,
-      "note": "Profile-endpoint price. Range 47.94-68.24."
+      "note": "Profile-endpoint price. Gas-weighted, so not hit by the crude build. Range 47.94-68.24; near the low end."
     }
   ],
   "watchlist": [
     {
       "ticker": "NVDA",
       "company": "Nvidia",
-      "desc": "155.42, -0.5%. Reports tonight. 148.80 is the line: a guide cut that breaks it opens new lows; holding above it after the print means the leadership shock is priced. Do not size up before the number.",
-      "change": "-0.46%",
-      "up": false
-    },
-    {
-      "ticker": "CVX",
-      "company": "Chevron",
-      "desc": "219.07, +0.9%. Passed yesterday's test: held the 50-day (215.65) through a -1.9% S&P day. Still the cleaner energy hedge than XOM, which is fighting its 50-day.",
+      "desc": "156.84, +0.9%. Faded from 159.70 despite a beat-and-raise. If it closes below 155.46 (yesterday's close) the market has rejected the print and 148.80 comes back into play; a close above 160 would be the first real sign the governance discount is easing.",
       "change": "+0.89%",
       "up": true
     },
     {
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "desc": "512.13, -1.1%. Lost its 50-day (519.36) today. If it can't reclaim it after Nvidia, the AI selloff is reaching software megacaps, not just chips.",
-      "change": "-1.13%",
-      "up": false
+      "ticker": "AAPL",
+      "company": "Apple",
+      "desc": "355.01, +0.9%. The one megacap acting well -- 1.6% from its year high while AI names chop. If rotation out of AI into quality continues after Anthropic's debut, this is where it shows.",
+      "change": "+0.88%",
+      "up": true
+    },
+    {
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "desc": "313.84, +1.5%. Reports after the close. Range 139.57-432.33 means it is already ~27% off the high; a solid guide is a read-through for AI security spend that does not depend on chip sentiment.",
+      "change": "+1.47%",
+      "up": true
     }
   ]
 };
